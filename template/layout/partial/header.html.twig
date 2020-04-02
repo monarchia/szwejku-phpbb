@@ -3,12 +3,13 @@
 # template/layout/partial/header.html.twig
 #}
 <!-- Begin of main header -->
-{% set is_global = "true" %}
+{% set is_global = "true" %}  
 <header class="global" id="global_nav">
   <nav class="dev_navbar wrap">
-    <a id="logo" class="logo" href="/">
-    <span class = "site_logo"></span>
-    </a>
   </nav>
+  <a id="logo" class="logo" href="{% if U_SITE_HOME %}{{ U_SITE_HOME }}{% else %}{{ U_INDEX }}{% endif %}" title="{% if U_SITE_HOME %}
+    {{ L_SITE_HOME }}{% else %}{{ L_INDEX }}{% endif %}">
+      <span class="site_logo"></span>
+    </a>
 </header>
 <!-- End of main header -->
