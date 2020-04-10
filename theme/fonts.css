@@ -1,0 +1,5 @@
+@import url(//brick.freetls.fastly.net/Raleway:500,600,700,800);
+@import url(//fonts.googleapis.com/css2?family=Kurale);
+html, html body {
+  font-family: "Raleway";
+}
