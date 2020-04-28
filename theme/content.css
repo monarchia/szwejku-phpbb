@@ -197,7 +197,7 @@ dl.row-item dt li {
 }
 
 dd.lastpost, dd.redirect, dd.moderation, dd.time, dd.info {
-	width: 100%;
+	width: 250px;
 }
 
 dd.redirect {
