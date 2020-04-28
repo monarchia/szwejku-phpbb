@@ -9,7 +9,7 @@
     font-family: 'Forum Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Forum'), url('Forum.woff2') format('woff2');
+    src: url('Forum.woff2') format('woff2');
 }
 @font-face {
 font-family: 'Raleway Regular';
