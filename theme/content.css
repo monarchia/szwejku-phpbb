@@ -29,7 +29,6 @@ ul.topiclist dt, ul.topiclist dd {
 ul.topiclist dt {
 	width: 100%;
 	margin-right: -440px;
-	font-size: 1.5rem;
 }
 
 ul.topiclist.missing-column dt {
@@ -103,7 +102,6 @@ li.header dt, li.header dd {
 	margin: 2px 0 4px 0;
 	padding-top: 2px;
 	padding-bottom: 2px;
-	font-size: 1.25em;
 	text-transform: uppercase;
 }
 
@@ -177,7 +175,6 @@ dd.posts, dd.topics, dd.views, dd.extra, dd.mark {
 	width: 80px;
 	text-align: center;
 	line-height: 2.2em;
-	font-size: 1.2em;
 }
 
 dd.posts, dd.topics, dd.views {
@@ -221,7 +218,6 @@ dd.option {
 	width: 125px;
 	line-height: 200%;
 	text-align: center;
-	font-size: 1.1em;
 }
 
 /* Post body styles
@@ -235,18 +231,15 @@ dd.option {
 }
 
 .postbody .ignore {
-	font-size: 1.1em;
 }
 
 .postbody h3.first {
 	/* The first post on the page uses this */
-	font-size: 1.7em;
 }
 
 .postbody h3 {
 	/* Postbody requires a different h3 format - so change it here */
 	float: left;
-	font-size: 1.5em;
 	padding: 2px 0 0 0;
 	margin-top: 0 !important;
 	margin-bottom: 0.3em !important;
@@ -267,7 +260,6 @@ dd.option {
 }
 
 .postbody .content {
-	font-size: 1.3em;
 	overflow-x: auto;
 }
 
@@ -328,14 +320,12 @@ dd.option {
 	min-height: 3em;
 	overflow: hidden;
 	line-height: 1.4em;
-	font-size: 1.2em;
 	padding-bottom: 1px;
 }
 
 .content h2, .panel h2 {
 	font-weight: normal;
 	border-bottom: 1px solid transparent;
-	font-size: 1.6em;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 	padding-bottom: 0.5em;
@@ -346,19 +336,16 @@ dd.option {
 }
 
 .panel p {
-	font-size: 1.2em;
 	margin-bottom: 1em;
 	line-height: 1.4em;
 }
 
 .content p {
-	font-size: 1.2em;
 	margin-bottom: 1em;
 	line-height: 1.4em;
 }
 
 dl.faq {
-	font-size: 1.1em;
 	margin-top: 1em;
 	margin-bottom: 2em;
 	line-height: 1.4em;
@@ -369,7 +356,6 @@ dl.faq dt {
 }
 
 .content dl.faq {
-	font-size: 1.2em;
 	margin-bottom: 0.5em;
 }
 
@@ -389,7 +375,6 @@ dl.faq dt {
 p.author {
 	margin-bottom: 0.6em;
 	padding: 0 0 5px 0;
-	font-size: 1em;
 	line-height: 1.2em;
 	clear: both;
 }
@@ -398,7 +383,6 @@ p.author {
 .signature {
 	margin-top: 1.5em;
 	padding-top: 0.2em;
-	font-size: 1.1em;
 	border-top: 1px solid transparent;
 	clear: left;
 	line-height: 140%;
@@ -431,7 +415,6 @@ dd .signature {
 	width: auto;
 	margin-top: 1.5em;
 	padding-top: 0.2em;
-	font-size: 1em;
 	border-top: 1px dashed transparent;
 	clear: left;
 	line-height: 130%;
@@ -467,7 +450,6 @@ blockquote:before {
 /* Code block */
 .codebox {
 	border: 1px solid transparent;
-	font-size: 1em;
 	margin: 1em 0 1.2em 0;
 	word-wrap: normal;
 }
@@ -477,7 +459,6 @@ blockquote:before {
 	border-bottom: 1px solid transparent;
 	margin-bottom: 0;
 	padding: 3px;
-	font-size: 0.8em !important;
 	font-weight: bold;
 	display: block;
 }
@@ -499,7 +480,6 @@ blockquote .codebox {
 /* Attachments
 ----------------------------------------*/
 .attachbox {
-	font-size: 13px;
 	float: left;
 	width: auto;
 	max-width: 100%;
@@ -549,7 +529,6 @@ blockquote .codebox {
 
 .attach-image img {
 	border: 1px solid transparent;
-/*	cursor: move; */
 	cursor: default;
 }
 
@@ -564,7 +543,6 @@ div.inline-attachment p {
 }
 
 dl.file {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 	display: block;
 }
 
@@ -573,7 +551,6 @@ dl.file dt {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 dl.file dd {
@@ -589,11 +566,9 @@ dl.thumbnail img {
 
 dl.thumbnail dd {
 	font-style: italic;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 .attachbox dl.thumbnail dd {
-	font-size: 100%;
 }
 
 dl.thumbnail dt a:hover img {
@@ -603,7 +578,6 @@ dl.thumbnail dt a:hover img {
 /* Post poll styles
 ----------------------------------------*/
 fieldset.polls {
-	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
 }
 
 fieldset.polls dl {
@@ -625,7 +599,6 @@ fieldset.polls dt {
 	border-right: none;
 	padding: 0;
 	margin: 0;
-	font-size: 1.1em;
 }
 
 fieldset.polls dd {
@@ -634,7 +607,6 @@ fieldset.polls dd {
 	border-left: none;
 	padding: 0 5px;
 	margin-left: 0;
-	font-size: 1.1em;
 }
 
 fieldset.polls dd.resultbar {
@@ -647,7 +619,6 @@ fieldset.polls dd input {
 
 fieldset.polls dd div {
 	text-align: right;
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	padding: 2px 2px 0 2px;
 	overflow: visible;
@@ -660,7 +631,6 @@ fieldset.polls dd div {
 }
 
 .vote-submitted {
-	font-size: 1.2em;
 	font-weight: bold;
 	text-align: center;
 }

@@ -1,8 +1,6 @@
 /* General Markup Styles
 ---------------------------------------- */
 html {
-	font-size: 100%;
-	/* Always show a scrollbar for short pages - stops the jump when the scrollbar appears. non-IE browsers */
 	height: 101%;
 }
 
@@ -19,13 +17,11 @@ h1 {
 	margin-right: 200px;
 	margin-top: 15px;
 	font-weight: bold;
-	font-size: 2em;
 }
 
 h2 {
 	/* Forum header titles */
 	font-weight: normal;
-	font-size: 2em;
 	margin: 0.8em 0 0.2em 0;
 }
 
@@ -40,18 +36,15 @@ h3 {
 	border-bottom: 1px solid transparent;
 	margin-bottom: 3px;
 	padding-bottom: 2px;
-	font-size: 1.05em;
 	margin-top: 20px;
 }
 
 h4 {
 	/* Forum and topic list titles */
-	font-size: 1.3em;
 }
 
 p {
 	line-height: 1.3em;
-	font-size: 1.1em;
 	margin-bottom: 1.5em;
 }
 
@@ -251,7 +244,6 @@ ul.linklist {
 
 ul.linklist > li {
 	float: left;
-	font-size: 1.1em;
 	line-height: 2.2em;
 	list-style-type: none;
 	margin-right: 7px;
@@ -540,7 +532,6 @@ a.header-avatar span:after {
 	border-top: 1px dotted transparent;
 	float: none !important;
 	line-height: normal !important;
-	font-size: 1em !important;
 	list-style: none;
 	margin: 0;
 	white-space: nowrap;
@@ -647,7 +638,6 @@ table.table1 tbody tr {
 }
 
 table.table1 td {
-	font-size: 1.1em;
 }
 
 table.table1 tbody td {
@@ -738,7 +728,6 @@ table.info tbody th {
 }
 
 dl.details {
-	font-size: 1.1em;
 }
 
 dl.details dt {
@@ -776,7 +765,6 @@ fieldset.fields1 dd.recipients {
 }
 
 fieldset.fields1 ul.recipients  input.button2{
-	font-size: 0.8em;
 	margin-right: 0;
 	padding: 0;
 }
@@ -792,7 +780,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 /* Action-bars (container for post/reply buttons, pagination, etc.)
 ---------------------------------------- */
 .action-bar {
-	font-size: 11px;
 	margin: 4px 0;
 }
 
@@ -847,7 +834,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 
 .pagination li.active span {
 	display: inline-block;
-	font-size: 13px;
 	font-weight: normal;
 	line-height: 1.4;
 	text-align: center;
@@ -870,7 +856,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 }
 
 .pagination li.page-jump a i {
-	font-size: 21px;
 }
 
 .pagination .arrow a {
@@ -891,7 +876,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 .row .pagination li a, .row .pagination li span {
 	border-radius: 2px;
 	padding: 1px 3px;
-	font-size: 9px;
 }
 
 /* jQuery popups
@@ -938,7 +922,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 .phpbb_alert div.alert_text > select,
 .phpbb_alert div.alert_text > textarea,
 .phpbb_alert div.alert_text > input {
-	font-size: 1.1em;
 }
 
 .darkenwrapper {
@@ -975,7 +958,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 /* Miscellaneous styles
 ---------------------------------------- */
 .copyright {
-	font-size: 10px;
 	text-align: center;
 	padding: 10px;
 }
@@ -987,7 +969,6 @@ fieldset.fields1 dl.pmlist dd.recipients {
 }
 
 .small {
-	font-size: 0.9em !important;
 }
 
 .titlespace {
@@ -1000,12 +981,10 @@ fieldset.fields1 dl.pmlist dd.recipients {
 
 .error {
 	font-weight: bold;
-	font-size: 1em;
 }
 
 div.rules {
 	margin: 10px 0;
-	font-size: 1.1em;
 	padding: 5px 10px;
 	border-radius: 7px;
 }
@@ -1079,7 +1058,6 @@ ul.linklist:after,
 }
 
 .member-search strong {
-	font-size: 0.95em;
 }
 
 .dropdown-extended {
@@ -1100,7 +1078,6 @@ ul.linklist:after,
 	float: none;
 	border-top: 1px solid;
 	list-style-type: none;
-	font-size: 0.95em;
 	clear: both;
 	position: relative;
 }
@@ -1154,7 +1131,6 @@ ul.linklist:after,
 
 .dropdown-extended .footer {
 	text-align: center;
-	font-size: 1.1em;
 }
 
 .dropdown-extended ul li a, .dropdown-extended ul li.no-url {
@@ -1181,7 +1157,6 @@ ul.linklist:after,
 
 .notification_list ul li p {
 	margin-bottom: 4px;
-	font-size: 1em;
 }
 
 .notification_list p.notification-reference,
@@ -1193,7 +1168,6 @@ ul.linklist:after,
 }
 
 .notification_list p.notification-time {
-	font-size: 0.9em;
 	margin: 0;
 	text-align: right;
 }
@@ -1208,7 +1182,6 @@ ul.linklist:after,
 }
 
 .notification_list p.notifications_title {
-	font-size: 1.2em !important;
 }
 
 .notification_list p.notifications_title strong {
@@ -1228,7 +1201,6 @@ ul.linklist:after,
 	opacity: 0.8;
 	text-align: center;
 	white-space: nowrap;
-	font-size: 10px;
 	line-height: 1;
 	float: right;
 	display: inline-block;
