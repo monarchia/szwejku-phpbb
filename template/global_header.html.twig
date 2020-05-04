@@ -2,9 +2,9 @@
  # global_header.html.twig
  #}
  {% if U_SITE_HOME %}
-    {% set home.url = U_SITE_HOME %}
+    {% set home_url = U_SITE_HOME %}
  {% else %}
-    {% set home.url = U_INDEX %}
+    {% set home_url = U_INDEX %}
  {% endif %}
 <nav class="global header headerbar">
 <!--
@@ -12,7 +12,7 @@
 - Links
 - Search
 - User menu -->
-    <a href="{{home.url}}">
+    <a href="{{home_url}}">
         Strona główna :)
     </a>
 </nav>
