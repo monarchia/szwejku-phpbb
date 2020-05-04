@@ -8,4 +8,5 @@ nav.global.header{
     z-index: 1000;
     display: flex;
     border-radius: unset;
+    width: 100%;
 }
