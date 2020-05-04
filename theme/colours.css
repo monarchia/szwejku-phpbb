@@ -86,7 +86,7 @@ a:hover { color: #D31141; }
 	border: unset;
 }
 
-#wrap > div {
+.page-body {
   background: rgba(255,255,255,0.7);
   padding: 0.5rem;
   border-radius: 0.5rem;
