@@ -8,3 +8,7 @@
  */
 
 /* empty */
+.reaction_image_size, .reaction_image_select {
+	width: 3rem;
+	height: 3rem;
+}
