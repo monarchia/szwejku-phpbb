@@ -44,9 +44,6 @@
 		<div class="dropdown">
 				<div class="pointer"><div class="pointer-inner"></div></div>
 		    		<ul class="dropdown-contents" role="menu">
-					<li>
-					{{ CURRENT_USERNAME_SIMPLE }}
-					</li>
 					<!-- IF U_RESTORE_PERMISSIONS -->
 					<li>
 						<a href="{U_RESTORE_PERMISSIONS}">
@@ -65,7 +62,7 @@
 						<!-- IF U_USER_PROFILE -->
 							<li>
 								<a href="{U_USER_PROFILE}" title="{L_READ_PROFILE}" role="menuitem">
-									<i class="icon fa-user fa-fw" aria-hidden="true"></i><span>{L_READ_PROFILE}</span>
+									<span>{{ CURRENT_USERNAME_SIMPLE }}</span>
 								</a>
 							</li>
 						<!-- ENDIF -->
