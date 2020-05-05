@@ -18,3 +18,6 @@ nav.global.header a.header-avatar img.avatar{
     height: 3rem;
     border-radius: 100%;
 }
+html body{
+    padding-top: 3rem;
+}
