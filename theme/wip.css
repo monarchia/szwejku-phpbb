@@ -10,8 +10,11 @@ nav.global.header{
     border-radius: unset;
     width: 100%;
 }
+nav.global.header .site-description{
+    width: unset;
+}
 nav.global.header a.header-avatar img.avatar{
     max-height: unset;
-    height: 2.75rem;
+    height: 3rem;
     border-radius: 100%;
 }

@@ -19,6 +19,20 @@
             </span>
         </a>
     </div>
+    <div id="search-box" class="search-box search-header" role="search">
+		<form action="{U_SEARCH}" method="get" id="search">
+		<fieldset>
+	    	<input name="keywords" id="keywords" type="search" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search tiny" size="20" value="{SEARCH_WORDS}" placeholder="{L_SEARCH_MINI}" />
+			<button class="button button-search" type="submit" title="{L_SEARCH}">
+		    	<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
+			</button>
+			<a href="{U_SEARCH}" class="button button-search-end" title="{L_SEARCH_ADV}">
+				<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
+			</a>
+			{S_SEARCH_HIDDEN_FIELDS}
+		</fieldset>
+		</form>
+	</div>
     <div class="header-profile dropdown-container">
         <a href="{U_PROFILE}" class="header-avatar dropdown-trigger"><!-- IF CURRENT_USER_AVATAR -->{CURRENT_USER_AVATAR} <!-- ENDIF --></a>
 		<div class="dropdown">
