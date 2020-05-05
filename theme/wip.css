@@ -11,7 +11,7 @@ nav.global.header{
     border-radius: unset;
     width: 100%;
 }
-nav.global.header div{
+nav.global.header > div{
     padding: 0 1em;
 }
 nav.global.header .site-description{
