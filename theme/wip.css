@@ -14,8 +14,17 @@ nav.global.header{
 nav.global.header > div{
     padding: 0 1em;
 }
+nav.global.header .global-links{
+    width: 100%;
+}
+.nav.global.header .global-links ul li{
+    display: inline;
+}
 nav.global.header .site-description{
     width: unset;
+}
+nav.global.header .site-description .logo{
+    padding: unset;
 }
 nav.global.header a.header-avatar img.avatar{
     max-height: unset;
