@@ -19,11 +19,7 @@
         </ul>
     </div>
     <div id="site-description" class="site-description">
-        <a id="logo" class="logo" href="{{ home_url }}">
-            <span class="site_logo">
-                <h1>{{ SITENAME }}</h1>
-            </span>
-        </a>
+	{% include "partials/branding.html.twig" %}
     </div>
     <div id="search-box" class="search-box search-header" role="search">
 		<form action="{U_SEARCH}" method="get" id="search">
