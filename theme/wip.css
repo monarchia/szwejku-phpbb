@@ -22,6 +22,10 @@ nav.global.header a.header-avatar img.avatar{
     height: 3rem;
     border-radius: 100%;
 }
+nav.global.header .dropdown{
+    top: 3rem;
+    right: 1.3rem;
+}
 html body{
     padding-top: 3rem;
 }
