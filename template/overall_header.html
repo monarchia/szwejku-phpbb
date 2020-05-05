@@ -49,9 +49,6 @@
 	<link href="{T_ASSETS_PATH}/cookieconsent/cookieconsent.min.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
 <!-- ENDIF -->
 
-<!--[if lte IE 9]>
-	<link href="{T_THEME_PATH}/tweaks.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
-<![endif]-->
 
 <!-- EVENT overall_header_head_append -->
 
@@ -70,16 +67,6 @@
 		<div class="headerbar" role="banner">
 		<!-- EVENT overall_header_headerbar_before -->
 			<div class="inner">
-
-			<!-- <div id="site-description" class="site-description">
-				<a id="-logo" class="logo" href="{% if U_SITE_HOME %}{{ U_SITE_HOME }}{% else %}{{ U_INDEX }}{% endif %}" title="{% if U_SITE_HOME %}{{ L_SITE_HOME }}{% else %}{{ L_INDEX }}{% endif %}">
-					<span class="site_logo"></span>
-				</a>
-				<h1>{SITENAME}</h1>
-				<p>{SITE_DESCRIPTION}</p>
-				<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>
-			</div> -->
-
 			<!-- EVENT overall_header_searchbox_before -->
 			<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
 			<!-- <div id="search-box" class="search-box search-header" role="search">
@@ -117,5 +104,5 @@
 			</div>
 		</div>
 		<!-- ENDIF -->
-
 		<!-- EVENT overall_header_content_before -->
+		<!-- INCLUDEPHP "functions/articles.php" -->
