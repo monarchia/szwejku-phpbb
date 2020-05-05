@@ -60,9 +60,9 @@
 					</li>
 					<!-- EVENT navbar_header_profile_list_after -->
 					<li class="separator"></li>
-					<div class="header">
-					No siemka
-					</div>
+					{% if S_NOTIFICATIONS_DISPLAY %}
+					{{ L_NOTIFICATIONS }}
+					{% endif %}
 					<li>
 						<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">
 							<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>{L_LOGIN_LOGOUT}</span>
