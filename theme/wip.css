@@ -16,10 +16,21 @@ nav.global.header > div{
 }
 nav.global.header .global-links{
     width: 100%;
+    max-width: 25%;
+    align-self: center;
 }
 nav.global.header .global-links ul li{
     display: inline-block;
 }
+nav.global.header .global-links a.button {
+    background: #000;
+    color: #fc0;
+    border: 2px solid #fc0;
+    box-shadow: 0px 0px 3px 0px black;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+
 nav.global.header .site-description{
     width: unset;
 }
