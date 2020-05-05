@@ -1,1 +1,13 @@
-/* Here Be Fonf Faces */
+
+@font-face{
+    font-family: 'Aladin Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Aladin-Regular.woff2') format('woff2');
+}
+@font-face{
+    font-family: 'Forum Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Forum.woff2') format('woff2');
+}
