@@ -11,5 +11,7 @@ nav.global.header{
     width: 100%;
 }
 nav.global.header a.header-avatar img.avatar{
+    max-height: unset;
     height: 2.75rem;
+    border-radius: 100%;
 }
