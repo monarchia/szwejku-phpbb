@@ -18,7 +18,7 @@ nav.global.header .global-links{
     width: 100%;
 }
 .nav.global.header .global-links ul li{
-    display: inline;
+    display: inline-block;
 }
 nav.global.header .site-description{
     width: unset;
