@@ -10,6 +10,6 @@ nav.global.header{
     border-radius: unset;
     width: 100%;
 }
-nav.global.header img.header-avatar{
+nav.global.header a.header-avatar img.avatar{
     height: 2.75rem;
 }
