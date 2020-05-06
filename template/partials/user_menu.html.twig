@@ -1,4 +1,34 @@
 <a href="{U_PROFILE}" class="header-avatar dropdown-trigger"><!-- IF CURRENT_USER_AVATAR -->{CURRENT_USER_AVATAR} <!-- ENDIF --><strong class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong></a>
 		<div class="dropdown dropdown-extended">
 			<div class="pointer"><div class="pointer-inner"></div></div>
+
 			{% include "sz/user_dropdown.html.twig" %}
+			{# <strong>Poniższy panel nie działa, to tylko makieta!</strong>
+	    		<ul class="dropdown-contents" role="menu">
+					<!-- IF U_RESTORE_PERMISSIONS -->
+					<li>
+						<a href="{U_RESTORE_PERMISSIONS}">
+						<i class="icon fa-refresh fa-fw" aria-hidden="true"></i><span>{L_RESTORE_PERMISSIONS}</span>
+						</a>
+					</li>
+					<!-- ENDIF -->
+
+					<!-- EVENT navbar_header_profile_list_before -->
+					<li>
+						<span>{{ CURRENT_USERNAME_SIMPLE }}</span>
+					</li>
+					<li>
+					<a href="" title="">{L_READ_PROFILE}</a><a href="" title="">{L_PROFILE}</a>
+					</li>
+					<li class="separator"></li>
+					{# <li>{L_NOTIFICATIONS}<a href="{U_NOTIFICATION_SETTINGS}" title="{L_SETTINGS}"><i class="icon fa-cog fa-fw" aria-hidden="true"></i></a></li> #}
+					
+					<li>
+						<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">
+							<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>{L_LOGIN_LOGOUT}</span>
+						</a>
+					</li>
+					<li class="separator"></li>
+					<!-- EVENT navbar_header_profile_list_after -->
+				</ul>
+			</div> #}
