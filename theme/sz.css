@@ -17,6 +17,7 @@ sz-dropdown {
 
 sz-dropdown h3 {
   margin-left: 2rem;
+  border: unset;
 }
 
 sz-dropdown header {
