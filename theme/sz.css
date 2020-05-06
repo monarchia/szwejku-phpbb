@@ -1,11 +1,21 @@
 nav.sz {
   background: rgba(255, 255, 255, 0.75);
   height: 100vh;
-  width: 250px;
+  width: 350px;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1;
+}
+
+nav.sz header {
+  position: fixed;
+  top: 0;
+}
+
+nav.sz footer {
+  position: fixed;
+  bottom: 0;
 }
 
 .global.headerbar a.dropdown-trigger {
