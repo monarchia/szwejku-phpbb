@@ -24,6 +24,12 @@
             bottom: 0;
         }
 }
+ul.sz-icons{
+    overflow: unset;
+    max-height: unset;
+    clear: unset;
+    display: inline-flex;
+}
 .global.headerbar a.dropdown-trigger{
     position: relative;
     z-index: 2;

@@ -34,6 +34,15 @@
   bottom: 0;
 }
 
+ul.sz-icons {
+  overflow: unset;
+  max-height: unset;
+  clear: unset;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .global.headerbar a.dropdown-trigger {
   position: relative;
   z-index: 2;
