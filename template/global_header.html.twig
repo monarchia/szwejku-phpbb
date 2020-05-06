@@ -31,6 +31,7 @@
 		</form>
 	</div>
     <div class="header-profile">
-    {% include "sz/user_dropdown.html.twig" %}
+    <a href="{U_PROFILE}" class="header-avatar dropdown-trigger"><!-- IF CURRENT_USER_AVATAR -->{CURRENT_USER_AVATAR} <!-- ENDIF --><strong class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong></a>
+	{% include "sz/user_dropdown.html.twig" %}
 	</div>
 </nav>
