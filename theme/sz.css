@@ -1,4 +1,4 @@
-nav.sz {
+sz-dropdown {
   background: rgba(255, 255, 255, 0.75);
   height: 100vh;
   width: 350px;
@@ -15,12 +15,20 @@ nav.sz {
           flex-direction: column;
 }
 
-nav.sz header {
+sz-dropdown h3 {
+  margin-left: 2rem;
+}
+
+sz-dropdown header {
   width: 100%;
   background: #fff;
 }
 
-nav.sz footer {
+sz-dropdown header a {
+  font-family: 'Aladin', sans-serif;
+}
+
+sz-dropdown footer {
   position: fixed;
   bottom: 0;
 }
