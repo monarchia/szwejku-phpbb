@@ -15,14 +15,14 @@ sz-dropdown {
           flex-direction: column;
 }
 
-sz-dropdown h3 {
-  margin-left: 2rem;
-  border: unset;
-}
-
 sz-dropdown header {
   width: 100%;
   background: #fff;
+}
+
+sz-dropdown header h3 {
+  margin-left: 2rem;
+  border: unset;
 }
 
 sz-dropdown header a {

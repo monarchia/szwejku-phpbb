@@ -8,14 +8,13 @@ sz-dropdown{
     z-index: 1;
     display: flex;
     flex-direction: column;
-        h3{
-            margin-left: 2rem;
-            border: unset;
-        }
         header{
             width: 100%;
             background: #fff;
-
+            h3{
+                margin-left: 2rem;
+                border: unset;
+            }
             a{
                 font-family: 'Aladin', sans-serif;
             }
