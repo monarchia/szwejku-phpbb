@@ -42,21 +42,12 @@
   width: 100%;
 }
 
-.global.headerbar a.dropdown-trigger {
-  position: relative;
-  z-index: 2;
-}
-
-.dropdown {
-  z-index: unset;
-}
-
-.tab-panel {
+.user-dropdown .tab .tab-panel {
   display: inline-block;
   min-height: 150px;
 }
 
-.tab-panel .tab-open {
+.user-dropdown .tab .tab-panel .tab-open {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -65,6 +56,15 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.global.headerbar a.dropdown-trigger {
+  position: relative;
+  z-index: 2;
+}
+
+.dropdown {
+  z-index: unset;
 }
 
 .tab-nav {

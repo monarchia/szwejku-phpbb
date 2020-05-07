@@ -33,6 +33,29 @@
         position: relative;
         background: white;
         width: 100%;
+
+        .tab-panel {
+            display: inline-block;
+            min-height: 150px;
+        
+            .tab-open {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                padding: 0;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                border: 0
+            }
+            .tab-inner {
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                transition: opacity .1s;
+                visibility: hidden
+            }
+        }
     }
 }
 
@@ -46,21 +69,6 @@
 }
 
 // them tabs
-.tab-panel {
-    display: inline-block;
-    min-height: 150px;
-
-    .tab-open {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0
-    }
-}
 
 .tab-nav {
     border-bottom: #aaa solid 1px;
@@ -80,13 +88,6 @@
     color: red;
 }
 
-.tab-inner {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    transition: opacity .1s;
-    visibility: hidden
-}
 
 .tab-open:focus:checked~.tab-nav {
     outline: thin dotted
