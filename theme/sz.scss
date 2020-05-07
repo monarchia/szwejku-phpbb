@@ -28,6 +28,12 @@
         position: fixed;
         bottom: 0;
     }
+
+    .tab {
+        position: relative;
+        background: white;
+        width: 100%;
+    }
 }
 
 .global.headerbar a.dropdown-trigger {
@@ -40,12 +46,6 @@
 }
 
 // them tabs
-.tab {
-    position: relative;
-    background: white;
-    width: 100%;
-}
-
 .tab-panel {
     display: inline-block;
     min-height: 150px;

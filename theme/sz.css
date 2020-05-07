@@ -36,6 +36,12 @@
   bottom: 0;
 }
 
+.user-dropdown .tab {
+  position: relative;
+  background: white;
+  width: 100%;
+}
+
 .global.headerbar a.dropdown-trigger {
   position: relative;
   z-index: 2;
@@ -43,12 +49,6 @@
 
 .dropdown {
   z-index: unset;
-}
-
-.tab {
-  position: relative;
-  background: white;
-  width: 100%;
 }
 
 .tab-panel {
