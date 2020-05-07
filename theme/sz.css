@@ -58,6 +58,15 @@
   border: 0;
 }
 
+.user-dropdown .tab .tab-panel .tab-inner {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+  visibility: hidden;
+}
+
 .global.headerbar a.dropdown-trigger {
   position: relative;
   z-index: 2;
@@ -83,15 +92,6 @@
 .tab-nav:hover {
   background-color: #eaeaea;
   color: red;
-}
-
-.tab-inner {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  -webkit-transition: opacity .1s;
-  transition: opacity .1s;
-  visibility: hidden;
 }
 
 .tab-open:focus:checked ~ .tab-nav {
