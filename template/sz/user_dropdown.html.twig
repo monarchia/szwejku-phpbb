@@ -1,5 +1,5 @@
 <div class="header-profile dropdown-container">
-	<a href="{U_PROFILE}" class="header-avatar dropdown-trigger"><!-- IF CURRENT_USER_AVATAR -->{CURRENT_USER_AVATAR} <!-- ENDIF --></a>
+	<a href="{U_PROFILE}" class="header-avatar dropdown-trigger">{% if CURRENT_USER_AVATAR %}{CURRENT_USER_AVATAR}{% else %}<img class="avatar" src="{{ T_THEME_PATH }}/images/no-avatar.gif" alt="Brak ustawionego awatara">{% endif %}<!-- ENDIF --></a>
 	
     <div class="dropdown">
         <nav class="user-dropdown" role="menu">
