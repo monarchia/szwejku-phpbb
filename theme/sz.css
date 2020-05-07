@@ -65,6 +65,14 @@
   -webkit-transition: opacity .1s;
   transition: opacity .1s;
   visibility: hidden;
+  width: 100%;
+}
+
+.user-dropdown .tab .tab-open:checked ~ .tab-inner {
+  opacity: 100;
+  visibility: visible;
+  -webkit-transition: opacity .6s ease;
+  transition: opacity .6s ease;
 }
 
 .global.headerbar a.dropdown-trigger {
@@ -96,12 +104,5 @@
 
 .tab-open:focus:checked ~ .tab-nav {
   outline: thin dotted;
-}
-
-.tab-open:checked ~ .tab-inner {
-  opacity: 100;
-  visibility: visible;
-  -webkit-transition: opacity .6s ease;
-  transition: opacity .6s ease;
 }
 /*# sourceMappingURL=sz.css.map */

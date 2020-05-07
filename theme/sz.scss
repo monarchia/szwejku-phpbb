@@ -54,7 +54,13 @@
                 left: 0;
                 transition: opacity .1s;
                 visibility: hidden;
+                width: 100%;
             }
+        }
+        .tab-open:checked~.tab-inner {
+            opacity: 100;
+            visibility: visible;
+            transition: opacity .6s ease
         }
     }
 }
@@ -91,10 +97,4 @@
 
 .tab-open:focus:checked~.tab-nav {
     outline: thin dotted
-}
-
-.tab-open:checked~.tab-inner {
-    opacity: 100;
-    visibility: visible;
-    transition: opacity .6s ease
 }
