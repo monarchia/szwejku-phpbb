@@ -28,11 +28,6 @@
         position: fixed;
         bottom: 0;
     }
-
-    div {
-        background: white;
-        width: 100%;
-    }
 }
 
 .global.headerbar a.dropdown-trigger {
@@ -47,6 +42,8 @@
 // them tabs
 .tab {
     position: relative;
+    background: white;
+    width: 100%;
 }
 
 .tab-panel {
@@ -69,7 +66,7 @@
     border-bottom: #aaa solid 1px;
     cursor: pointer;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .tab-open,
