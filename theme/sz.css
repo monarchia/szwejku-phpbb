@@ -68,6 +68,10 @@
   width: 100%;
 }
 
+.user-dropdown .tab .tab-panel .tab-inner h3 {
+  margin-top: unset;
+}
+
 .user-dropdown .tab .tab-open:checked ~ .tab-inner {
   opacity: 100;
   visibility: visible;

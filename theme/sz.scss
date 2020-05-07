@@ -55,6 +55,10 @@
                 transition: opacity .1s;
                 visibility: hidden;
                 width: 100%;
+
+                h3{
+                    margin-top: unset;
+                }
             }
         }
         .tab-open:checked~.tab-inner {
