@@ -2,12 +2,11 @@
 	<a href="{U_PROFILE}" class="header-avatar dropdown-trigger">
 	{% if CURRENT_USER_AVATAR %}{CURRENT_USER_AVATAR}
 	{% else %}<img class="avatar" src="{{ T_THEME_PATH }}/images/no_avatar.gif" alt="Brak ustawionego awatara">{% endif %}</a>
-	
     <div class="dropdown">
         <nav class="user-dropdown" role="menu">
         <header>
-        <!-- EVENT navbar_header_user_profile_prepend -->
-           <!-- EVENT navbar_header_username_prepend -->
+		{% EVENT navbar_header_user_profile_prepend %}
+        {% EVENT navbar_header_username_prepend %}
            <h3><a href="{{ U_PROFILE }}">{CURRENT_USERNAME_SIMPLE}</a></h3>
         </header>
         <ul class="dropdown-contents" role="menu">
@@ -18,7 +17,7 @@
 			</a>
 			</li>
 			<!-- ENDIF -->
-			<!-- EVENT navbar_header_profile_list_before -->
+			{% EVENT navbar_header_profile_list_before %}
 			<li>
 			<a href="{U_PROFILE}" title="{L_PROFILE}" role="menuitem">
 			<i class="icon fa-sliders fa-fw" aria-hidden="true"></i><span>{L_PROFILE}</span>
@@ -31,7 +30,7 @@
 			</a>
 			</li>
 			<!-- ENDIF -->
-			<!-- EVENT navbar_header_profile_list_after -->
+			{% EVENT navbar_header_profile_list_after %}
 			<li class="separator"></li>
 			<li>
 			<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">
