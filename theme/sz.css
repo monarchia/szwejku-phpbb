@@ -36,12 +36,6 @@
   bottom: 0;
 }
 
-.user-dropdown div {
-  display: block;
-  width: 100%;
-  background: white;
-}
-
 .global.headerbar a.dropdown-trigger {
   position: relative;
   z-index: 2;
@@ -53,6 +47,8 @@
 
 .tab {
   position: relative;
+  background: white;
+  width: 100%;
 }
 
 .tab-panel {
@@ -75,7 +71,7 @@
   border-bottom: #aaa solid 1px;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .tab-open,
