@@ -6,6 +6,39 @@
         <header>
         <h3><a href="$">Username</a></h3>
         </header>
+        					<ul class="dropdown-contents" role="menu">
+						<!-- IF U_RESTORE_PERMISSIONS -->
+							<li>
+								<a href="{U_RESTORE_PERMISSIONS}">
+									<i class="icon fa-refresh fa-fw" aria-hidden="true"></i><span>{L_RESTORE_PERMISSIONS}</span>
+								</a>
+							</li>
+						<!-- ENDIF -->
+
+					<!-- EVENT navbar_header_profile_list_before -->
+
+						<li>
+							<a href="{U_PROFILE}" title="{L_PROFILE}" role="menuitem">
+								<i class="icon fa-sliders fa-fw" aria-hidden="true"></i><span>{L_PROFILE}</span>
+							</a>
+						</li>
+						<!-- IF U_USER_PROFILE -->
+							<li>
+								<a href="{U_USER_PROFILE}" title="{L_READ_PROFILE}" role="menuitem">
+									<i class="icon fa-user fa-fw" aria-hidden="true"></i><span>{L_READ_PROFILE}</span>
+								</a>
+							</li>
+						<!-- ENDIF -->
+
+						<!-- EVENT navbar_header_profile_list_after -->
+
+						<li class="separator"></li>
+						<li>
+							<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">
+								<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>{L_LOGIN_LOGOUT}</span>
+							</a>
+						</li>
+					</ul>
         <!-- EVENT navbar_header_username_append -->
         <footer>Footer</footer>
         </nav>
