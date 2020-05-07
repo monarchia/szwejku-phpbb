@@ -42,13 +42,13 @@
 		{% if S_NOTIFICATIONS_DISPLAY %}
 			<div class="tab-panel">
 				<input class="tab-open" id="tab-1" name="tab-wrap-1" type="radio" checked>
-				<label class="tab-nav" for="tab-1"><i class="icon fa-globe fa-fw"></i>Powiadomienia</label>
+				<label class="tab-nav" for="tab-1"><i class="icon fa-globe fa-fw"></i></label>
 				<div class="tab-inner">
-				<i>W budowie...</i>
+				<h4>{{ L_NOTIFICATIONS }}</h4>
 				</div>
 			</div>
 		{% endif %}
-
+		{% if condition %}
 			<div class="tab-panel">
 				<input class="tab-open" id="tab-2" name="tab-wrap-1" type="radio">
 				<label class="tab-nav" for="tab-2">Tab 2</label>
@@ -56,14 +56,7 @@
 				Zwei
 				</div>
 			</div>
-
-			<div class="tab-panel">
-				<input class="tab-open" id="tab-3" name="tab-wrap-1" type="radio" >
-				<label class="tab-nav" for="tab-3">Tab 3</label>
-				<div class="tab-inner">
-				Drei
-				</div>
-			</div>
+		{% endif %}
 		</div>
 		{% EVENT navbar_header_user_profile_append %}
 		<!-- IF U_ACP -->
