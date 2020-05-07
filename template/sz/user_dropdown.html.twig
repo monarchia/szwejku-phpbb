@@ -39,13 +39,15 @@
 			</li>
 			</ul>
 		<div class="tab">
+		{% if S_NOTIFICATIONS_DISPLAY %}
 			<div class="tab-panel">
 				<input class="tab-open" id="tab-1" name="tab-wrap-1" type="radio" checked>
-				<label class="tab-nav" for="tab-1">Tab 1</label>
+				<label class="tab-nav" for="tab-1"><i class="icon fa-globe fa-fw"></i>Powiadomienia</label>
 				<div class="tab-inner">
-				Ein
+				<i>W budowie...</i>
 				</div>
 			</div>
+		{% endif %}
 
 			<div class="tab-panel">
 				<input class="tab-open" id="tab-2" name="tab-wrap-1" type="radio">

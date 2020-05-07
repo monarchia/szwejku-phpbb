@@ -28,13 +28,11 @@
         position: fixed;
         bottom: 0;
     }
-}
 
-ul.sz-icons {
-    overflow: unset;
-    max-height: unset;
-    clear: unset;
-    display: inline-flex;
+    div {
+        background: white;
+        width: 100%;
+    }
 }
 
 .global.headerbar a.dropdown-trigger {
@@ -71,6 +69,7 @@ ul.sz-icons {
     border-bottom: #aaa solid 1px;
     cursor: pointer;
     display: inline-block;
+    font-size: 1.5rem;
 }
 
 .tab-open,
