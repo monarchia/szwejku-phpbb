@@ -75,21 +75,24 @@ ul.sz-icons {
 }
 
 .tab-nav {
-  border: #aaa solid 1px;
+  border-bottom: #aaa solid 1px;
   cursor: pointer;
-  font-size: 1.4rem;
   display: inline-block;
-  padding: 10px 20px;
-  margin-right: 20px;
 }
 
-.tab-open, .tab-nav:hover, .tab-open:checked ~ .tab-nav {
+.tab-open,
+.tab-open:checked ~ .tab-nav {
+  border: #aaa solid 1px;
+  border-bottom: none;
+}
+
+.tab-nav:hover {
   background-color: #eaeaea;
+  color: red;
 }
 
 .tab-inner {
   opacity: 0;
-  margin-top: 20px;
   position: absolute;
   left: 0;
   -webkit-transition: opacity .1s;
