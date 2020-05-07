@@ -36,13 +36,10 @@
   bottom: 0;
 }
 
-ul.sz-icons {
-  overflow: unset;
-  max-height: unset;
-  clear: unset;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.user-dropdown div {
+  display: block;
+  width: 100%;
+  background: white;
 }
 
 .global.headerbar a.dropdown-trigger {
@@ -78,6 +75,7 @@ ul.sz-icons {
   border-bottom: #aaa solid 1px;
   cursor: pointer;
   display: inline-block;
+  font-size: 1.5rem;
 }
 
 .tab-open,
