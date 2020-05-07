@@ -1,4 +1,4 @@
-.sz-dropdown {
+.user-dropdown {
   background: rgba(255, 255, 255, 0.75);
   height: 100vh;
   width: 350px;
@@ -17,21 +17,21 @@
           box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.sz-dropdown header {
+.user-dropdown header {
   width: 100%;
   background: #fff;
 }
 
-.sz-dropdown header h3 {
+.user-dropdown header h3 {
   margin-left: 2rem;
   border: unset;
 }
 
-.sz-dropdown header a {
+.user-dropdown header a {
   font-family: 'Aladin', sans-serif;
 }
 
-.sz-dropdown footer {
+.user-dropdown footer {
   position: fixed;
   bottom: 0;
 }
