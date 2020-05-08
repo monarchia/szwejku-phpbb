@@ -1,5 +1,5 @@
 {# 
- # global_header.html.twig
+ # template/global_header.html.twig
  #}
  {% if U_SITE_HOME %}
     {% set home_url = U_SITE_HOME %}
@@ -30,7 +30,7 @@
 		</fieldset>
 		</form>
 	</div>
-    <!-- EVENT navbar_header_user_profile_prepend -->
+    {% EVENT navbar_header_user_profile_prepend %}
 	<div class="header-profile">
     {% include "sz/user_dropdown.html.twig" %}
 	</div>
