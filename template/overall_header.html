@@ -54,9 +54,11 @@
 {$STYLESHEETS}
 
 <!-- EVENT overall_header_stylesheets_after -->
-
+{% macro normalize(s) %}
+{{ s|lower|replace({' ':'_'}) }}
+{% endmacro %}
 </head>
-<body id="phpbb" class="nojs notouch section-{SCRIPT_NAME} user-{S_USERNAME} group-{U_GROUP} forum-{FORUM_ID} {S_CONTENT_DIRECTION} {BODY_CLASS}">
+<body id="phpbb" class="nojs notouch section-{SCRIPT_NAME} user-{{_self.normalize(S_USERNAME)}} group-{U_GROUP} forum-{FORUM_ID} {S_CONTENT_DIRECTION} {BODY_CLASS}">
 
 <!-- EVENT overall_header_body_before -->
 {% include "global_header.html.twig" %}
