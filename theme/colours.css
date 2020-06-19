@@ -6,7 +6,7 @@ Colours and backgrounds for common.css
 html, body {
 	color: #161616;
 	background-color: #F0D077;
-  background: url('images/bg.jpg');
+  	background: url('images/bg.jpg');
 }
 
 h1 {
@@ -86,11 +86,7 @@ a:hover { color: #D31141; }
 	border: unset;
 }
 
-.page-body {
-  background: rgba(255,255,255,0.7);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-}
+
 
 .headerbar {
 	color: #161616;
