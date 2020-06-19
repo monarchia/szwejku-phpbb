@@ -16,6 +16,7 @@
     <div id="site-description" class="site-description">
 	{% include "partials/branding.html.twig" %}
     </div>
+<!-- EVENT overall_header_searchbox_before -->	
     <div id="search-box" class="search-box search-header" role="search">
 		<form action="{U_SEARCH}" method="get" id="search">
 		<fieldset>
@@ -30,6 +31,7 @@
 		</fieldset>
 		</form>
 	</div>
+<!-- EVENT overall_header_searchbox_after -->
     {% EVENT navbar_header_user_profile_prepend %}
 	{% if S_USER_LOGGED_IN %}
 	<div class="header-profile">
