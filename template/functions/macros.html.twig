@@ -1,0 +1,3 @@
+{% macro normalize(s) %}
+{{ s|lower|replace({' ':'_'}) }}
+{% endmacro %}
