@@ -222,6 +222,14 @@ dd.option {
 
 /* Post body styles
 ----------------------------------------*/
+.topic-header{
+	background: #fffff0;
+}
+.topic-header h1,
+.topic-header h1 a{
+	color: #b8860b;
+}
+
 .postbody {
 	padding: 0;
 	line-height: 1.48em;
