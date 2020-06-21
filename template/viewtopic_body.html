@@ -1,7 +1,9 @@
 <!-- INCLUDE overall_header.html -->
 
 <!-- EVENT viewtopic_topic_title_before -->
+<header class="topic-header" id="topic-{{ S_TOPIC_ID }}">
 <h2 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h2>
+</header>
 <!-- EVENT viewtopic_topic_title_after -->
 <!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
 <!-- IF FORUM_DESC --><div style="display: none !important;">{FORUM_DESC}<br /></div><!-- ENDIF -->
@@ -148,15 +150,14 @@
 					<!-- ENDIF -->
 					<!-- EVENT viewtopic_body_avatar_after -->
 				</div>
-                
-                <!-- EVENT viewtopic_body_postrow_rank_before -->
-			    <!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</dd><!-- ENDIF -->
-			    <!-- EVENT viewtopic_body_postrow_rank_after -->
-
-                <!-- EVENT viewtopic_body_post_author_before -->
+				<!-- EVENT viewtopic_body_post_author_before -->
 				<!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong><!-- ELSE -->{postrow.POST_AUTHOR_FULL}<!-- ENDIF -->
 				<!-- EVENT viewtopic_body_post_author_after -->
 			</dt>
+
+			<!-- EVENT viewtopic_body_postrow_rank_before -->
+			<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</dd><!-- ENDIF -->
+			<!-- EVENT viewtopic_body_postrow_rank_after -->
 
 		<!-- IF postrow.POSTER_POSTS != '' --><dd class="profile-posts"><strong>{L_POSTS}{L_COLON}</strong> <!-- IF postrow.U_SEARCH !== '' --><a href="{postrow.U_SEARCH}"><!-- ENDIF -->{postrow.POSTER_POSTS}<!-- IF postrow.U_SEARCH !== '' --></a><!-- ENDIF --></dd><!-- ENDIF -->
 		<!-- IF postrow.POSTER_JOINED --><dd class="profile-joined"><strong>{L_JOINED}{L_COLON}</strong> {postrow.POSTER_JOINED}</dd><!-- ENDIF -->
