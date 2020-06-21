@@ -11,36 +11,9 @@ body {
 	word-wrap: break-word;
 	-webkit-print-color-adjust: exact;
 }
-
-h1 {
-	/* Forum name */
-	margin-right: 200px;
-	margin-top: 15px;
-	font-weight: bold;
-}
-
-h2 {
-	/* Forum header titles */
-	font-weight: normal;
-	margin: 0.8em 0 0.2em 0;
-}
-
-h2.solo {
-	margin-bottom: 1em;
-}
-
-h3 {
-	/* Sub-headers (also used as post headers, but defined later) */
-	font-weight: bold;
-	text-transform: uppercase;
-	border-bottom: 1px solid transparent;
-	margin-bottom: 3px;
-	padding-bottom: 2px;
-	margin-top: 20px;
-}
-
-h4 {
-	/* Forum and topic list titles */
+/* Some header styling */
+h1, h2, h3, h4 {
+	font-family: 'Aladin';
 }
 
 p {
