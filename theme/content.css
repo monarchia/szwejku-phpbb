@@ -224,6 +224,7 @@ dd.option {
 ----------------------------------------*/
 .topic-header{
 	background: #fffff0;
+	margin: 0.2rem;
 }
 .topic-header h1,
 .topic-header h1 a{
