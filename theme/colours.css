@@ -10,16 +10,16 @@ html, body {
 }
 
 h1 {
-	/* color: #FFFFFF; */
+	color: #fc0;
 }
 
 h2 {
-	/* color: #28313F; */
+	color: #fc0;
 }
 
 h3 {
 	border-bottom-color: #CCCCCC;
-	color: #115098;
+	color: #fc0;
 }
 
 hr {
@@ -32,8 +32,8 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #105289; }
-a:hover { color: #D31141; }
+a { color: #fc0; }
+a:hover { border-bottom: 1px dashed; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
