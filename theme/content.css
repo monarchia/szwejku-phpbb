@@ -222,6 +222,10 @@ dd.option {
 
 /* Post body styles
 ----------------------------------------*/
+.index-right{
+	width: 40vw;
+}
+
 .topic-header{
 	background: #fffff0;
 	padding: 0.45rem;
