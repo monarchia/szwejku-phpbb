@@ -1,6 +1,6 @@
 		<dl class="postprofile" id="profile{postrow.POST_ID}"<!-- IF postrow.S_POST_HIDDEN --> style="display: none;"<!-- ENDIF -->>
 			<dt class="<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->has-profile-rank<!-- ELSE -->no-profile-rank<!-- ENDIF --> <!-- IF postrow.POSTER_AVATAR -->has-avatar<!-- ELSE -->no-avatar<!-- ENDIF -->">
-            <h3 class="post-author"><a href="./memberlist.php?mode=viewprofile={{ postrow.POSTER_ID }}" class="username-coloured" style="color: {{ postrow.POST_AUTHOR_COLOUR }}">
+            <h3 class="post-author"><a href="./memberlist.php?mode=viewprofile&u={{ postrow.POSTER_ID }}" class="username-coloured" style="color: {{ postrow.POST_AUTHOR_COLOUR }}">
             <!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><span class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</span><!-- ENDIF -->			<!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR</strong><!-- ELSE -->{postrow.POST_AUTHOR}<!-- ENDIF -->
             </a></h3>
 			   	<div class="avatar-container">
