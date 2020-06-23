@@ -581,3 +581,8 @@
     	width: 80px;
 	}
 }
+@media screen and (min-width: 1024px) {
+		.index-right {
+			width: 40vw;
+	}
+}

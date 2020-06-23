@@ -13,14 +13,3 @@
     width: fit-content;
     border-radius: 100%;
 }
-
-a.sz-bttn {
-    display: inline-block;
-    height: 1rem;
-    padding: 0.5rem;
-    background: ghostwhite;
-    color: brown;
-    border-radius: 4px;
-    box-shadow: 0 0 2px #ccc inset, 0 0 2px #161616;
-    min-width: 1rem;
-}
