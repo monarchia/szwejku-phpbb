@@ -1,5 +1,5 @@
-		<dl class="postprofile" id="profile{postrow.POST_ID}"<!-- IF postrow.S_POST_HIDDEN --> style="display: none;"<!-- ENDIF -->>
-			<dt class="<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->has-profile-rank<!-- ELSE -->no-profile-rank<!-- ENDIF --> <!-- IF postrow.POSTER_AVATAR -->has-avatar<!-- ELSE -->no-avatar<!-- ENDIF -->">
+		<div class="postprofile" id="profile{postrow.POST_ID}"<!-- IF postrow.S_POST_HIspanEN --> style="display: none;"<!-- ENDIF -->>
+			<header class="<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->has-profile-rank<!-- ELSE -->no-profile-rank<!-- ENDIF --> <!-- IF postrow.POSTER_AVATAR -->has-avatar<!-- ELSE -->no-avatar<!-- ENDIF -->">
             <h3 class="post-author"><a href="./memberlist.php?mode=viewprofile&u={{ postrow.POSTER_ID }}" class="username-coloured" style="color: {{ postrow.POST_AUTHOR_COLOUR }}">
             <!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><span class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</span><!-- ENDIF -->			<!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR</strong><!-- ELSE -->{postrow.POST_AUTHOR}<!-- ENDIF -->
             </a></h3>
@@ -12,36 +12,36 @@
 				</div>
 				<!-- EVENT viewtopic_body_post_author_before -->
 				<!-- EVENT viewtopic_body_post_author_after -->
-			</dt>
+			</header>
 
 			<!-- EVENT viewtopic_body_postrow_rank_before -->
 			
 			<!-- EVENT viewtopic_body_postrow_rank_after -->
 
-		<!-- IF postrow.POSTER_POSTS != '' --><dd class="profile-posts"><strong>{L_POSTS}{L_COLON}</strong> <!-- IF postrow.U_SEARCH !== '' --><a href="{postrow.U_SEARCH}"><!-- ENDIF -->{postrow.POSTER_POSTS}<!-- IF postrow.U_SEARCH !== '' --></a><!-- ENDIF --></dd><!-- ENDIF -->
-		<!-- IF postrow.POSTER_JOINED --><dd class="profile-joined"><strong>{L_JOINED}{L_COLON}</strong> {postrow.POSTER_JOINED}</dd><!-- ENDIF -->
-		<!-- IF postrow.POSTER_WARNINGS --><dd class="profile-warnings"><strong>{L_WARNINGS}{L_COLON}</strong> {postrow.POSTER_WARNINGS}</dd><!-- ENDIF -->
+		<!-- IF postrow.POSTER_POSTS != '' --><span class="profile-posts"><strong>{L_POSTS}{L_COLON}</strong> <!-- IF postrow.U_SEARCH !== '' --><a href="{postrow.U_SEARCH}"><!-- ENDIF -->{postrow.POSTER_POSTS}<!-- IF postrow.U_SEARCH !== '' --></a><!-- ENDIF --></span><!-- ENDIF -->
+		<!-- IF postrow.POSTER_JOINED --><span class="profile-joined"><strong>{L_JOINED}{L_COLON}</strong> {postrow.POSTER_JOINED}</span><!-- ENDIF -->
+		<!-- IF postrow.POSTER_WARNINGS --><span class="profile-warnings"><strong>{L_WARNINGS}{L_COLON}</strong> {postrow.POSTER_WARNINGS}</span><!-- ENDIF -->
 
 		<!-- IF postrow.S_PROFILE_FIELD1 -->
 			<!-- Use a construct like this to include admin defined profile fields. Replace FIELD1 with the name of your field. -->
-			<dd><strong>{postrow.PROFILE_FIELD1_NAME}{L_COLON}</strong> {postrow.PROFILE_FIELD1_VALUE}</dd>
+			<span><strong>{postrow.PROFILE_FIELD1_NAME}{L_COLON}</strong> {postrow.PROFILE_FIELD1_VALUE}</span>
 		<!-- ENDIF -->
 
 		<!-- EVENT viewtopic_body_postrow_custom_fields_before -->
 		<!-- BEGIN custom_fields -->
 			<!-- IF not postrow.custom_fields.S_PROFILE_CONTACT -->
-				<dd class="profile-custom-field profile-{postrow.custom_fields.PROFILE_FIELD_IDENT}"><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}{L_COLON}</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</dd>
+				<span class="profile-custom-field profile-{postrow.custom_fields.PROFILE_FIELD_IDENT}"><strong>{postrow.custom_fields.PROFILE_FIELD_NAME}{L_COLON}</strong> {postrow.custom_fields.PROFILE_FIELD_VALUE}</span>
 			<!-- ENDIF -->
 		<!-- END custom_fields -->
 		<!-- EVENT viewtopic_body_postrow_custom_fields_after -->
 
 		<!-- EVENT viewtopic_body_contact_fields_before -->
 		<!-- IF not S_IS_BOT and .postrow.contact -->
-			<dd class="profile-contact">
+			<span class="profile-contact">
 				<strong>{L_CONTACT}{L_COLON}</strong>
 				<div class="dropdown-container dropdown-left">
 					<a href="#" class="dropdown-trigger" title="{postrow.CONTACT_USER}">
-						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hidden="true"></i><span class="sr-only">{postrow.CONTACT_USER}</span>
+						<i class="icon fa-commenting-o fa-fw icon-lg" aria-hispanen="true"></i><span class="sr-only">{postrow.CONTACT_USER}</span>
 					</a>
 					<div class="dropdown">
 						<div class="pointer"><div class="pointer-inner"></div></div>
@@ -62,8 +62,8 @@
 						</div>
 					</div>
 				</div>
-			</dd>
+			</span>
 		<!-- ENDIF -->
 		<!-- EVENT viewtopic_body_contact_fields_after -->
 
-		</dl>
+		</div>
