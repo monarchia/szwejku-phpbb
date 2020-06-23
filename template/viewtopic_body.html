@@ -1,7 +1,7 @@
 <!-- INCLUDE overall_header.html -->
 
 <!-- EVENT viewtopic_topic_title_before -->
-{% set TOPIC_AUTHOR_AVATAR = {{ home_url }}'/download/file.php?	avatar='{{ TOPIC_POSTER }} %}
+{% set TOPIC_AUTHOR_AVATAR = {{ home_url }}~'/download/file.php?avatar='~{{ TOPIC_POSTER }} %}
 <header class="topic-header " id="topic-{{ S_TOPIC_ID }}">
 <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
 <!-- EVENT viewtopic_topic_title_after -->
