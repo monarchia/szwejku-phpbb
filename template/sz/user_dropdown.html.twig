@@ -74,19 +74,25 @@
 		{% endif %}
 		{% if S_DISPLAY_PM %}
 			<div class="tab-panel">
-				<input class="tab-open" id="tab-2" name="tab-wrap-1" type="radio">
+				<input class="tab-open" id="tab-2" name="tab-wrap-2" type="radio">
 				<label class="tab-nav" for="tab-2"> <i class="fa fa-envelope fa-fw"></i></label>
 				<div class="tab-inner">
 				Wiadomości?
 				</div>
 			</div>
 		{% endif %}
+		{% if U_ACP %}
+			<div class="tab-panel">
+				<input type="radio" class="tab-open" id="tab-3" name="tab-wrap-3">
+				<label for="tab-3" class="tab-nav">
+					<a href="{U_ACP}" title="{L_ACP}" role="menuitem"><i class="icon fa-cogs fa-fw" aria-hidden="true"></i><span>{L_ACP_SHORT}</span></a>
+				</label>	
+			</div>
+		{% endif %}
 		</div>
 		{% EVENT navbar_header_user_profile_append %}
 		<!-- IF U_ACP -->
-				<a href="{U_ACP}" title="{L_ACP}" role="menuitem">
-					<i class="icon fa-cogs fa-fw" aria-hidden="true"></i><span>{L_ACP_SHORT}</span>
-				</a>
+
 		<!-- ENDIF -->
 		<!-- IF U_MCP -->
 				<a href="{U_MCP}" title="{L_MCP}" role="menuitem">
