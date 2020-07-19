@@ -16,9 +16,12 @@
 	{% elseif S_IN_UCP %}
 		{{ L_UCP }} - 
 	{% endif %}
-	{{ PAGE_TITLE }}<!-- IF S_VIEWTOPIC or S_VIEWFORUM --> - {{ SITENAME }}<!-- ENDIF -->
+	{{ PAGE_TITLE }} -
+	{% if S_VIEWTOPIC or S_VIEWFORUM %}
+	{{ SITENAME }}
+	{% endif %}
 {% endset %}
-<title>{{- TITLE -}}</title>
+<title>{{- "TITLE" -}}</title>
 <!-- IF S_ENABLE_FEEDS -->
 	<!-- IF S_ENABLE_FEEDS_OVERALL --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{{ path('phpbb_feed_index') }}"><!-- ENDIF -->
 	<!-- IF S_ENABLE_FEEDS_NEWS --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{{ path('phpbb_feed_news') }}"><!-- ENDIF -->
