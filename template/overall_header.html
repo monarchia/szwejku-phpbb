@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-{% set TITLE %}
+{% set TITLE %}{{-
 	{% if UNREAD_NOTIFICATIONS_COUNT %}
 	({{ UNREAD_NOTIFICATIONS_COUNT }})
 	{% endif %}
@@ -17,8 +17,8 @@
 		{L_UCP} - 
 	{% endif %}
 	{PAGE_TITLE}<!-- IF S_VIEWTOPIC or S_VIEWFORUM --> - {SITENAME}<!-- ENDIF -->
-{% endset %}
-<title>{{- TITLE -}}</title>
+-}}{% endset %}
+<title>{{-	 TITLE -}}</title>
 <!-- IF S_ENABLE_FEEDS -->
 	<!-- IF S_ENABLE_FEEDS_OVERALL --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{{ path('phpbb_feed_index') }}"><!-- ENDIF -->
 	<!-- IF S_ENABLE_FEEDS_NEWS --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{{ path('phpbb_feed_news') }}"><!-- ENDIF -->
