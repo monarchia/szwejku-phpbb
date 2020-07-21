@@ -4,6 +4,7 @@
     * Removed dropdown
     * Added Logout link
     * Added user links
+    * Fixed popups
 # v0.1.0
 ## 2020-07-20
 
