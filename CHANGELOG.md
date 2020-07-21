@@ -1,3 +1,8 @@
+# v0.1.2
+1. [](#fixed)
+    * Changed avatar display size
+    * Removed dropdown
+    * Added Logout link
 # v0.1.0
 ## 2020-07-20
 
