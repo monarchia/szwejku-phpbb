@@ -103,6 +103,7 @@ a:hover	{ text-decoration: underline; }
 	margin: 0 auto;
 	min-width: 625px;
 	padding: 15px;
+	margin-top: 3rem;
 }
 
 @media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
