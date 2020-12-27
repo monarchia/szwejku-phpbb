@@ -1,5 +1,5 @@
 {# 
- # template/global_header.html.twig
+ # template/partials/global_header.html.twig
  #}
  {% if U_SITE_HOME %}
     {% set home_url = U_SITE_HOME %}
@@ -7,13 +7,7 @@
     {% set home_url = U_INDEX %}
  {% endif %}
 <nav class="global header headerbar">
-    <div id="global-links" class="global-links">
-        <ul>
-            <li><a class="button" href="https://forum.austro-wegry.org">Forum</a></li>
-            <li><a class="button" href="https://kiosk.austro-wegry.org">Prasa</a></li>
-        </ul>
-    </div>
-    <div id="site-description" class="site-description">
+	<div id="site-description" class="site-description">
 	{% include "partials/branding.html.twig" %}
     </div>
 <!-- EVENT overall_header_searchbox_before -->	
