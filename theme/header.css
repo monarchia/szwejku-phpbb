@@ -11,3 +11,6 @@
     display: flex;
     flex-flow: column wrap;
 }
+.logo img {
+    height: 150%;
+}
