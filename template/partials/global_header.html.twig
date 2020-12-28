@@ -1,7 +1,13 @@
 {# 
- # partials/global_header.html.twig
+ # template/partials/global_header.html.twig
  #}
-
-<header>
-   {% include "partials/branding.html.twig" %}
-</header>
+ {% if U_SITE_HOME %}
+    {% set home_url = U_SITE_HOME %}
+ {% else %}
+    {% set home_url = U_INDEX %}
+ {% endif %}
+<nav class="global header headerbar">
+	<div id="site-description" class="site-description">
+	{% include "partials/branding.html.twig" %}
+    </div>
+</nav>

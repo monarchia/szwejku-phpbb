@@ -46,7 +46,9 @@
 <link href="{T_STYLESHEET_LINK}" rel="stylesheet">
 <link href="{T_STYLESHEET_LANG_LINK}" rel="stylesheet">
 
-{# Inject favicon tpl #}
+{#
+ # Inject favicon tpl
+ #}
 {% include "partials/favicon.html.twig" %}
 
 <!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
@@ -64,7 +66,7 @@
 
 <!-- EVENT overall_header_head_append -->
 
-{{ STYLESHEETS }}
+{$STYLESHEETS}
 
 <!-- EVENT overall_header_stylesheets_after -->
 {% import "functions/macros.html.twig" as macro %}
