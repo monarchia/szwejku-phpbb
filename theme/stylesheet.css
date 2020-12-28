@@ -7,18 +7,18 @@
     --------------------------------------------------------------
 */
 
-@import url("fonts.css{{ T_ASSETS_VERSION }}");
-@import url("normalize.css{{ T_ASSETS_VERSION }}");
-@import url("base.css{{ T_ASSETS_VERSION }}");
-@import url("utilities.css{{ T_ASSETS_VERSION }}");
-@import url("common.css{{ T_ASSETS_VERSION }}");
-@import url("links.css{{ T_ASSETS_VERSION }}");
-@import url("content.css{{ T_ASSETS_VERSION }}");
-@import url("buttons.css{{ T_ASSETS_VERSION }}");
-@import url("cp.css{{ T_ASSETS_VERSION }}");
-@import url("forms.css{{ T_ASSETS_VERSION }}");
-@import url("icons.css{{ T_ASSETS_VERSION }}");
-@import url("colours.css{{ T_ASSETS_VERSION }}");
-@import url("responsive.css{{ T_ASSETS_VERSION }}");
-@import url("header.css{{ T_ASSETS_VERSION }}");
+@import url("fonts.css");
+@import url("normalize.css");
+@import url("base.css");
+@import url("utilities.css");
+@import url("common.css");
+@import url("links.css");
+@import url("content.css");
+@import url("buttons.css");
+@import url("cp.css");
+@import url("forms.css");
+@import url("icons.css");
+@import url("colours.css");
+@import url("responsive.css");
+@import url("header.css");
 @import url("topic.css")
