@@ -2,7 +2,12 @@
  # partials/global_header.html.twig
  #}
 <header>
+{% block header %}
    <a title="{{ L_SITE_HOME }}" class="logo" href="{{ BOARD_URL }}">
       <img src="{{ T_THEME_PATH }}/images/banner.png" alt="{{ SITENAME }}">
    </a>
+   <a href="{U_VIEW_ALL_NOTIFICATIONS}" id="notification_list_button" class="dropdown-trigger">
+      <i class="icon fa-bell fa-fw" aria-hidden="true"></i><span>{L_NOTIFICATIONS} </span><strong class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong>
+   </a>
+{% block header %}
 </header>
