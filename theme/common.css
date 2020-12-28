@@ -124,35 +124,6 @@ a:hover	{ text-decoration: underline; }
 .page-footer h3 {
 	margin-top: 20px;
 }
-
-.logo {
-	float: left;
-	width: auto;
-	padding: 10px 13px 0 10px;
-}
-
-.logo:hover {
-	text-decoration: none;
-}
-
-.site_logo {
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 149px;
-	height: 52px;
-}
-
-/* Site description and logo */
-.site-description {
-	float: left;
-	width: 65%;
-}
-
-.site-description h1 {
-	margin-right: 0;
-	display: none;
-}
-
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .headerbar {

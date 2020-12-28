@@ -1,4 +1,4 @@
-body > header {
+#global-header {
     position: fixed;
     top: 0;
     background: url("./assets/images/texture.png"),
@@ -10,6 +10,9 @@ body > header {
     justify-content: space-between;
     border-radius: unset;
     width: 100%;
+}
+#global-header > * {
+    border: 1px solid #f00;
 }
 .logo img {
     height: 150%;
