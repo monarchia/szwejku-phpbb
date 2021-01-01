@@ -6,11 +6,10 @@
    <a title="{{ L_SITE_HOME }}" class="logo" href="{{ BOARD_URL }}">
       <img src="{{ T_THEME_PATH }}/images/banner.png" alt="{{ SITENAME }}">
    </a>
-{#    User menu: #}
 <nav class="user-menu">
    {% if S_USER_LOGGED_IN %}
    <a class="button" href="{{ U_PROFILE }}">
-      {{ CURRENT_USER_AVATAR }}{{ CURRENT_USERNAME_SIMPLE }}
+      {{ CURRENT_USER_AVATAR }} {{ CURRENT_USERNAME_SIMPLE }}
    </a>
    {% if S_NOTIFICATIONS_DISPLAY %}
    <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button">
@@ -38,10 +37,7 @@
    </a>
    {% else %}
    <a class="button" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
-      <i class="icon fa-power-off fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
-   </a>
-   <a class="button" href="{{ U_REGISTER }}" role="menuitem">
-      <i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i>{L_REGISTER}
+      <i class="icon fa-user-circle fa-fw" aria-hidden="true"></i> Logowanie
    </a>
    {% endif %}
 </nav>
