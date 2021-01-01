@@ -8,8 +8,12 @@
    </a>
 {#    User menu: #}
 <nav>
-   {% if not S_USER_LOGGED_IN %}
-   <a href="{U_REGISTER}" role="menuitem">
+   {% if S_USER_LOGGED_IN %}
+   <a class="button" href="{{ U_PROFILE }}">
+      <i class="icon fa-user fa-fw"></i><span>Panel profilu</span>
+   </a>
+   {% else %}
+   <a class="button" href="{U_REGISTER}" role="menuitem">
       <i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>{L_REGISTER}</span>
    </a>
    {% endif %}
