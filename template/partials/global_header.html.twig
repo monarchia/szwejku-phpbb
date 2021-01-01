@@ -12,14 +12,6 @@
    <a class="button" href="{{ U_PROFILE }}">
       <i class="icon fa-user fa-fw"></i><span>{{ S_USERNAME }}</span>
    </a>
-   {% if S_DISPLAY_PM %}
-   <a class="button" href="{U_PRIVATEMSGS}" role="menuitem">
-      {% if PRIVATE_MESSAGE_COUNT %}
-         <strong class="badge">{PRIVATE_MESSAGE_COUNT}</strong>
-      {% endif %}
-      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i>
-      </a>
-   {% endif %}
    {% if S_NOTIFICATIONS_DISPLAY %}
    <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button button-icon-only">
       {% if NOTIFICATIONS_COUNT %}
@@ -27,6 +19,14 @@
       {% endif %}
       <i class="icon fa-bell fa-fw" aria-hidden="true"></i>
    </a>
+   {% endif %}
+   {% if S_DISPLAY_PM %}
+   <a class="button" href="{U_PRIVATEMSGS}" role="menuitem">
+      {% if PRIVATE_MESSAGE_COUNT %}
+         <strong class="badge">{PRIVATE_MESSAGE_COUNT}</strong>
+      {% endif %}
+      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i>
+      </a>
    {% endif %}
    {% if U_ACP %}
    <a class="button" title="Administracja" href="{{ U_ACP }}">
