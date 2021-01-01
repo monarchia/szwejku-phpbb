@@ -9,8 +9,7 @@
     border-radius: unset;
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
 }
 .logo img {
-    height: 50%;
+    height: 145%;
 }
