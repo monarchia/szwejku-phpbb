@@ -1,3 +1,8 @@
+# v0.1.3
+## 2021-01-01
+1. [](#new)
+    * Added custom site header with iconified shortcuts (UCP, notifications, messages, ACP, logout)
+
 # v0.1.2
 1. [](#fixed)
     * Changed avatar display size
