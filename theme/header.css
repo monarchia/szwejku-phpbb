@@ -9,6 +9,7 @@
     border-radius: unset;
     width: 100%;
     display: flex;
+    align-content: space-between;
 }
 .logo img {
     height: 145%;
