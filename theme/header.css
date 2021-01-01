@@ -14,3 +14,6 @@
 .logo img {
     height: 145%;
 }
+#global-header .user-menu {
+    margin: auto 1.5rem;
+}
