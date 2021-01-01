@@ -10,7 +10,7 @@
 <nav class="user-menu">
    {% if S_USER_LOGGED_IN %}
    <a class="button" href="{{ U_PROFILE }}">
-      <i class="icon fa-user fa-fw"></i><span>{{ CURRENT_USER_AVATAR }}{{ CURRENT_USERNAME_SIMPLE }}</span>
+      {{ CURRENT_USER_AVATAR }}{{ CURRENT_USERNAME_SIMPLE }}
    </a>
    {% if S_NOTIFICATIONS_DISPLAY %}
    <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button">
