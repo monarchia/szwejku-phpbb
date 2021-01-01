@@ -20,6 +20,11 @@
       <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i>
       </a>
    {% endif %}
+   {% if S_NOTIFICATIONS_DISPLAY %}
+   <a href="{U_VIEW_ALL_NOTIFICATIONS}" id="notification_list_button" class="button button-icon-only">
+      <i class="icon fa-bell fa-fw" aria-hidden="true"></i><span>{L_NOTIFICATIONS} </span><strong class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong>
+   </a>
+   {% endif %}
    {% if U_ACP %}
    <a class="button" title="Administracja" href="{{ U_ACP }}">
       <i class="icon fa-shield fa-fw"></i>
