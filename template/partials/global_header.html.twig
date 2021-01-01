@@ -19,7 +19,10 @@
       {% endif %}
       {% if S_DISPLAY_PM %}
       <a class="button" href="{U_PRIVATEMSGS}" role="menuitem">
-         <i class="icon fa-inbox fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i><strong class="badge<!-- IF not PRIVATE_MESSAGE_COUNT --> hidden<!-- ENDIF -->">{PRIVATE_MESSAGE_COUNT}</strong>
+         {% if PRIVATE_MESSAGE_COUNT %}
+         <strong class="badge">{PRIVATE_MESSAGE_COUNT}</strong>
+         {% endif %}
+         <i class="icon fa-inbox fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i>
       </a>
       {% endif %}
    {% else %}
