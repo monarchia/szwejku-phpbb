@@ -17,6 +17,11 @@
          <i class="icon fa-shield fa-fw"></i>
       </a>  
       {% endif %}
+      {% if S_DISPLAY_PM %}
+      <a href="{U_PRIVATEMSGS}" role="menuitem">
+         <i class="icon fa-inbox fa-fw" aria-hidden="true"></i><span>{L_PRIVATE_MESSAGES} </span><strong class="badge<!-- IF not PRIVATE_MESSAGE_COUNT --> hidden<!-- ENDIF -->">{PRIVATE_MESSAGE_COUNT}</strong>
+      </a>
+      {% endif %}
    {% else %}
    <a class="button" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
       <i class="icon fa-power-off fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
