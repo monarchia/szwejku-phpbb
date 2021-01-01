@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-between;
 }
+#global-header .logo {
+    max-width: 50%;
+}
 .logo img {
     height: 145%;
 }
