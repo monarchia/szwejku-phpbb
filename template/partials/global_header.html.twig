@@ -21,8 +21,11 @@
       </a>
    {% endif %}
    {% if S_NOTIFICATIONS_DISPLAY %}
-   <a href="{U_VIEW_ALL_NOTIFICATIONS}" id="notification_list_button" class="button button-icon-only">
-      <i class="icon fa-bell fa-fw" aria-hidden="true"></i><span>{L_NOTIFICATIONS} </span><strong class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong>
+   <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button button-icon-only">
+      {% if NOTIFICATIONS_COUNT %}
+      <strong class="badge">{NOTIFICATIONS_COUNT}</strong>
+      {% endif %}
+      <i class="icon fa-bell fa-fw" aria-hidden="true"></i>
    </a>
    {% endif %}
    {% if U_ACP %}
