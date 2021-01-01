@@ -13,7 +13,7 @@
       <i class="icon fa-user fa-fw"></i><span>{{ S_USERNAME }}</span>
    </a>
    {% if S_NOTIFICATIONS_DISPLAY %}
-   <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button button-icon-only">
+   <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button">
       {% if NOTIFICATIONS_COUNT %}
       <strong class="badge">{NOTIFICATIONS_COUNT}</strong>
       {% endif %}
@@ -33,6 +33,9 @@
       <i class="icon fa-shield fa-fw"></i>
    </a>  
    {% endif %}
+   <a class="button" href="{{ U_LOGIN_LOGOUT }}" title="Wyloguj">
+      <i class="icon fa-power-off fa-fw" aria-hidden="true"></i>
+   </a>
    {% else %}
    <a class="button" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
       <i class="icon fa-power-off fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
