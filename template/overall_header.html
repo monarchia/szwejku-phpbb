@@ -21,7 +21,7 @@
 	{{ SITENAME }}
 	{% endif %}
 {% endset -%}
-<title>{{- TITLE -}}</title>
+<title>{{- TITLE|lower -}}</title>
 <!-- IF S_ENABLE_FEEDS -->
 	<!-- IF S_ENABLE_FEEDS_OVERALL --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{{ path('phpbb_feed_index') }}"><!-- ENDIF -->
 	<!-- IF S_ENABLE_FEEDS_NEWS --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{{ path('phpbb_feed_news') }}"><!-- ENDIF -->
@@ -38,7 +38,7 @@
 <!-- ENDIF -->
 
 <!--
-	phpBB style name: Kaisergelb
+	phpBB style name: Svejk
 	Modified by:	  [KuK Vervaltungsbureau](http://github.com/monarchia)
 -->
 
@@ -101,11 +101,13 @@
   <!-- End Matomo Code -->
   
   <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+	if( screen.width >= 700 ){
 	new Crate({
 	  server: '777938415693987851',
 	  channel: '777938417341562892',
 	  color: '#fc0'
 	})
+}
   </script>
   
 </head>
