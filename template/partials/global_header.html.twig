@@ -10,7 +10,7 @@
 <nav class="user-menu">
    {% if S_USER_LOGGED_IN %}
    <a class="button" href="{{ U_PROFILE }}">
-      <i class="icon fa-user fa-fw"></i><span>Panel profilu</span>
+      <i class="icon fa-user fa-fw"></i><span>{{ S_USERNAME }}</span>
    </a>
       {% if U_ACP %}
       <a class="button" title="Administracja" href="{{ U_ACP }}">
