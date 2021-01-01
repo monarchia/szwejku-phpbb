@@ -17,3 +17,6 @@
 #global-header .user-menu {
     margin: auto 1.5rem;
 }
+.user-menu .avatar {
+    width: 1.4rem;
+}
