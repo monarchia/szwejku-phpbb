@@ -21,7 +21,7 @@
 	{{ SITENAME }}
 	{% endif %}
 {% endset -%}
-<title>{{- TITLE|lower -}}</title>
+<title>{{ TITLE }}</title>
 <!-- IF S_ENABLE_FEEDS -->
 	<!-- IF S_ENABLE_FEEDS_OVERALL --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{{ path('phpbb_feed_index') }}"><!-- ENDIF -->
 	<!-- IF S_ENABLE_FEEDS_NEWS --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{{ path('phpbb_feed_news') }}"><!-- ENDIF -->
@@ -43,7 +43,7 @@
 -->
 
 <link href="{T_FONT_AWESOME_LINK}" rel="stylesheet">
-<link href="{T_STYLESHEET_LINK}" rel="stylesheet">
+<link href="{T_STYLESHEET_LINK}?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
 <link href="{T_STYLESHEET_LANG_LINK}" rel="stylesheet">
 
 {#
