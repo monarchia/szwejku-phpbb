@@ -28,6 +28,25 @@
 						{% endif %}
 						{{ CURRENT_USERNAME_SIMPLE }}
 					 </a>
+					 {% if S_NOTIFICATIONS_DISPLAY %}
+   <span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
+   <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button dropdown-trigger">
+      {% if NOTIFICATIONS_COUNT %}
+      <strong class="badge">{NOTIFICATIONS_COUNT}</strong>
+      {% endif %}
+      <i class="icon fa-bell fa-fw" aria-hidden="true"></i>
+   </a>
+   <!-- INCLUDE notification_dropdown.html -->
+</span>
+   {% endif %}
+   {% if S_DISPLAY_PM %}
+   <a class="button" href="{U_PRIVATEMSGS}" role="menuitem">
+      {% if PRIVATE_MESSAGE_COUNT %}
+         <strong class="badge">{PRIVATE_MESSAGE_COUNT}</strong>
+      {% endif %}
+      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i>
+      </a>
+   {% endif %}
 		{% elseif S_REGISTER_ENABLED %}
 			<a class="button" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
 				<i class="icon fa-user-circle-o fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
