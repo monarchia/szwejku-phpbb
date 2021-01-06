@@ -22,11 +22,6 @@
 		{% if S_USER_LOGGED_IN %}
 				<li class="profile">
 					<a class="button" href="{{ U_PROFILE }}">
-						{% if CURRENT_USER_AVATAR %}
-						{{ CURRENT_USER_AVATAR }} 
-						{% else %}
-						<img class="avatar" src="{{ T_THEME_PATH }}/images/no_avatar.gif" width="447" height="500">   
-						{% endif %}
 						{{ CURRENT_USERNAME_SIMPLE }}
 					 </a>
 				</li>
