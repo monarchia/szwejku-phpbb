@@ -1,5 +1,4 @@
-{% if S_REGISTERED_USER %}
-<li id="quick-links" class="hide responsive-show  dropdown-container">
+<li id="quick-links" class="hide responsive-show dropdown-container">
     <a href="#" class="dropdown-trigger">
         <i class="icon fa-th fa-fw" aria-hidden="true"></i><span>{L_QUICK_LINKS}</span>
     </a>
@@ -72,6 +71,7 @@
         </ul>
     </div>
 </li>
+{% if S_REGISTERED_USER %}
 <li>
     <a href="{U_SEARCH_SELF}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_SELF}</span>
