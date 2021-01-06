@@ -19,39 +19,7 @@
 	</ul>
 	<ul id="nav-main" class="nav-main linklist" role="menubar">
 	{% if S_DISPLAY_SEARCH %}
-		{# Quick links #}
-		<!-- IF S_REGISTERED_USER -->
-		<li>
-			<a href="{U_SEARCH_SELF}" role="menuitem">
-				<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_SELF}</span>
-			</a>
-		</li>
-	<!-- ENDIF -->
-	<!-- IF S_USER_LOGGED_IN -->
-		<li>
-			<a href="{U_SEARCH_NEW}" role="menuitem">
-				<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_NEW}</span>
-			</a>
-		</li>
-	<!-- ENDIF -->
-	<!-- IF S_LOAD_UNREADS -->
-		<li>
-			<a href="{U_SEARCH_UNREAD}" role="menuitem">
-				<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_UNREAD}</span>
-			</a>
-		</li>
-	<!-- ENDIF -->
-		<li>
-			<a href="{U_SEARCH_UNANSWERED}" role="menuitem">
-				<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_UNANSWERED}</span>
-			</a>
-		</li>
-		<li>
-			<a href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">
-				<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>{L_SEARCH_ACTIVE_TOPICS}</span>
-			</a>
-		</li>
-		{# /Quick links #}
+		{% include "partials/quicklinks.html.twig" %}
 		{% if not S_IN_SEARCH %}
 		<li class="rightside responsive-search" data-last-responsive="true">
 			<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">
