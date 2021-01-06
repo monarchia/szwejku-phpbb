@@ -18,7 +18,13 @@
 		{% endif %}
 	</ul>
 	<ul id="nav-main" class="nav-main linklist" role="menubar">
-		Links
+	{% if S_DISPLAY_SEARCH and not S_IN_SEARCH %}
+	<li class="rightside responsive-search" data-last-responsive="true">
+		<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">
+		<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
+		</a>
+	</li>	
+	{% endif %}
 	</ul>
 	</div>
 </nav>
