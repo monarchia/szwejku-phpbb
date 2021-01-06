@@ -18,11 +18,14 @@
 			</fieldset>
 		</form>			
 		{% endif %}
+		<li class="hide responsive-show rightside">
 		{% if S_USER_LOGGED_IN %}
-			<li class="hide responsive-show rightside">
 				Profile
-			</li>
+		{% elseif S_REGISTER_ENABLED %}
+				Register
+				
 		{% endif %}
+		</li>
 	</ul>
 	<ul id="nav-main" class="nav-main linklist" role="menubar">
 	{% if S_DISPLAY_SEARCH %}
