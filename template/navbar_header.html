@@ -18,6 +18,11 @@
 			</fieldset>
 		</form>			
 		{% endif %}
+		{% if S_USER_LOGGED_IN %}
+			<li class="hide responsive-show rightside">
+				Profile
+			</li>
+		{% endif %}
 	</ul>
 	<ul id="nav-main" class="nav-main linklist" role="menubar">
 	{% if S_DISPLAY_SEARCH %}
