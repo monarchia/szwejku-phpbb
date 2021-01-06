@@ -26,7 +26,7 @@
 		{% endif %}
 		<li class="hide responsive-show rightside user-menu">
 		{% if S_USER_LOGGED_IN %}
-					<a class="username button" href="{{ U_PROFILE }}">
+					<a class="username" href="{{ U_PROFILE }}">
 						{% if CURRENT_USER_AVATAR %}
 						{{ CURRENT_USER_AVATAR }} 
 						{% else %}
@@ -36,7 +36,7 @@
 					 </a>
 					{% if S_NOTIFICATIONS_DISPLAY %}
 					<span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
-						<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button dropdown-trigger">
+						<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger">
 						   {% if NOTIFICATIONS_COUNT %}
 						   <strong class="badge">{NOTIFICATIONS_COUNT}</strong>
 						   {% endif %}
