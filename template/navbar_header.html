@@ -41,9 +41,9 @@
 					 </a>
 					{% if S_NOTIFICATIONS_DISPLAY %}
 					<span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
-						<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger button icon">
+						<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger {{ NOTIFICATIONS_COUNT ? 'unread' }} button icon">
 						   {% if NOTIFICATIONS_COUNT %}
-						   <strong class="badge">{NOTIFICATIONS_COUNT}</strong>
+						   {{ NOTIFICATIONS_COUNT }}
 						   {% endif %}
 						   <i class="icon fa-bell fa-fw" aria-hidden="true"></i>
 						</a>
