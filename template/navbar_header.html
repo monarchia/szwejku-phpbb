@@ -27,23 +27,22 @@
 						<img class="avatar" src="{{ T_THEME_PATH }}/images/no_avatar.gif" width="447" height="500">   
 						{% endif %}
 					 </a>
-					 {% if S_NOTIFICATIONS_DISPLAY %}
-   					<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button dropdown-trigger">
+					{% if S_NOTIFICATIONS_DISPLAY %}
+   					<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="icon">
 						{% if NOTIFICATIONS_COUNT %}
 						<strong class="badge">{NOTIFICATIONS_COUNT}</strong>
 						{% endif %}
 						<i class="icon fa-bell fa-fw" aria-hidden="true"></i>
 					</a>
-</span>
-   {% endif %}
-   {% if S_DISPLAY_PM %}
-   <a class="button" href="{U_PRIVATEMSGS}" role="menuitem">
-      {% if PRIVATE_MESSAGE_COUNT %}
-         <strong class="badge">{PRIVATE_MESSAGE_COUNT}</strong>
-      {% endif %}
-      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i>
-      </a>
-   {% endif %}
+  					{% endif %}
+					{% if S_DISPLAY_PM %}
+					<a class="icon" href="{U_PRIVATEMSGS}" role="menuitem">
+						{% if PRIVATE_MESSAGE_COUNT %}
+							<strong class="badge">{PRIVATE_MESSAGE_COUNT}</strong>
+						{% endif %}
+						<i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i>
+						</a>
+					{% endif %}
 		{% elseif S_REGISTER_ENABLED %}
 			<a class="button" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
 				<i class="icon fa-user-circle-o fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
