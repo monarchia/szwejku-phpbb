@@ -24,7 +24,9 @@
 						{{ CURRENT_USERNAME_SIMPLE }}
 					 </a>
 		{% elseif S_REGISTER_ENABLED %}
-				Register
+			<a class="button" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
+				<i class="icon fa-user-circle-o fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
+			</a>
 		{% endif %}
 		</li>
 	</ul>
