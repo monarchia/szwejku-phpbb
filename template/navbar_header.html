@@ -1,11 +1,6 @@
 <nav class="navbar" role="navigation">
 	<div class="inner">
 	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist" role="menubar">
-		<li class="crumb">
-			<a href="{{ U_INDEX }}">
-				<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
-			</a>
-		</li>
 		<li class="responsive-hide breadcrumbs">
 				<!-- BEGIN navlinks -->
 					{% set NAVLINK_NAME = navlinks.BREADCRUMB_NAME | default(navlinks.FORUM_NAME) %}
@@ -63,6 +58,11 @@
 		</li>
 	</ul>
 	<ul id="nav-main" class="nav-main linklist" role="menubar">
+		<li class="crumb">
+			<a href="{{ U_INDEX }}">
+				<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
+			</a>
+		</li>
 	{% if S_DISPLAY_SEARCH %}
 		{% include "partials/quicklinks.html.twig" %}
 		{% if not S_IN_SEARCH %}
