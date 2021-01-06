@@ -68,7 +68,6 @@
 		</ul>
 		<ul id="nav-main" class="nav-main linklist" role="menubar">
 				<!-- IF S_DISPLAY_SEARCH -->
-					<li class="separator"></li>
 					<!-- IF S_REGISTERED_USER -->
 						<li>
 							<a href="{U_SEARCH_SELF}" role="menuitem">
@@ -100,30 +99,6 @@
 								<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>{L_SEARCH_ACTIVE_TOPICS}</span>
 							</a>
 						</li>
-						<li class="separator"></li>
-						<li>
-							<a href="{U_SEARCH}" role="menuitem">
-								<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>{L_SEARCH}</span>
-							</a>
-						</li>
-				<!-- ENDIF -->
-
-				<!-- IF not S_IS_BOT and (S_DISPLAY_MEMBERLIST or U_TEAM) -->
-					<li class="separator"></li>
-					<!-- IF S_DISPLAY_MEMBERLIST -->
-						<li>
-							<a href="{U_MEMBERLIST}" role="menuitem">
-								<i class="icon fa-group fa-fw" aria-hidden="true"></i><span>{L_MEMBERLIST}</span>
-							</a>
-						</li>
-					<!-- ENDIF -->
-					<!-- IF U_TEAM -->
-						<li>
-							<a href="{U_TEAM}" role="menuitem">
-								<i class="icon fa-shield fa-fw" aria-hidden="true"></i><span>{L_THE_TEAM}</span>
-							</a>
-						</li>
-					<!-- ENDIF -->
 				<!-- ENDIF -->
 				<li class="separator"></li>
 		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
