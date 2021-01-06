@@ -32,15 +32,17 @@
 						{% else %}
 						<img class="avatar" src="{{ T_THEME_PATH }}/images/no_avatar.gif" width="447" height="500">   
 						{% endif %}
-						Profil
+						{{ S_USERNAME }}
 					 </a>
 					{% if S_NOTIFICATIONS_DISPLAY %}
-   					<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="icon">
+					<span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}"></span>
+   					<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="icon dropdown-trigger">
 						{% if NOTIFICATIONS_COUNT %}
 						<strong class="badge">{NOTIFICATIONS_COUNT}</strong>
 						{% endif %}
 						<i class="icon fa-bell fa-fw" aria-hidden="true"></i>
 					</a>
+					</span>
   					{% endif %}
 					{% if S_DISPLAY_PM %}
 					<a class="icon" href="{U_PRIVATEMSGS}" role="menuitem">
