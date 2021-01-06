@@ -20,11 +20,9 @@
 		{% endif %}
 		<li class="hide responsive-show rightside">
 		{% if S_USER_LOGGED_IN %}
-				<li class="profile">
 					<a class="button" href="{{ U_PROFILE }}">
 						{{ CURRENT_USERNAME_SIMPLE }}
 					 </a>
-				</li>
 		{% elseif S_REGISTER_ENABLED %}
 				Register
 		{% endif %}
