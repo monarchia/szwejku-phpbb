@@ -66,8 +66,7 @@
 		</fieldset>
 		</form>
 		</ul>
-	<ul id="nav-main" class="nav-main linklist" role="menubar">
-		<!-- EVENT overall_header_navigation_prepend -->
+		<ul id="nav-main" class="nav-main linklist" role="menubar">
 		<li id="quick-links" class="quick-links dropdown-container responsive-menu<!-- IF not S_DISPLAY_QUICK_LINKS and not S_DISPLAY_SEARCH --> hidden<!-- ENDIF -->" data-skip-responsive="true">
 			<a href="#" class="dropdown-trigger">
 				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>{L_QUICK_LINKS}</span>
@@ -141,9 +140,9 @@
 				</ul>
 			</div>
 		</li>
-		<li <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
+		<li class="rightside" <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
 			<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">
-				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>{L_FAQ}</span>
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
 			</a>
 		</li>
 		<!-- EVENT overall_header_navigation_append -->
@@ -154,6 +153,6 @@
 			</a>
 		</li>	
 				<!-- ENDIF -->
-	</ul>
+		</ul>
 	</div>
 </div>
