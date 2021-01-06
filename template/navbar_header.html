@@ -140,14 +140,14 @@
 				</ul>
 			</div>
 		</li>
+		<!-- EVENT overall_header_navigation_append -->
 		<li class="rightside" <!-- IF not S_USER_LOGGED_IN -->data-skip-responsive="true"<!-- ELSE -->data-last-responsive="true"<!-- ENDIF -->>
 			<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">
 				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
 			</a>
 		</li>
-		<!-- EVENT overall_header_navigation_append -->
 		<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-		<li class="rightside responsive-search">
+		<li class="rightside responsive-search" data-last-responsive="true">
 			<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">
 			<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
 			</a>
