@@ -12,7 +12,7 @@
       {{ CURRENT_USER_AVATAR }} {{ CURRENT_USERNAME_SIMPLE }}
    </a>
    {% if S_NOTIFICATIONS_DISPLAY %}
-   <div class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
+   <span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
    <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="button dropdown-trigger">
       {% if NOTIFICATIONS_COUNT %}
       <strong class="badge">{NOTIFICATIONS_COUNT}</strong>
@@ -20,7 +20,7 @@
       <i class="icon fa-bell fa-fw" aria-hidden="true"></i>
    </a>
    <!-- INCLUDE notification_dropdown.html -->
-   </div>
+</span>
    {% endif %}
    {% if S_DISPLAY_PM %}
    <a class="button" href="{U_PRIVATEMSGS}" role="menuitem">
