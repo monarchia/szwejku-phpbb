@@ -10,6 +10,7 @@ body {
 	padding: 12px 0;
 	word-wrap: break-word;
 	-webkit-print-color-adjust: exact;
+	padding-top: 3rem;
 }
 /* Some header styling */
 h1, h2, h3, h4 {
@@ -103,7 +104,6 @@ a:hover	{ text-decoration: underline; }
 	margin: 0 auto;
 	min-width: 625px;
 	padding: 15px;
-	margin-top: 3rem;
 }
 
 @media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
