@@ -39,25 +39,19 @@
 						{% endif %}
 						{{ S_USERNAME }}
 					 </a>
-					{% if S_NOTIFICATIONS_DISPLAY %}
-					<span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
-						<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger {{ NOTIFICATIONS_COUNT ? 'unread' }} button icon">
-						   {% if NOTIFICATIONS_COUNT %}
-						   {{ NOTIFICATIONS_COUNT }}
-						   {% endif %}
-						   <i class="icon fa-bell fa-fw" aria-hidden="true"></i>
-						</a>
-						<!-- INCLUDE notification_dropdown.html -->
-					 </span>
-  					{% endif %}
-					{% if S_DISPLAY_PM %}
-					<a class="button icon" href="{U_PRIVATEMSGS}" role="menuitem">
-						{% if PRIVATE_MESSAGE_COUNT %}
-							<strong class="badge">{PRIVATE_MESSAGE_COUNT}</strong>
-						{% endif %}
-						<i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i>
-						</a>
-					{% endif %}
+					 {% if S_NOTIFICATIONS_DISPLAY %}
+   <span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
+      <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger {{ NOTIFICATIONS_COUNT ? 'unread' }} button">
+         <i class="icon fa-bell fa-fw" aria-hidden="true"></i> {{ NOTIFICATIONS_COUNT ?: ''}}
+      </a> 
+   <!-- INCLUDE notification_dropdown.html -->
+</span>
+   {% endif %}
+   {% if S_DISPLAY_PM %}
+   <a class="button {{ PRIVATE_MESSAGE_COUNT ? 'unread' }}" href="{U_PRIVATEMSGS}" role="menuitem">
+      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i> {{ PRIVATE_MESSAGE_COUNT ?: ''}}
+      </a>
+   {% endif %}
 		{% elseif S_REGISTER_ENABLED %}
 			<a class="button" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
 				<i class="icon fa-user-circle-o fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
