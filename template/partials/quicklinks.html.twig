@@ -1,24 +1,24 @@
-<!-- IF S_REGISTERED_USER -->
+{% if S_REGISTERED_USER %}
 <li>
     <a href="{U_SEARCH_SELF}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_SELF}</span>
     </a>
 </li>
-<!-- ENDIF -->
-<!-- IF S_USER_LOGGED_IN -->
+{% endif %}
+{% if S_USER_LOGGED_IN %}
 <li>
     <a href="{U_SEARCH_NEW}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_NEW}</span>
     </a>
 </li>
-<!-- ENDIF -->
-<!-- IF S_LOAD_UNREADS -->
+{% endif %}
+{% if S_LOAD_UNREADS %}
 <li>
     <a href="{U_SEARCH_UNREAD}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_UNREAD}</span>
     </a>
 </li>
-<!-- ENDIF -->
+{% endif %}
 <li>
     <a href="{U_SEARCH_UNANSWERED}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_UNANSWERED}</span>
