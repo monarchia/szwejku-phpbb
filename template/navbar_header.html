@@ -21,14 +21,38 @@
 				<!-- EVENT overall_header_breadcrumb_append -->
 			</li>
 			<!-- EVENT overall_header_breadcrumbs_after -->
-	
-			<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-				<li class="rightside responsive-search">
-					<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">
-						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
-					</a>
-				</li>
-			<!-- ENDIF -->
+<!-- IF S_REGISTERED_USER -->
+		<!-- IF S_DISPLAY_PM -->
+		<li class="hide responsive-show rightside" data-skip-responsive="true">
+			<a href="{U_PRIVATEMSGS}" role="menuitem">
+				<i class="icon fa-inbox fa-fw" aria-hidden="true"></i><span>{L_PRIVATE_MESSAGES} </span><strong class="badge<!-- IF not PRIVATE_MESSAGE_COUNT --> hidden<!-- ENDIF -->">{PRIVATE_MESSAGE_COUNT}</strong>
+			</a>
+		</li>
+	<!-- ENDIF -->
+	<!-- IF S_NOTIFICATIONS_DISPLAY -->
+		<li class="hide responsive-show dropdown-container dropdown-{S_CONTENT_FLOW_END} rightside" data-skip-responsive="true">
+			<a href="{U_VIEW_ALL_NOTIFICATIONS}" id="notification_list_button" class="dropdown-trigger">
+				<i class="icon fa-bell fa-fw" aria-hidden="true"></i><span>{L_NOTIFICATIONS} </span><strong class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong>
+			</a>
+			<!-- INCLUDE notification_dropdown.html -->
+		</li>
+	<!-- ENDIF -->
+	<!-- EVENT navbar_header_user_profile_append -->
+<!-- ELSE IF not S_IS_BOT -->
+	<!-- IF S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) -->
+		<li class="hide responsive-show rightside" data-skip-responsive="true">
+			<a href="{U_REGISTER}" role="menuitem">
+				<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>{L_REGISTER}</span>
+			</a>
+		</li>
+	<!-- ENDIF -->
+	<!-- EVENT navbar_header_logged_out_content -->
+<!-- ENDIF -->
+	<li class="hide responsive-show rightside"  data-skip-responsive="true">
+		<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">
+			<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>{L_LOGIN_LOGOUT}</span>
+		</a>
+	</li>
 		</ul>
 		<ul id="nav-main" class="nav-main linklist" role="menubar">
 		<!-- EVENT overall_header_navigation_prepend -->
@@ -111,38 +135,13 @@
 			</a>
 		</li>
 		<!-- EVENT overall_header_navigation_append -->
-	<!-- IF S_REGISTERED_USER -->
-		<!-- IF S_DISPLAY_PM -->
-			<li class="hide responsive-show rightside" data-skip-responsive="true">
-				<a href="{U_PRIVATEMSGS}" role="menuitem">
-					<i class="icon fa-inbox fa-fw" aria-hidden="true"></i><span>{L_PRIVATE_MESSAGES} </span><strong class="badge<!-- IF not PRIVATE_MESSAGE_COUNT --> hidden<!-- ENDIF -->">{PRIVATE_MESSAGE_COUNT}</strong>
-				</a>
-			</li>
-		<!-- ENDIF -->
-		<!-- IF S_NOTIFICATIONS_DISPLAY -->
-			<li class="hide responsive-show dropdown-container dropdown-{S_CONTENT_FLOW_END} rightside" data-skip-responsive="true">
-				<a href="{U_VIEW_ALL_NOTIFICATIONS}" id="notification_list_button" class="dropdown-trigger">
-					<i class="icon fa-bell fa-fw" aria-hidden="true"></i><span>{L_NOTIFICATIONS} </span><strong class="badge<!-- IF not NOTIFICATIONS_COUNT --> hidden<!-- ENDIF -->">{NOTIFICATIONS_COUNT}</strong>
-				</a>
-				<!-- INCLUDE notification_dropdown.html -->
-			</li>
-		<!-- ENDIF -->
-		<!-- EVENT navbar_header_user_profile_append -->
-	<!-- ELSE IF not S_IS_BOT -->
-		<!-- IF S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) -->
-			<li class="hide responsive-show rightside" data-skip-responsive="true">
-				<a href="{U_REGISTER}" role="menuitem">
-					<i class="icon fa-pencil-square-o  fa-fw" aria-hidden="true"></i><span>{L_REGISTER}</span>
-				</a>
-			</li>
-		<!-- ENDIF -->
-		<!-- EVENT navbar_header_logged_out_content -->
-	<!-- ENDIF -->
-		<li class="hide responsive-show rightside"  data-skip-responsive="true">
-			<a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}" accesskey="x" role="menuitem">
-				<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>{L_LOGIN_LOGOUT}</span>
+		<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
+		<li class="rightside responsive-search">
+			<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">
+			<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
 			</a>
-		</li>
+		</li>	
+				<!-- ENDIF -->
 	</ul>
 	</div>
 </div>
