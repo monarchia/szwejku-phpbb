@@ -41,7 +41,7 @@
 					 </a>
 					{% if S_NOTIFICATIONS_DISPLAY %}
 					<span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
-						<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger button">
+						<a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger button icon">
 						   {% if NOTIFICATIONS_COUNT %}
 						   <strong class="badge">{NOTIFICATIONS_COUNT}</strong>
 						   {% endif %}
@@ -51,7 +51,7 @@
 					 </span>
   					{% endif %}
 					{% if S_DISPLAY_PM %}
-					<a class="button" href="{U_PRIVATEMSGS}" role="menuitem">
+					<a class="button icon" href="{U_PRIVATEMSGS}" role="menuitem">
 						{% if PRIVATE_MESSAGE_COUNT %}
 							<strong class="badge">{PRIVATE_MESSAGE_COUNT}</strong>
 						{% endif %}
