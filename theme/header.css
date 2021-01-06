@@ -31,3 +31,7 @@
     float: left;
     line-height: 1.4rem;
 }
+.navbar .logo {
+    margin: -10px;
+    height: 1.4rem;
+}
