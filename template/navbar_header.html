@@ -1,6 +1,11 @@
 <nav class="navbar" role="navigation">
 	<div class="inner">
 	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist" role="menubar">
+		<li class="responsive show">
+			<a href="{{ U_SITE_HOME ?: U_INDEX }}">
+				Małe logo
+			</a>
+		</li>
 		<li class="responsive-hide breadcrumbs">
 				<!-- BEGIN navlinks -->
 					{% set NAVLINK_NAME = navlinks.BREADCRUMB_NAME | default(navlinks.FORUM_NAME) %}
