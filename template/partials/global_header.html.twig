@@ -19,14 +19,14 @@
    {% if S_NOTIFICATIONS_DISPLAY %}
    <span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
       <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger {{ NOTIFICATIONS_COUNT ? 'unread' }} button">
-         <i class="icon fa-bell fa-fw" aria-hidden="true"></i> {{ NOTIFICATIONS_COUNT }}
+         <i class="icon fa-bell fa-fw" aria-hidden="true"></i> {{ NOTIFICATIONS_COUNT ?: ''}}
       </a> 
    <!-- INCLUDE notification_dropdown.html -->
 </span>
    {% endif %}
    {% if S_DISPLAY_PM %}
    <a class="button {{ PRIVATE_MESSAGE_COUNT ? 'unread' }}" href="{U_PRIVATEMSGS}" role="menuitem">
-      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i> {{ PRIVATE_MESSAGE_COUNT }}
+      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i> {{ PRIVATE_MESSAGE_COUNT ?: ''}}
       </a>
    {% endif %}
    {% if U_ACP %}
