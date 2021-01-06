@@ -33,5 +33,6 @@
 }
 .navbar .home {
     margin: -10px;
-    height: 1.4rem;
+    width: 1.4rem;
+    height: auto;
 }
