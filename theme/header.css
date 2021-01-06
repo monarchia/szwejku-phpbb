@@ -24,3 +24,10 @@
     width: 1.4rem;
     height: auto;
 }
+.navbar #search {
+    float: inline-end;
+}
+.navbar #search #keywords {
+    float: left;
+    line-height: 1.4rem;
+}
