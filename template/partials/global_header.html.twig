@@ -9,7 +9,12 @@
 <nav class="user-menu">
    {% if S_USER_LOGGED_IN %}
    <a class="button" href="{{ U_PROFILE }}">
-      {{ CURRENT_USER_AVATAR }} {{ CURRENT_USERNAME_SIMPLE }}
+      {% if CURRENT_USER_AVATAR %}
+      {{ CURRENT_USER_AVATAR }} 
+      {% else %}
+      <img src="{{ T_THEME_PATH }}/images/no_avatar.gif" width="447" height="500">   
+      {% endif %}
+      {{ CURRENT_USERNAME_SIMPLE }}
    </a>
    {% if S_NOTIFICATIONS_DISPLAY %}
    <span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
