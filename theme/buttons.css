@@ -25,6 +25,14 @@
  	text-decoration: none;
  	outline: none;
 }
+/* Custom notification buttons */
+.button.unread {
+	background: #D31141;
+	border-color: #D31141;
+}
+.button.unread, .button.unread * {
+	color: #fff;
+}
 
 .caret {
 	border-left: 1px solid;
