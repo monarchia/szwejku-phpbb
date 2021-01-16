@@ -1,6 +1,9 @@
 # szwejku.libraries.yml
 picnic:
   version: latest
+  type: external
+  minified: true
+  preprocess: false
   css:
     theme:
       //cdn.jsdelivr.net/npm/picnic
