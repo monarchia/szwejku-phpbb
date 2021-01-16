@@ -1,0 +1,6 @@
+# szwejku.libraries.yml
+picnic:
+  version: latest
+  css:
+    theme:
+      //cdn.jsdelivr.net/npm/picnic
