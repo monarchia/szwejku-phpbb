@@ -1,0 +1,8 @@
+{
+ "name": "monarchia/kaiser",
+ "type": "drupal-theme",
+ "description": "Drupal theme for MAW",
+ "require": {
+     "composer/installers": "^1.7"
+     }
+}
