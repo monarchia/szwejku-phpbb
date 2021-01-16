@@ -1,9 +1,14 @@
 # szwejku.libraries.yml
 picnic:
+  remote: https://github.com/franciscop/picnic
   version: latest
   type: external
   minified: true
   preprocess: false
+  license:
+    name: MIT
+    url: https://github.com/franciscop/picnic/blob/master/LICENSE
+    gpl-compatible: true
   css:
     theme:
       //cdn.jsdelivr.net/npm/picnic
