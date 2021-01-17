@@ -62,7 +62,7 @@
 
 {# Forum navigation #}
 <ul id="nav-main" class="nav-main linklist" role="menubar">
-	<li>
+	<li class="leftside">
 		<a href="{{ U_INDEX }}">
 				<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
 		</a>
@@ -70,8 +70,8 @@
 	{% if S_DISPLAY_SEARCH %}
 		{% include "partials/quicklinks.html.twig" %}
 	{% endif %}
-	<li>
-		<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem" class="rightside">
+	<li class="rightside">
+		<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem" >
 			<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
 		</a>
 	</li>
