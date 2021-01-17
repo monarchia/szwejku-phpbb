@@ -66,11 +66,9 @@
 	{% if S_DISPLAY_SEARCH %}
 		{% include "partials/quicklinks.html.twig" %}
 		{% if not S_IN_SEARCH %}
-		<li class="rightside responsive-search" data-last-responsive="true">
 			<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}" role="menuitem">
 			<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
 			</a>
-		</li>	
 		{% endif %}
 			<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem">
 				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
