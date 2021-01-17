@@ -1,4 +1,7 @@
 # szwejku.libraries.yml
+fonts:
+  css:
+    theme: 'common/fonts/style.css'
 picnic:
   remote: https://github.com/franciscop/picnic
   version: 6.5.4

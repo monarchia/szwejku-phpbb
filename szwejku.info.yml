@@ -2,6 +2,7 @@ name: Szwejku
 type: theme
 desciription: "Drupal theme for MAW"
 core_version_requirement: ^8 || ^9
+base theme: stable
 libraries:
   - szwejku/picnic
-base theme: stable
+  - szwejku/fonts
