@@ -1,3 +1,8 @@
+# v0.1.4
+## 2021-01-17
+1. [](#fixed)
+    * Fixed problems with viewing on very wide screens
+
 # v0.1.3
 ## 2021-01-01
 1. [](#new)
