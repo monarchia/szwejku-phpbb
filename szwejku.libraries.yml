@@ -1,7 +1,7 @@
 # szwejku.libraries.yml
 picnic:
   remote: https://github.com/franciscop/picnic
-  version: latest
+  version: 6.5.4
   type: external
   minified: true
   preprocess: false
