@@ -1,7 +1,7 @@
 # szwejku.libraries.yml
-style:
+main:
   css:
-    theme: 'styles/style.css'
+    theme: 'css/style.css'
 fonts:
   css:
     theme: 'common/fonts/style.css'

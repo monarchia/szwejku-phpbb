@@ -6,4 +6,4 @@ base theme: stable
 libraries:
   - szwejku/picnic
   - szwejku/fonts
-  - szwejku/style
+  - szwejku/main
