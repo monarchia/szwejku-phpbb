@@ -11,4 +11,4 @@ picnic:
     gpl-compatible: true
   css:
     theme:
-      //cdn.jsdelivr.net/npm/picnic
+      //cdn.jsdelivr.net/npm/picnic: {type: external }
