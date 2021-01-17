@@ -2,8 +2,6 @@
 picnic:
   remote: https://github.com/franciscop/picnic
   version: 6.5.4
-  type: external
-  minified: true
   preprocess: false
   license:
     name: MIT
@@ -11,4 +9,4 @@ picnic:
     gpl-compatible: true
   css:
     theme:
-      //cdn.jsdelivr.net/npm/picnic: {type: external }
+      //cdn.jsdelivr.net/npm/picnic: {type: external,  minified: true }
