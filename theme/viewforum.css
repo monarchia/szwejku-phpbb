@@ -6,7 +6,8 @@
     .category header {
         color: beige;
         padding: 1rem;
+        background: linear-gradient(transparent 100%, #161616df 1% );
     }
     li.row {
-        background: linear-gradient(#ffffffdf 0%, transparent 100%);
+        background: #ffffffdf;
     }
