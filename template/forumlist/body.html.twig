@@ -22,7 +22,7 @@
     <li class="header">
         {% EVENT forumlist_body_category_header_row_prepend %}
         <dl class="row-item">
-            <dt><div class="list-inner">{forumrow.L_SUBFORUM_STR}</div></dt>
+            <dt class="responsive-show"><h2><a href="{{ forumrow.U_VIEWFORUM }}">{{ forumrow.FORUM_NAME }}</a></h2></dt>
             <dd class="topics">{L_TOPICS}</dd>
             <dd class="posts">{L_POSTS}</dd>
             <dd class="lastpost"><span>{L_LAST_POST}</span></dd>
