@@ -8,10 +8,10 @@
     {% endif %}
 
 <!-- EVENT forumlist_body_category_header_before -->
-<!-- IF  (forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) -->
-<section class="forums">
-    <ul class="topiclist forums">
-<!-- ENDIF -->
+    {% if (forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) %}
+    <section>
+        <ul class="topiclist forums">
+    {% endif %}
 <!-- IF (forumrow.S_IS_CAT) -->
 <section class="category" id="f-{{ forumrow.FORUM_ID }}" {% if forumrow.FORUM_IMAGE %} style="background-image: url({{ forumrow.FORUM_IMAGE_SRC }});"{% endif %} >
 <div class="inner">
