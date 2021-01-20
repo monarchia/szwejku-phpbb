@@ -1,7 +1,7 @@
     .category {
         background: #161616;
         background-size: contain;
-        border-radius: 1rem;
+        border-radius: 1.5rem;
         background-repeat: no-repeat;
     }
     .category header {
@@ -10,5 +10,5 @@
         background: linear-gradient(#161616df 10%, transparent 100%);
     }
     li.row {
-        background: #ffffffdf;
+        background: #fffffff0;
     }
