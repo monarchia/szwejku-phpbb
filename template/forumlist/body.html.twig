@@ -14,7 +14,7 @@
 {% if (forumrow.S_IS_CAT) %}
 <section class="category" id="f-{{ forumrow.FORUM_ID }}" {% if forumrow.FORUM_IMAGE %} style="background-image: url({{ forumrow.FORUM_IMAGE_SRC }});"{% endif %} >
 <div class="inner">
-    <header>
+    <header class="responsive-hide">
         <h2><a href="{{ forumrow.U_VIEWFORUM }}">{{ forumrow.FORUM_NAME }}</a></h2>
         <div class="description">{{ forumrow.FORUM_DESC }}</div>
     </header>
