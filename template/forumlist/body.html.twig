@@ -14,15 +14,15 @@
 {% if (forumrow.S_IS_CAT) %}
 <section class="category" id="f-{{ forumrow.FORUM_ID }}" {% if forumrow.FORUM_IMAGE %} style="background-image: url({{ forumrow.FORUM_IMAGE_SRC }});"{% endif %} >
 <div class="inner">
-    <header>
+    <header class="responsive-hide">
         <h2><a href="{{ forumrow.U_VIEWFORUM }}">{{ forumrow.FORUM_NAME }}</a></h2>
-        <div class="description responsive-hide">{{ forumrow.FORUM_DESC }}</div>
+        <div class="description ">{{ forumrow.FORUM_DESC }}</div>
     </header>
 <ul class="topiclist">
     <li class="header">
         {% EVENT forumlist_body_category_header_row_prepend %}
         <dl class="row-item">
-            <dt class="responsive-show"><h2><a href="{{ forumrow.U_VIEWFORUM }}">{{ forumrow.FORUM_NAME }}</a></h2></dt>
+            <dt class="hide responsive-show"><h2><a href="{{ forumrow.U_VIEWFORUM }}">{{ forumrow.FORUM_NAME }}</a></h2></dt>
             <dd class="topics">{L_TOPICS}</dd>
             <dd class="posts">{L_POSTS}</dd>
             <dd class="lastpost"><span>{L_LAST_POST}</span></dd>
