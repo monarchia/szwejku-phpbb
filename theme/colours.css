@@ -25,7 +25,7 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #fc0; 
+a { color: rgb(255, 224, 88); 
 	border-bottom: 1px dotted;
 }
 a:hover { color: #D31141; }
@@ -49,10 +49,6 @@ a:hover { color: #D31141; }
 	background-color: transparent;
 }
 
-/* Back to top of page */
-.top i {
-	color: #999999;
-}
 
 /* Arrow links  */
 .arrow-left:hover, .arrow-right:hover {
