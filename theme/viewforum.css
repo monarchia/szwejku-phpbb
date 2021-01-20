@@ -1,6 +1,7 @@
     .category {
         background: #161616;
         background-size: contain;
+        border-radius: 1rem;
     }
     .category header {
         color: beige;
