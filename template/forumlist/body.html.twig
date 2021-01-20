@@ -8,7 +8,7 @@
 <!-- ENDIF -->
 
 <!-- EVENT forumlist_body_category_header_before -->
-<!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT  -->
+<!-- IF (forumrow.S_IS_CAT or forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) -->
 <section class="category" id="f-{{ forumrow.FORUM_ID }}" {% if forumrow.FORUM_IMAGE %} style="background-image: url({{ forumrow.FORUM_IMAGE_SRC }});"{% endif %} >
 <div class="inner">
     <header>
