@@ -1,6 +1,6 @@
 {% for forum in loops.forumrow %}
     {{ forum.FORUM_NAME }}</br>
-    {% for subforum in forum.subforum %}
-    - {{ subforum.SUBFORUM_NAME }}
-    {% endfor %}
+    {% if not forum.S_FIRST_ROW %}
+        <hr>
+    {% endif %}
 {% endfor %}
