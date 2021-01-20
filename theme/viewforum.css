@@ -1,4 +1,8 @@
     .category {
         background: #161616;
+        background-position: bottom;
+        background-size: contain;
+    }
+    .category .description {
         color: beige;
     }
