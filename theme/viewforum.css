@@ -23,7 +23,5 @@ a.subforum {
 }
 .unread {
     color: #f08080;
-}
-.read {
-    color:#1e90ff;
+    font-weight: bolder;
 }
