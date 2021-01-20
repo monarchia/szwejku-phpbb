@@ -21,9 +21,9 @@
 a.subforum {
     border-bottom: 1px dotted;
 }
-a.subforum.unread {
+.unread {
     color: #f08080;
 }
-a.subforum.read {
+.read {
     color:#1e90ff;
 }
