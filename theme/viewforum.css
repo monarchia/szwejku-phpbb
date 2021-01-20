@@ -7,3 +7,6 @@
         color: beige;
         padding: 1rem;
     }
+    li.row {
+        background: #ffffffdf;
+    }

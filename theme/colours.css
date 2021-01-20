@@ -329,17 +329,6 @@ p.post-notice {
 Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
-ul.forums {
-	background-color: #fffff0; /* Old browsers */ /* FF3.6+ */
-	/*background-image: -webkit-linear-gradient(top, #D2E0EB 0%, #EEF5F9 100%);
-	background-image: linear-gradient(to bottom, #D2E0EB 0%,#EEF5F9 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D2E0EB', endColorstr='#EEF5F9',GradientType=0 ); /* IE6-9 */ 
-}
-
-ul.topiclist li {
-	/*color: #4C5D77;*/
-}
-
 ul.topiclist dd {
 	border-left-color: #FFFFFF;
 }
