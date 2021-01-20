@@ -2,11 +2,12 @@
         background: #161616;
         background-size: contain;
         border-radius: 1rem;
+        background-repeat: no-repeat;
     }
     .category header {
         color: beige;
         padding: 1rem;
-        background: linear-gradient(#161616 0%, transparent 100%);
+        background: linear-gradient(#161616df 10%, transparent 100%);
     }
     li.row {
         background: #ffffffdf;
