@@ -1,6 +1,6 @@
 {% for forum in loops.forumrow %}
     {{ forum.FORUM_NAME }}</br>
-    {% if not forum.S_FIRST_ROW %}
-        <hr>
-    {% endif %}
+	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  -->
+    <hr>
+    <!-- ENDIF -->    
 {% endfor %}
