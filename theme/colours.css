@@ -25,8 +25,8 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: rgb(35, 0, 82); 
-	border-bottom: 1px dotted;
+a { color: #ffa600;
+	border-bottom: dotted;
 }
 a:hover { color: #D31141; }
 
