@@ -6,6 +6,7 @@
     .category header {
         color: beige;
         padding: 1rem;
+        background: #161616df;
     }
     li.row {
         background: #ffffffdf;
