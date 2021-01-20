@@ -2,6 +2,7 @@
         background: #161616;
         background-position: bottom;
         background-size: contain;
+        padding: 2rem;
     }
     .category .description {
         color: beige;
