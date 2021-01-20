@@ -1,17 +1,17 @@
 <!-- BEGIN forumrow -->
-	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  -->
+	{% if (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  %}
 </ul>
 
 </div>
 </section>
-    <!-- ENDIF -->
+    {% endif %}
 
 {% EVENT forumlist_body_category_header_before %}
-<!-- IF  (forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) -->
+{% if (forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) %}
 <section>
     <ul class="topiclist forums">
-<!-- ENDIF -->
-<!-- IF (forumrow.S_IS_CAT) -->
+{% endif %}
+{% if (forumrow.S_IS_CAT) %}
 <section class="category" id="f-{{ forumrow.FORUM_ID }}" {% if forumrow.FORUM_IMAGE %} style="background-image: url({{ forumrow.FORUM_IMAGE_SRC }});"{% endif %} >
 <div class="inner">
     <header>
@@ -31,7 +31,7 @@
     </li>
 </ul>
 <ul class="topiclist forums">
-<!-- ENDIF -->
+{% endif %}
 {% EVENT forumlist_body_category_header_after %}
 
 <!-- IF not forumrow.S_IS_CAT -->
