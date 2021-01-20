@@ -12,3 +12,18 @@
     li.row {
         background: #fffffff0;
     }
+/* 
+ * Subforum links styling
+ ************************/
+.subforums {
+    list-style: none;
+}
+a.subforum {
+    border-bottom: 1px dotted;
+}
+a.subforum.unread {
+    color: #f08080;
+}
+a.subforum.read {
+    color:#1e90ff;
+}
