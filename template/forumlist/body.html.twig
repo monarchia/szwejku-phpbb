@@ -1,6 +1,6 @@
 {% for forum in loops.forumrow %}
     {% if forum.S_IS_CAT %}
-    section class="category" id="f-{{ forum.FORUM_ID }}" {% if forum.FORUM_IMAGE %} style="background-image: url({{ forum.FORUM_IMAGE_SRC }});"{% endif %} >
+    <section class="category" id="f-{{ forum.FORUM_ID }}" {% if forum.FORUM_IMAGE %} style="background-image: url({{ forum.FORUM_IMAGE_SRC }});"{% endif %} >
     <div class="inner">
         <header>
             <h2><a href="{{ forum.U_VIEWFORUM }}">{{ forum.FORUM_NAME }}</a></h2>
