@@ -1,15 +1,15 @@
 
 <!-- BEGIN forumrow -->
-	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  -->
-</ul>
+    {% if (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT %}
+    </ul>
 
-</div>
-</section>
-    <!-- ENDIF -->
+    </div>
+    </section>
+    {% endif %}
 
 <!-- EVENT forumlist_body_category_header_before -->
 <!-- IF  (forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) -->
-<section>
+<section class="forums">
     <ul class="topiclist forums">
 <!-- ENDIF -->
 <!-- IF (forumrow.S_IS_CAT) -->
