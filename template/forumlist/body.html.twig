@@ -67,7 +67,7 @@
                 {% EVENT forumlist_body_subforums_after %}
             <!-- ENDIF -->
 
-            <!-- IF not S_IS_BOT -->
+            {% if not S_IS_BOT %}
             <div class="responsive-show" style="display: none;">
                 <!-- IF forumrow.CLICKS -->
                     {L_REDIRECTS}{L_COLON} <strong>{forumrow.CLICKS}</strong>
@@ -75,7 +75,7 @@
                     {L_TOPICS}{L_COLON} <strong>{forumrow.TOPICS}</strong>
                 <!-- ENDIF -->
             </div>
-            <!-- ENDIF -->
+            {% endif %}
         </div>
     </dt>
     <!-- IF forumrow.CLICKS -->
