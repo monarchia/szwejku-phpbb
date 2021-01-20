@@ -59,7 +59,7 @@
         {% if forumrow.MODERATORS %}
         <br /><strong>{forumrow.L_MODERATOR_STR}{L_COLON}</strong> {forumrow.MODERATORS}
         {% endif %}
-        {% if .forumrow.subforum and forumrow.S_LIST_SUBFORUMS %}
+        {% if forumrow.subforum and forumrow.S_LIST_SUBFORUMS %}
         <!-- EVENT forumlist_body_subforums_before -->
                 <br /><strong>{forumrow.L_SUBFORUM_STR}{L_COLON}</strong>
                 <!-- BEGIN subforum -->
