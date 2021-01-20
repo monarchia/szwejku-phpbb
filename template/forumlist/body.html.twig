@@ -65,7 +65,7 @@
                     <li>
                         {% EVENT forumlist_body_subforum_link_prepend %}
                         <a href="{{ forumrow.subforum.U_SUBFORUM }}" class="subforum {{ forumrow.subforum.S_UNREAD ? 'unread' : 'read' }}" title=" {% if forumrow.subforum.S_UNREAD %}{L_UNREAD_POSTS}{% else %}{L_NO_UNREAD_POSTS}{% endif %} ">
-                            {forumrow.subforum.SUBFORUM_NAME} <!-- IF forumrow.subforum.IS_LINK --><i class="icon fa-external-link<!-- ENDIF --> fa-fw" aria-hidden="true"></i>
+                            {forumrow.subforum.SUBFORUM_NAME} <!-- IF forumrow.subforum.IS_LINK --><i class="icon fa-external-link fa-fw" aria-hidden="true"></i><!-- ENDIF -->
                         </a>{% EVENT forumlist_body_subforum_link_append %}
                     </li>
                 <!-- END subforum -->
