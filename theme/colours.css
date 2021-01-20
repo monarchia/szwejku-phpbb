@@ -5,17 +5,10 @@ Colours and backgrounds for common.css
 
 html, body {
 	color: #161616;
-	background-color: #F0D077;
+	background-color: beige;
   	background: url('images/bg.jpg');
 }
 
-h1 {
-	/* color: #FFFFFF; */
-}
-
-h2 {
-	/* color: #28313F; */
-}
 
 h3 {
 	border-bottom-color: #CCCCCC;
@@ -32,7 +25,9 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #105289; }
+a { color: #fc0; 
+	border-bottom: 1px dotted;
+}
 a:hover { color: #D31141; }
 
 /* Links on gradient backgrounds */
@@ -40,9 +35,7 @@ a:hover { color: #D31141; }
 	color: #FFFFFF;
 }
 
-.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
-}
+
 
 /* Notification mark read link */
 .dropdown-extended a.mark_read {
@@ -50,20 +43,7 @@ a:hover { color: #D31141; }
 }
 
 /* Post body links */
-.postlink {
-	border-bottom-color: #368AD2;
-	color: #368AD2;
-}
 
-.postlink:visited {
-	border-bottom-color: #5D8FBD;
-	color: #5D8FBD;
-}
-
-.postlink:hover {
-	background-color: #D0E4F6;
-	color: #0D4473;
-}
 
 .signature a, .signature a:hover {
 	background-color: transparent;
@@ -99,11 +79,6 @@ a:hover { color: #D31141; }
 .forabg {
 	background: #161616;
 	border-radius: unset;
-/*	background-color: #0076B1;
-	background-image: -webkit-linear-gradient(top, #6ACEFF 0%, #12A3EB 2px, #0076B1 92px, #0076B1 100%);
-	background-image: linear-gradient(to bottom, #6ACEFF 0%,#12A3EB 2px,#0076B1 92px,#0076B1 100%);
-	background-repeat: repeat-x;
-	*/
 }
 
 .navbar {
