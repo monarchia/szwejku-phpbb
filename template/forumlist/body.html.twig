@@ -36,12 +36,13 @@
                     {{ forumrow.FORUM_DESC }}
                 </div>
             {% endif %}
-        </header>    
-        <!-- IF forumrow.subforum and forumrow.S_LIST_SUBFORUMS -->
-        {% EVENT forumlist_body_subforums_before %}
+        </header>
+        <div>
         {% if forumrow.MODERATORS %}
         <strong>{forumrow.L_MODERATOR_STR}{L_COLON}</strong> {forumrow.MODERATORS}
         {% endif %}
+        <!-- IF forumrow.subforum and forumrow.S_LIST_SUBFORUMS -->
+        {% EVENT forumlist_body_subforums_before %}
         <ul class="subforums">
             <strong>{forumrow.L_SUBFORUM_STR}{L_COLON}</strong>
             <!-- BEGIN subforum -->
@@ -100,6 +101,7 @@
                     <!-- ENDIF -->
                 </span>
             </dd>
+        </div>
         <!-- ELSE -->
             <dd>&nbsp;</dd>
         <!-- ENDIF -->
