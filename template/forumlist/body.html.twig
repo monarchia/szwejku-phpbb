@@ -49,7 +49,7 @@
                 <span class="forum-image">{% EVENT forumlist_body_forum_image_prepend %}{forumrow.FORUM_IMAGE}{% EVENT forumlist_body_forum_image_append %}</span>
                 {% EVENT forumlist_body_forum_image_after %}
             <!-- ENDIF -->
-            <h3><a href="{forumrow.U_VIEWFORUM}" class="forumtitle {{ forumrow.S_UNREAD_FORUM ?: 'read' }}">{forumrow.FORUM_NAME}</a></h3>
+            <h3><a href="{forumrow.U_VIEWFORUM}" class="forumtitle {{ forumrow.S_UNREAD_FORUM ? 'unread' : 'read' }}">{forumrow.FORUM_NAME}</a></h3>
             {% if not forumrow.S_IS_LINK %}
             <br><small class="topics">{L_TOPICS}: {forumrow.TOPICS}</small> &bull; <small class="posts">{L_POSTS}: {forumrow.POSTS}</small>
             {% endif %}
