@@ -27,7 +27,7 @@
     flex: 2 2 50%;
     justify-self: flex-start;
 }
-forum > header:first-child {
+.forum > header:first-child {
     margin-left: 5rem;
 }
 .forum .subforums {
