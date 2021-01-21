@@ -18,8 +18,12 @@
             {% if forumrow.MODERATORS %}
             <br><strong>{forumrow.L_MODERATOR_STR}{L_COLON}</strong> {forumrow.MODERATORS}
             {% endif %}
+            {% if forumrow.FORUM_DESC %}
+                <div class="description">
+                    {{ forumrow.FORUM_DESC }}
+                </div>
+            {% endif %}
         </header>    
-        <!-- IF forumrow.FORUM_DESC --><br />{forumrow.FORUM_DESC}<!-- ENDIF -->
         <!-- IF .forumrow.subforum and forumrow.S_LIST_SUBFORUMS -->
         {% EVENT forumlist_body_subforums_before %}
         <br>
