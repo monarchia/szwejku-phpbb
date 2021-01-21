@@ -46,7 +46,8 @@
         border-radius: 2px;
         box-shadow: 0 0 6px #161616c0;
         padding: 5px;
-        margin: 3px;
+        margin: 5px;
+        width: 100%;
     }
             .lastpost .meta {
                 display: block;
