@@ -1,17 +1,20 @@
-    .category {
-        background: #161616;
-        background-size: contain;
-        border-radius: 1.5rem;
-        background-repeat: no-repeat;
-    }
-    .category header {
-        color: beige;
-        padding: 1rem;
-        background: linear-gradient(#161616df 10%, transparent 100%);
-    }
-    li.row {
-        background: #fffffff0;
-    }
+.category {
+    background: #161616;
+    background-size: contain;
+    border-radius: 1.5rem;
+    background-repeat: no-repeat;
+}
+.category header {
+    color: beige;
+    padding: 1rem;
+    background: linear-gradient(#161616df 10%, transparent 100%);
+}
+.category header h2 a {
+    color: #ffcc00f0;
+}
+li.row {
+    background: #ffffffc0;
+}
 /* 
  * Subforum links styling
  ************************/
