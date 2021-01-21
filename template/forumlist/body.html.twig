@@ -54,7 +54,7 @@
             <!-- ENDIF -->
             <a href="{forumrow.U_VIEWFORUM}" class="forumtitle {{ forumrow.S_UNREAD_FORUM ? 'unread' : 'read' }}">{forumrow.FORUM_NAME}</a>
             {% if not forumrow.S_IS_LINK %}
-            <br><small>Tematy: {forumrow.TOPICS}  Posty: {forumrow.POSTS}</small>
+            <br><small class="topics">{L_TOPICS}: {forumrow.TOPICS}</small><small class="posts">{L_POSTS}: {forumrow.POSTS}</small>
             {% endif %}
             <!-- IF forumrow.FORUM_DESC --><br />{forumrow.FORUM_DESC}<!-- ENDIF -->
             <!-- IF forumrow.MODERATORS -->
