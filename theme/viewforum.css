@@ -28,7 +28,7 @@
     width: 99%;
 }
 .forum>header {
-    flex: 2 2 25%%;
+    flex: 2 2 25%;
     justify-self: flex-start;
 }
 .forum > header:first-child {
