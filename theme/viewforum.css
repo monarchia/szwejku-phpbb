@@ -21,6 +21,9 @@
     align-self: center;
     flex: 1 1 2rem;
 }
+.forum>header {
+    flex: 2 2 50%;
+}
 /* 
  * Subforum links styling
  ************************/
