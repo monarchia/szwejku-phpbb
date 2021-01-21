@@ -24,6 +24,9 @@
 .forum>header {
     flex: 2 2 50%;
 }
+.forum .subforums {
+    flex: 1 2 25%;
+}
 /* 
  * Subforum links styling
  ************************/
