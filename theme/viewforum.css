@@ -16,6 +16,8 @@
     background: #fffffff0;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+    justify-items: stretch;
 }
 .forum .forum-image {
     align-self: center;
