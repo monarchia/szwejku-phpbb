@@ -22,6 +22,10 @@
 .forum .forum-image {
     align-self: center;
     flex: 1 1 5rem;
+    max-width: 5rem;
+}
+.forum-image img {
+    width: 99%;
 }
 .forum>header {
     flex: 2 2 50%;
