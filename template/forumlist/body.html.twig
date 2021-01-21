@@ -6,7 +6,7 @@
 
 {% EVENT forumlist_body_category_header_before %}
 {% if (forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) %}
-<section class="forum" id="f{{forumrow.FORUM_ID}}">
+<section class="forum" id="f{{ forumrow.FORUM_ID }}">
     <ul class="topiclist forums"></ul>
 {% endif %}
 {% if (forumrow.S_IS_CAT) %}
