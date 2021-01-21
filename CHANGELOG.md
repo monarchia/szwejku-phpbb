@@ -1,3 +1,10 @@
+# v0.1.5
+## 2021-01-21
+1. [](#improved)
+    * Rewrote homepage forum list
+2. [](#new)
+    * Added backgrounds for categories
+
 # v0.1.4
 ## 2021-01-17
 1. [](#fixed)
