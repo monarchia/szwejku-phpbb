@@ -17,6 +17,10 @@
     display: flex;
     justify-content: space-between;
 }
+.forum .forum-image {
+    align-self: center;
+    flex: 1 1 2rem;
+}
 /* 
  * Subforum links styling
  ************************/
