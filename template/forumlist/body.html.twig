@@ -23,8 +23,6 @@
         {% EVENT forumlist_body_category_header_row_prepend %}
         <dl class="row-item">
             <dt class="hide responsive-show"><h3><a href="{{ forumrow.U_VIEWFORUM }}">{{ forumrow.FORUM_NAME }}</a></h3></dt>
-            <dd class="topics">{L_TOPICS}</dd>
-            <dd class="posts">{L_POSTS}</dd>
             <dd class="lastpost"><span>{L_LAST_POST}</span></dd>
         </dl>
         {% EVENT forumlist_body_category_header_row_append %}
@@ -54,7 +52,7 @@
             <!-- ENDIF -->
             <a href="{forumrow.U_VIEWFORUM}" class="forumtitle {{ forumrow.S_UNREAD_FORUM ? 'unread' : 'read' }}">{forumrow.FORUM_NAME}</a>
             {% if not forumrow.S_IS_LINK %}
-            <br><small class="topics">{L_TOPICS}: {forumrow.TOPICS}</small><small class="posts">{L_POSTS}: {forumrow.POSTS}</small>
+            <br><small class="topics">{L_TOPICS}: {forumrow.TOPICS}</small> &bull; <small class="posts">{L_POSTS}: {forumrow.POSTS}</small>
             {% endif %}
             <!-- IF forumrow.FORUM_DESC --><br />{forumrow.FORUM_DESC}<!-- ENDIF -->
             <!-- IF forumrow.MODERATORS -->
@@ -91,8 +89,6 @@
     <!-- IF forumrow.CLICKS -->
         <dd class="redirect"><span>{L_REDIRECTS}{L_COLON} {forumrow.CLICKS}</span></dd>
     <!-- ELSEIF not forumrow.S_IS_LINK -->
-        <dd class="topics">{forumrow.TOPICS} <dfn>{L_TOPICS}</dfn></dd>
-        <dd class="posts">{forumrow.POSTS} <dfn>{L_POSTS}</dfn></dd>
         <dd class="lastpost">
             <span>
                 <!-- IF forumrow.U_UNAPPROVED_TOPICS -->
