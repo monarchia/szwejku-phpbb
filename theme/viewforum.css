@@ -17,15 +17,18 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    justify-items: stretch;
+    justify-items: stretch  ;
 }
 .forum .forum-image {
     align-self: center;
-    flex: 1 1 2rem;
+    flex: 1 1 5rem;
 }
 .forum>header {
     flex: 2 2 50%;
     justify-self: flex-start;
+}
+forum > header:first-child {
+    margin-left: 5rem;
 }
 .forum .subforums {
     flex: 1 3 25%;
