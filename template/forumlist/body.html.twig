@@ -13,7 +13,7 @@
 {% endif %}
 {% EVENT forumlist_body_category_header_after %}
 
-<!-- IF not forumrow.S_IS_CAT -->
+{% if not forumrow.S_IS_CAT %}
 {% EVENT forumlist_body_forum_row_before %}
 <li class="row" title="{forumrow.FORUM_FOLDER_IMG_ALT}">
 {% EVENT forumlist_body_forum_row_prepend %}
@@ -105,7 +105,7 @@
 {% EVENT forumlist_body_forum_row_append %}
 </li>
 {% EVENT forumlist_body_forum_row_after %}
-<!-- ENDIF -->
+{% endif %}
 
 <!-- IF forumrow.S_LAST_ROW -->
 </ul>
