@@ -26,17 +26,17 @@
         <h3><a href="{forumrow.U_VIEWFORUM}" class="forumtitle {{ forumrow.S_UNREAD_FORUM ? 'unread' : 'read' }}">{forumrow.FORUM_NAME}</a></h3>
         {% if not forumrow.S_IS_LINK %}
         <br><small class="topics">{L_TOPICS}: {forumrow.TOPICS}</small> &bull; <small class="posts">{L_POSTS}: {forumrow.POSTS}</small>
+        {% endif %}
         {% if S_ENABLE_FEEDS and forumrow.S_FEED_ENABLED %}
         <a class="feed-icon-forum" title="{L_FEED} - {forumrow.FORUM_NAME}" href="{U_FEED}?f={forumrow.FORUM_ID}">
         <i class="icon fa-rss-square fa-fw icon-orange" aria-hidden="true"></i><span class="sr-only">{L_FEED} - {forumrow.FORUM_NAME}</span>
         </a>
+        {% endif %}
+        {% if forumrow.MODERATORS %}
+        <br><strong>{forumrow.L_MODERATOR_STR}{L_COLON}</strong> {forumrow.MODERATORS}
+        {% endif %}
     </header>    
-    {% endif %}
-    {% endif %}
     <!-- IF forumrow.FORUM_DESC --><br />{forumrow.FORUM_DESC}<!-- ENDIF -->
-    <!-- IF forumrow.MODERATORS -->
-    <br><strong>{forumrow.L_MODERATOR_STR}{L_COLON}</strong> {forumrow.MODERATORS}
-    <!-- ENDIF -->
     <!-- IF .forumrow.subforum and forumrow.S_LIST_SUBFORUMS -->
     {% EVENT forumlist_body_subforums_before %}
     <br>
