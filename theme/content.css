@@ -148,7 +148,7 @@ dl.row-item dt {
 }
 
 dl.row-item dt .list-inner {
-	padding-left: 52px;					/* Space for folder icon */
+	padding: 1em;
 }
 
 dl.row-item dt, dl.row-item dd {
