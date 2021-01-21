@@ -29,7 +29,7 @@
                 {% endif %}
             </h3>
             {% if not forumrow.S_IS_LINK %}
-            <br><small class="topics">{L_TOPICS}: {forumrow.TOPICS}</small> &bull; <small class="posts">{L_POSTS}: {forumrow.POSTS}</small>
+            <small class="topics">{L_TOPICS}: {forumrow.TOPICS}</small>&bull;<small class="posts">{L_POSTS}: {forumrow.POSTS}</small>
             {% endif %}
             {% if forumrow.MODERATORS %}
             <br><strong>{forumrow.L_MODERATOR_STR}{L_COLON}</strong> {forumrow.MODERATORS}
