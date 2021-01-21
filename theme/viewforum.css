@@ -47,6 +47,6 @@ a.subforum {
     border-bottom: 1px dotted;
 }
 .unread {
-    color: #f08080;
-    font-weight: bolder;
+    color:#b22222;
+    font-weight: bold;
 }
