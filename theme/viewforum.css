@@ -12,7 +12,7 @@
 .category>header h2 a {
     color: #ffcc00f0;
 }
-li.row {
+.forum {
     background: #fffffff0;
     display: flex;
 }
