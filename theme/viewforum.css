@@ -15,6 +15,7 @@
 .forum {
     background: #fffffff0;
     display: flex;
+    justify-content: space-between;
 }
 /* 
  * Subforum links styling
