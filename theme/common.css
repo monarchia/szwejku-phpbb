@@ -1203,7 +1203,6 @@ ul.linklist:after,
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
-	align-items: baseline;
 }
 .stats > * {
 	background-color: antiquewhite;
@@ -1215,7 +1214,7 @@ ul.linklist:after,
 	flex: 2 1 30%;
 }
 .login-form {
-	flex: 2 1 30%;
+	flex: 1 1 30%;
 }
 .statistics ul li {
 	list-style: none;
