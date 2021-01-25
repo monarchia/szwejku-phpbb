@@ -12,15 +12,14 @@
 <!-- IF S_FORUM_RULES -->
 {% include "viewforum/rules.html.twig" %}
 <!-- ENDIF -->
-
-<!-- IF S_HAS_SUBFORUM -->
+{% if S_HAS_SUBFORUM %}
 <!-- IF not S_IS_BOT and U_MARK_FORUMS -->
 	<div class="action-bar compact">
 		<a href="{U_MARK_FORUMS}" class="mark-read rightside" data-ajax="mark_forums_read">{L_MARK_SUBFORUMS_READ}</a>
 	</div>
 <!-- ENDIF -->
 	<!-- INCLUDE forumlist_body.html -->
-<!-- ENDIF -->
+{% endif %}
 
 <!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->
 	<div class="action-bar bar-top">
