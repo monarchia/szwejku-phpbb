@@ -1,0 +1,10 @@
+<div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
+    <div class="inner">
+    {% if U_FORUM_RULES %}
+        <a href="{U_FORUM_RULES}">{L_FORUM_RULES}</a>
+    {% else %}
+        <strong>{L_FORUM_RULES}</strong><br />
+        {FORUM_RULES}
+    {% endif %}
+    </div>
+</div>
