@@ -1207,8 +1207,9 @@ ul.linklist:after,
 .stats > * {
 	margin: 0.5em;
 	background-color: antiquewhite;
+	min-width: 200px;
 }
-.stat-block h3 {
+.stats > * h3 {
 	background-color: #161616;
 	padding: 1em;
 }
