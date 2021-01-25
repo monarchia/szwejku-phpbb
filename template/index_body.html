@@ -3,7 +3,7 @@
  -->
 
 <!-- INCLUDE overall_header.html -->
-<div class="action-bar bar-top">
+
 {% block time %}
 	<div class="time rightside">
 		{% if S_USER_LOGGED_IN %}{{ LAST_VISIT_DATE }}{% endif %}
@@ -15,8 +15,6 @@
 		<a href="{U_MARK_FORUMS}" class="mark-read button" accesskey="m" data-ajax="mark_forums_read">{L_MARK_FORUMS_READ}</a>
 <!-- ENDIF -->
 <!-- EVENT index_body_markforums_after -->
-</div>
-</div>
 <!-- INCLUDE forumlist_body.html -->
 
 <!-- EVENT index_body_forumlist_body_after -->
