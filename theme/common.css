@@ -1199,3 +1199,14 @@ ul.linklist:after,
 	display: flex;
 	justify-content: space-between;
 }
+.stats {
+	display: flex;
+	justify-content: space-evenly;
+}
+.stat-block {
+	background: #161616;
+}
+.stat-block p {
+	display: block;
+	background: whitesmoke;
+}
