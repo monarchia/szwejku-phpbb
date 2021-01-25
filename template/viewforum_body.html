@@ -2,7 +2,7 @@
 	viewforum_body.html
  -->
 <!-- INCLUDE overall_header.html -->
-<section id="f-{{ FORUM_ID }}" class="viewforum" >
+<section id="f-{{ FORUM_ID }}" class="viewforum" >	
 	<header>
 		<!-- EVENT viewforum_forum_title_before -->
 		<h2 class="forum-title"><!-- EVENT viewforum_forum_name_prepend --><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a><!-- EVENT viewforum_forum_name_append --></h2>
@@ -32,7 +32,12 @@
 	<!-- ENDIF -->
 	<!-- INCLUDE forumlist_body.html -->
 <!-- ENDIF -->
-
+<!-- EVENT viewforum_body_topic_row_before -->
+<div class="topicrow">
+	{% block topicrow %}
+	TOPICROW
+	{% endblock topicrow %}
+</div>
 <!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->
 	<div class="action-bar bar-top">
 
@@ -125,12 +130,7 @@
 
 <!-- ENDIF -->
 
-<!-- EVENT viewforum_body_topic_row_before -->
-<div class="topicrow">
-	{% block topicrow %}
-	TOPICROW
-	{% endblock topicrow %}
-</div>
+
 <!-- IF .topicrow and not S_DISPLAY_ACTIVE -->
 	<div class="action-bar bar-bottom">
 		<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
