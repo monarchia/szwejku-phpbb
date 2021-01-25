@@ -1207,12 +1207,13 @@ ul.linklist:after,
 }
 .stats > * {
 	background-color: antiquewhite;
-	flex: 1 1 200px%;
 }
 .stats > * h3 {
 	background-color: #161616;
 }
-
+.online-list {
+	flex: 2 1 30%;
+}
 .statistics ul li {
 	list-style: none;
 }
