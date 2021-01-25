@@ -27,7 +27,7 @@
 <!-- IF S_HAS_SUBFORUM -->
 	<!-- IF not S_IS_BOT and U_MARK_FORUMS -->
 		<div class="action-bar compact">
-			<a href="{U_MARK_FORUMS}" class="mark-read rightside" data-ajax="mark_forums_read">{L_MARK_SUBFORUMS_READ}</a>
+			<a href="{U_MARK_FORUMS}" class="mark-read button" data-ajax="mark_forums_read">{L_MARK_SUBFORUMS_READ}</a>
 		</div>
 	<!-- ENDIF -->
 	<!-- INCLUDE forumlist_body.html -->
@@ -268,9 +268,9 @@
 
 			<a href="{U_POST_NEW_TOPIC}" class="button" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->">
 			<!-- IF S_IS_LOCKED -->
-				<span>{L_BUTTON_FORUM_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
+			<i class="icon fa-lock fa-fw" aria-hidden="true"></i><span>{L_BUTTON_FORUM_LOCKED}</span>
 			<!-- ELSE -->
-				<span>{L_BUTTON_NEW_TOPIC}</span> <i class="icon fa-pencil fa-fw" aria-hidden="true"></i>
+			<i class="icon fa-pencil fa-fw" aria-hidden="true"></i><span>{L_BUTTON_NEW_TOPIC}</span>
 			<!-- ENDIF -->
 			</a>
 
