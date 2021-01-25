@@ -4,8 +4,7 @@
 
 <!-- INCLUDE overall_header.html -->
 {% block time %}
-<p class="{S_CONTENT_FLOW_END} time"><!-- IF S_USER_LOGGED_IN -->{LAST_VISIT_DATE}<!-- ELSE -->{CURRENT_TIME}<!-- ENDIF --></p>
-<!-- IF S_USER_LOGGED_IN --><p class="time">{CURRENT_TIME}</p><!-- ENDIF -->	
+<span class="time rightside"> {{ LAST_VISIT_DATE }} {{ CURRENT_TIME }} </span>
 {% endblock time %}
 
 <!-- EVENT index_body_markforums_before -->
