@@ -1,3 +1,6 @@
+<!-- 
+	overall_header.html
+ -->
 <!DOCTYPE html>
 <html dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}">
 <head>
@@ -5,21 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 {%- set TITLE %}
-	{% if UNREAD_NOTIFICATIONS_COUNT %}
-	({{ UNREAD_NOTIFICATIONS_COUNT }})
-	{% endif %}
-	{% if not S_VIEWTOPIC and not S_VIEWFORUM %}
-	{{ SITENAME }} - 
-	{% endif %}
-	{% if S_IN_MCP %}
-		{{ L_MCP }} - 
-	{% elseif S_IN_UCP %}
-		{{ L_UCP }} - 
-	{% endif %}
-	{{ PAGE_TITLE }} -
-	{% if S_VIEWTOPIC or S_VIEWFORUM %}
-	{{ SITENAME }}
-	{% endif %}
+	{% if UNREAD_NOTIFICATIONS_COUNT %}	({{ UNREAD_NOTIFICATIONS_COUNT }})	{% endif %}	{% if not S_VIEWTOPIC and not S_VIEWFORUM %}	{{ SITENAME }} - 	{% endif %}	{% if S_IN_MCP %}		{{ L_MCP }} - 	{% elseif S_IN_UCP %}		{{ L_UCP }} - 	{% endif %}	{{ PAGE_TITLE }} -	{% if S_VIEWTOPIC or S_VIEWFORUM %}	{{ SITENAME }}	{% endif %}
 {% endset -%}
 <title>{{ TITLE }}</title>
 <!-- IF S_ENABLE_FEEDS -->
