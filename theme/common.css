@@ -1225,6 +1225,9 @@ ul.linklist:after,
 .panel {
 	background-color: rgba(255, 245, 238, 0.664);
 }
-.forabg dl {
+ul dl {
 	background-image: unset;
   }
+.action-bar {
+	background: #fff5eecc;
+}
