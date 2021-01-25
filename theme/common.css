@@ -1205,9 +1205,11 @@ ul.linklist:after,
 	justify-content: space-evenly;
 }
 .stats > * {
-	padding: 0.5em; 
 	background-color: antiquewhite;
 }
 .stats > * h3 {
 	background-color: #161616;
+}
+.statistics ul li {
+	list-style: none;
 }
