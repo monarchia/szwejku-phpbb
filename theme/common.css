@@ -1207,7 +1207,6 @@ ul.linklist:after,
 .stats > * {
 	margin: 0.5em;
 	background-color: antiquewhite;
-	min-width: 200px;
 }
 .stats > * h3 {
 	background-color: #161616;
