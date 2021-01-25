@@ -1201,6 +1201,7 @@ ul.linklist:after,
 }
 .stats {
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-evenly;
 }
 .stats > * {
@@ -1209,5 +1210,5 @@ ul.linklist:after,
 }
 .stat-block h3 {
 	background-color: #161616;
-	padding: 1em auto;
+	padding: 1em;
 }
