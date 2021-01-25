@@ -1,3 +1,9 @@
+<!-- 
+{% for l in loops|keys %}
+{{ l }}
+{% endfor %}
+-->
+
 <!-- BEGIN forumrow -->
 	{% if (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  %}
 </section>
@@ -10,10 +16,9 @@
 {% include "forumlist/category.html.twig" %}
 {% endif %}
 {% EVENT forumlist_body_category_header_after %}
-
 {% if not forumrow.S_IS_CAT %}
 {% EVENT forumlist_body_forum_row_before %}
-<section class="forum" id="f-{{ forumrow.FORUM_ID }}" title="{forumrow.FORUM_FOLDER_IMG_ALT}">
+<section class="forum {{ forumrow.S_IS_LINK ? 'link' }}" id="f-{{ forumrow.FORUM_ID }}" title="{{ forumrow.FORUM_FOLDER_IMG_ALT }}">
     {% EVENT forumlist_body_forum_row_prepend %}
         {% if forumrow.FORUM_IMAGE %}
         {% EVENT forumlist_body_forum_image_before %}
