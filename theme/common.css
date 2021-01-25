@@ -1207,19 +1207,12 @@ ul.linklist:after,
 }
 .stats > * {
 	background-color: antiquewhite;
+	flex: 1 1 30%;
 }
 .stats > * h3 {
 	background-color: #161616;
 }
-.online-list{
-	flex: auto 30%;
-}
-.birthday-list {
-	flex: 0 0 30%;
-}
-.statistics {
-	flex: 1 1 30%;
-}
+
 .statistics ul li {
 	list-style: none;
 }
