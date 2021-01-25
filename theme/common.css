@@ -1204,9 +1204,10 @@ ul.linklist:after,
 	justify-content: space-evenly;
 }
 .stats > * {
-	margin: 1.5em;
+	margin: 0.5em;
 	background-color: antiquewhite;
 }
 .stat-block h3 {
-
+	background-color: #161616;
+	padding: 1em auto;
 }
