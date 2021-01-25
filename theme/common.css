@@ -1207,7 +1207,7 @@ ul.linklist:after,
 }
 .stats > * {
 	background-color: antiquewhite;
-	flex: 1 1 30%;
+	flex: 1 1 200px%;
 }
 .stats > * h3 {
 	background-color: #161616;
