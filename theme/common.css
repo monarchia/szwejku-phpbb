@@ -1214,6 +1214,9 @@ ul.linklist:after,
 .online-list {
 	flex: 2 1 30%;
 }
+.login-form {
+	flex: 2 1 30%;
+}
 .statistics ul li {
 	list-style: none;
 }
