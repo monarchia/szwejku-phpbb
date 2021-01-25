@@ -128,7 +128,6 @@
 
 <!-- EVENT viewforum_body_topic_row_before -->
 
-{% block topicrow %}
 <!-- BEGIN topicrow -->
 
 	<!-- IF not topicrow.S_TOPIC_TYPE_SWITCH and not topicrow.S_FIRST_ROW -->
@@ -140,7 +139,7 @@
 	<!-- IF topicrow.S_FIRST_ROW or not topicrow.S_TOPIC_TYPE_SWITCH -->
 		<div class="forumbg<!-- IF topicrow.S_TOPIC_TYPE_SWITCH and (topicrow.S_POST_ANNOUNCE or topicrow.S_POST_GLOBAL) --> announcement<!-- ENDIF -->">
 		<div class="inner">
-		<ul class="topiclist topics">
+		<ul class="topiclist">
 			<li class="header">
 				<dl class="row-item">
 					<dt<!-- IF S_DISPLAY_ACTIVE --> id="active_topics"<!-- ENDIF -->><div class="list-inner"><!-- IF S_DISPLAY_ACTIVE -->{L_ACTIVE_TOPICS}<!-- ELSEIF topicrow.S_TOPIC_TYPE_SWITCH and (topicrow.S_POST_ANNOUNCE or topicrow.S_POST_GLOBAL) -->{L_ANNOUNCEMENTS}<!-- ELSE -->{L_TOPICS}<!-- ENDIF --></div></dt>
@@ -149,6 +148,8 @@
 					<dd class="lastpost"><span>{L_LAST_POST}</span></dd>
 				</dl>
 			</li>
+		</ul>
+		<ul class="topiclist topics">
 	<!-- ENDIF -->
 
 		<!-- EVENT viewforum_body_topicrow_row_before -->
@@ -259,7 +260,6 @@
 	</div>
 	<!-- ENDIF -->
 <!-- END topicrow -->
-{% endblock topicrow %}
 
 <!-- IF .topicrow and not S_DISPLAY_ACTIVE -->
 	<div class="action-bar bar-bottom">
