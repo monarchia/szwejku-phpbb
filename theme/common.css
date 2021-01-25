@@ -1203,10 +1203,10 @@ ul.linklist:after,
 	display: flex;
 	justify-content: space-evenly;
 }
-.stat-block {
-	background: #161616;
+.stats > * {
+	margin: 1.5em;
+	background-color: antiquewhite;
 }
-.stat-block p {
-	display: block;
-	background: whitesmoke;
+.stat-block h3 {
+
 }
