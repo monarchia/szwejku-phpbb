@@ -126,9 +126,11 @@
 <!-- ENDIF -->
 
 <!-- EVENT viewforum_body_topic_row_before -->
-{% block topicrow %}
-TOPICROW
-{% endblock topicrow %}
+<div class="topicrow">
+	{% block topicrow %}
+	TOPICROW
+	{% endblock topicrow %}
+</div>
 <!-- IF .topicrow and not S_DISPLAY_ACTIVE -->
 	<div class="action-bar bar-bottom">
 		<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
