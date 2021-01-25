@@ -67,11 +67,14 @@
 <!-- IF NEWEST_USER -->
 	<div class="stat-block statistics">
 		<h3>{L_STATISTICS}</h3>
-		<p>
+		<ul>
 			<!-- EVENT index_body_block_stats_prepend -->
-			{TOTAL_POSTS} &bull; {TOTAL_TOPICS} &bull; {TOTAL_USERS} &bull; {NEWEST_USER}
+			<li>{TOTAL_POSTS}</li>
+			<li> {TOTAL_TOPICS}</li>
+			<li> {TOTAL_USERS}</li>
+			<li>{NEWEST_USER}</li>
 			<!-- EVENT index_body_block_stats_append -->
-		</p>
+		</ul>
 	</div>
 <!-- ENDIF -->
 </aside>
