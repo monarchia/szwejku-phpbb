@@ -1205,7 +1205,7 @@ ul.linklist:after,
 	justify-content: space-evenly;
 }
 .stats > * {
-	margin: 0.5em;
+	/* margin: 0.5em; */
 	background-color: antiquewhite;
 }
 .stats > * h3 {
