@@ -2,16 +2,15 @@
 	viewforum_body.html
  -->
 <!-- INCLUDE overall_header.html -->
-<section id="f-{{ FORUM_ID }}" class="category" >
-	{{ FORUM_IMAGE }}
+<section id="f-{{ FORUM_ID }}" class="forum" >
+	{{ FORUM_IMAGE_SRC }}
 <header>
 	<!-- EVENT viewforum_forum_title_before -->
 	<h2 class="forum-title"><!-- EVENT viewforum_forum_name_prepend --><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a><!-- EVENT viewforum_forum_name_append --></h2>
 	<!-- EVENT viewforum_forum_title_after -->
 	<!-- IF FORUM_DESC --><div class="description">{FORUM_DESC}<br /></div><!-- ENDIF -->
 	<!-- IF MODERATORS --><p><strong><!-- IF S_SINGLE_MODERATOR -->{L_MODERATOR}<!-- ELSE -->{L_MODERATORS}<!-- ENDIF -->{L_COLON}</strong> {MODERATORS}</p><!-- ENDIF -->
-</header>
-<!-- IF S_FORUM_RULES -->
+	<!-- IF S_FORUM_RULES -->
 	<div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
 		<div class="inner">
 
@@ -25,7 +24,7 @@
 		</div>
 	</div>
 <!-- ENDIF -->
-
+</header>
 <!-- IF S_HAS_SUBFORUM -->
 <!-- IF not S_IS_BOT and U_MARK_FORUMS -->
 	<div class="action-bar compact">
