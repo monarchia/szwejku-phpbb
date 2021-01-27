@@ -2,11 +2,7 @@
 main:
   css:
     theme: 
-      'css/style.css': {}
-fonts:
-  css:
-    theme:
-      'common/fonts/style.css': {}
+      'style/css/style.css': {}
 picnic:
   remote: https://github.com/franciscop/picnic
   version: 6.5.4
