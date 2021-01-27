@@ -58,15 +58,14 @@
             }
     .link .forum-image {
         order: 2;
-        max-width: unset;
-        width: auto;
-        flex: 3 0 50%;
+        max-width: 60%;
+        width: auto;;
     }
     .link .forum-image img {
         width: unset;
     }
     .link header {
-        flex: 2 1 auto;
+        flex: 1 1 30%;
         align-self: center;
     }
 .moderators {
