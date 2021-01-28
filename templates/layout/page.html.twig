@@ -67,6 +67,11 @@
       {{ page.content }}
     </div>{# /.layout-content #}
 
+    <aside>
+      {% if (page.sidebar_first or page.sidebar_second) %}
+        Mamy sidebar!
+      {% endif %}
+    </aside>
     {% if page.sidebar_first %}
       <aside class="layout-sidebar-first two" role="complementary">
         {{ page.sidebar_first }}
