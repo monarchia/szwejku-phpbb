@@ -21,6 +21,9 @@
         height: 1.5rem;
     }
 }
+.content {
+    max-width: 1110px;
+}
 // Change style for links inside nav block
 nav[id*="block"] ul,
 div[id*="block"] ol
