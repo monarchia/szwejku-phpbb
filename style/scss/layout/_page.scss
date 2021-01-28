@@ -23,6 +23,11 @@
 }
 .content {
     max-width: 1110px;
+    margin: auto;
+
+    main {
+        flex: 1 1 min-content;
+    }
 }
 // Change style for links inside nav block
 nav[id*="block"] ul,
