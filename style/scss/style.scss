@@ -1,3 +1,4 @@
 $shared: "//plik.austro-wegry.org/common/";
 
-@import 'colours', 'fonts', 'overrides', 'common', 'layout';
+@import 'variables/colours';
+@import 'theme', 'layout';
