@@ -16,6 +16,9 @@
             height: 4rem;
         }
     }
+    & nav {
+        height: 1.5rem;
+    }
 }
 // Change style for links inside nav block
 nav[id*="block"] ul {
