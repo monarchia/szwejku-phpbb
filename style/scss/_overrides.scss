@@ -26,3 +26,7 @@ nav[role=menubar] {
     transition: all .3s;
     transform-style: preserve-3d;
 }
+
+.label, [data-tooltip]::after, button, .button, [type="submit"], .dropimage {
+    background: $success;
+}
