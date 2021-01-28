@@ -21,8 +21,7 @@
     }
 }
 // Change style for links inside nav block
-div[id*="block"] ul,
-div[id*="block"] ol
+div[id*="block"] ul ol, nav[id*="block"] ol ul
 {
     margin: unset;
     list-style: none;
