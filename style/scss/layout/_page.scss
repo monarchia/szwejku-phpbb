@@ -29,4 +29,8 @@
 nav ul, nav ol{
     margin: unset;
     list-style: none;
+
+    li {
+        display: inline-block;
+    }
 }
