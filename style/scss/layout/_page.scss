@@ -26,7 +26,8 @@
     margin: auto;
 
     main {
-        flex: 1 1 content;
+        max-width: 1110px;
+        margin: auto;
     }
 }
 // Change style for links inside nav block
