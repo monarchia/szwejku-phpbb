@@ -6,7 +6,7 @@
     font-family: 'Aladin Regular';
     font-style: normal;
     font-weight: normal;
-    src: url($fonts+"/Aladin-Regular.woff2") format('woff2');
+    src: local('Aladin'), url($fonts+"/Aladin-Regular.woff2") format('woff2');
 }
 @font-face{
     font-family: 'Forum Regular';
@@ -17,4 +17,8 @@
 
 html, html body {
     font-family: 'Forum', Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Aladin';
 }
