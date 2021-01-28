@@ -51,7 +51,13 @@
       <div id="header-top" role="menubar">{{ page.primary_menu }}</div>
       <div id="header-bot" role="menubar">{{ page.secondary_menu }}</div>
     </div>
-    <div class="right">{{ page.user_menu }}</div>
+    <div class="right">
+      {% if logged_in %}
+      {{ page.user_menu }}
+      {% else %}
+      <a href="/user/login" class="button">Logowanie</a>
+      {% endif %}
+    </div>
   </header>
 
   {{ page.breadcrumb }}
