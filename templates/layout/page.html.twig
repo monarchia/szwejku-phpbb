@@ -57,9 +57,9 @@
       {% endif %}
     </div>
   </header>
-  <div class="flex two four-500 six-800">
+  <div class="flex one two-500 three-800">
   <a id="main-content" class="none" tabindex="-1"></a>{# link is in html.html.twig #}
-  <main role="main">
+  <main role="main" class="full half-500">
     {{ page.breadcrumb }}
 
     {{ page.highlighted }}
@@ -70,13 +70,13 @@
   </main>
 
   {% if page.sidebar_first %}
-  <aside class="layout-sidebar-first sidebar two" role="complementary">
+  <aside class="layout-sidebar-first sidebar" role="complementary">
     {{ page.sidebar_first }}
   </aside>
 {% endif %}
 
 {% if page.sidebar_second %}
-  <aside class="layout-sidebar-second sidebar two" role="complementary">
+  <aside class="layout-sidebar-second sidebar" role="complementary">
     {{ page.sidebar_second }}
   </aside>
 {% endif %}
