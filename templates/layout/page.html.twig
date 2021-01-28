@@ -45,10 +45,12 @@
 #}
 <div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-    <nav id="header-top" role="menubar">{{ page.primary_menu }}</nav>
-    <nav id="header-bot" role="menubar">{{ page.secondary_menu }}</nav>
+  <header role="banner" class="flex">
+    <div class="brand">{{ page.header }}</div>
+    <div class="half">
+      <nav id="header-top" role="menubar">{{ page.primary_menu }}</nav>
+      <nav id="header-bot" role="menubar">{{ page.secondary_menu }}</nav>
+    </div>
   </header>
 
   {{ page.breadcrumb }}
