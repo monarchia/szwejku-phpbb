@@ -7,7 +7,11 @@
     height: 3rem;
     justify-content: space-evenly;
 
-&.brand{
-    max-width: 40%;
-}
+    & .brand{
+        max-width: 40%;
+
+        $ img {
+            height: 4rem;
+        }
+    }
 }
