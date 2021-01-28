@@ -15,3 +15,11 @@
         }
     }
 }
+// Change style for links inside nav block
+nav[id*="block"] ul {
+    margin: unset;
+    list-style: none;
+    li {
+        display: inline-block;
+    }
+}
