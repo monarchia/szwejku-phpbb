@@ -1,7 +1,7 @@
 {
  "name": "monarchia/szwejku",
  "type": "drupal-theme",
- "version": "0.1.0-dev",
+ "version": "0.1.1-dev",
  "description": "Drupal theme for MAW",
  "require": {
     "composer/installers": "^1.7",
