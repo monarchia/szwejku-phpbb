@@ -9,12 +9,3 @@
     $danger: #e45735;
     $success: #228B22;
     $love: #D31141;
-
-html, html body {
-    a {
-        color: $tertiary;
-    &:hover {
-        color: $love;
-    }
-    }
-}

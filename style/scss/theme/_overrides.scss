@@ -28,5 +28,6 @@ nav[role=menubar] {
 }
 
 .label, [data-tooltip]::after, button, .button, [type="submit"], .dropimage {
-    background: $success;
+    background: $tertiary;
+    font-weight: bolder;
 }

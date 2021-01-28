@@ -7,4 +7,13 @@ html, html body {
 // Some basic padding so that fixed elements don't cover contents
 html body {
     padding: 3em 0;
+
+    a {
+        color: $tertiary;
+    &:hover {
+        color: $love;
+    }
+    }
 }
+
+    
