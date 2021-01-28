@@ -57,7 +57,7 @@
       {% endif %}
     </div>
   </header>
-
+  <div class="content">
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}
@@ -68,18 +68,19 @@
   <main role="main" class="flex">
       {{ page.content }}
   </main>
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first sidebar two" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
+  {% if page.sidebar_first %}
+  <aside class="layout-sidebar-first sidebar two" role="complementary">
+    {{ page.sidebar_first }}
+  </aside>
+{% endif %}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second sidebar two" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+{% if page.sidebar_second %}
+  <aside class="layout-sidebar-second sidebar two" role="complementary">
+    {{ page.sidebar_second }}
+  </aside>
+{% endif %}
 
+  </div>
   {% if page.footer %}
     <footer id="footer-main" role="contentinfo" class="flex flex">
       {{ page.footer }}
