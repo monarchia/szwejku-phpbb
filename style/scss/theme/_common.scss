@@ -4,3 +4,7 @@
 html, html body {
     background: url('//plik.austro-wegry.org/common/images/bg.webp');
 }
+// Some basic padding so that fixed elements don't cover contents
+html body {
+    padding: 0 3em;
+}
