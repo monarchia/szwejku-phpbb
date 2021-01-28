@@ -70,7 +70,7 @@
   </main>
 
   {% if page.sidebar_first %}
-  <aside class="layout-sidebar-first sidebar" role="complementary">
+  <aside class="layout-sidebar-first sidebar {{ page.sidebar_second ?: 'third' }}" role="complementary">
     {{ page.sidebar_first }}
   </aside>
   {% endif %}
