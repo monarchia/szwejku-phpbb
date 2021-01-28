@@ -1,3 +1,12 @@
 #header-bot {
     top: 3em;
 }
+#main-header {
+    width: 100vw;
+    background: url($shared"images/texture.png"), linear-gradient(#161616 50%, #fc0 50%);
+    height: 3rem;
+
+&.brand{
+    max-width: 40%;
+}
+}
