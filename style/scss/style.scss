@@ -1,7 +1,2 @@
-/*
-    Main styling
-*/
-html, html body {
-    background: url('//plik.austro-wegry.org/common/images/bg.webp');
-}
-@import 'fonts', 'overrides';
+$shared: "//plik.austro-wegry.org/common/";
+@import 'fonts', 'overrides', 'common';
