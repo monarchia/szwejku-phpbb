@@ -58,15 +58,15 @@
     </div>
   </header>
   <div class="content flex">
-  {{ page.breadcrumb }}
-
-  {{ page.highlighted }}
-
-  {{ page.help }}
-
   <a id="main-content" class="none" tabindex="-1"></a>{# link is in html.html.twig #}
   <main role="main">
-      {{ page.content }}
+    {{ page.breadcrumb }}
+
+    {{ page.highlighted }}
+  
+    {{ page.help }}
+  
+    {{ page.content }}
   </main>
 
   {% if page.sidebar_first %}
