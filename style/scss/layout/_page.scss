@@ -1,8 +1,13 @@
 #header-bot {
     top: 3em;
 }
+
+.layout-container{
+    max-width: 1110px;
+}
+
 #main-header {
-    width: 100vw;
+    width: 100%;
     background: url($shared+"images/texture.png"), linear-gradient(#161616 50%, #fc0 50%);
     height: 3rem;
     justify-content: space-evenly;
