@@ -8,10 +8,13 @@
     $highlight: #7fff00;
     $danger: #e45735;
     $success: #228B22;
-    $love: #b22222;
+    $love: #D31141;
 
 html, html body {
     a {
-        color: $tertiary
+        color: $tertiary;
+    &:hover {
+        color: $love;
+    }
     }
 }
