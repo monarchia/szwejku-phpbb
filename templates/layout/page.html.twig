@@ -57,7 +57,7 @@
       {% endif %}
     </div>
   </header>
-  <div class="content">
+  <div class="content flex">
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}
@@ -65,9 +65,10 @@
   {{ page.help }}
 
   <a id="main-content" class="none" tabindex="-1"></a>{# link is in html.html.twig #}
-  <main role="main" class="flex">
+  <main role="main">
       {{ page.content }}
   </main>
+
   {% if page.sidebar_first %}
   <aside class="layout-sidebar-first sidebar two" role="complementary">
     {{ page.sidebar_first }}
