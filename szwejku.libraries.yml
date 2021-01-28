@@ -1,4 +1,6 @@
 # szwejku.libraries.yml
+regions:
+  user_menu: 'User menu'
 main:
   css:
     theme: 
