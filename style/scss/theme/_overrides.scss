@@ -1,0 +1,33 @@
+//  Remove Picnic styling from all NAV elements
+nav {
+    position: unset;
+    top: unset;
+    left: unset;
+    right: unset;
+    height: unset;
+    padding: unset;
+    background: unset;
+    box-shadow: unset;
+    z-index: unset;
+    transition: unset;
+    transform-style: unset;
+}
+
+nav[role=menubar] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    // height: 3em;
+    padding: 0 .6em;
+    background: #fff;
+    box-shadow: 0 0 0.2em rgba(170,170,170,0.2);
+    z-index: 10000;
+    transition: all .3s;
+    transform-style: preserve-3d;
+}
+
+.label, [data-tooltip]::after, button, .button, [type="submit"], .dropimage {
+    background: $tertiary;
+    font-weight: bolder;
+}

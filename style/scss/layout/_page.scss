@@ -1,0 +1,36 @@
+#header-bot {
+    top: 3em;
+}
+
+#main-header {
+    // width: 100vw;
+    background: url($shared+"images/texture.png"), linear-gradient(#161616 50%, #fc0 50%);
+    height: 3rem;
+    justify-content: space-evenly;
+
+    & * {
+        flex: unset;
+    }
+    & .brand{
+        max-width: 40%;
+        & img {
+            height: 4rem;
+        }
+    }
+    & nav {
+        height: 1.5rem;
+    }
+}
+.content {
+    max-width: 1110px;
+    margin: auto;
+}
+// Change style for links inside nav block
+nav ul, nav ol{
+    margin: unset;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+}
