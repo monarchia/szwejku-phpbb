@@ -14,4 +14,4 @@
  * @see template_preprocess_menu_local_task()
  */
 #}
-<li{{ attributes }}>{{ text url }}</li>
+<li class="button {{ is_active ?: 'pseudo' }}">{{ link }}</li>
