@@ -32,7 +32,7 @@
  */
 #}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<ul role="navigation" id="{{ heading_id }}" class="block system-menu"  aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby')}}>
+<div role="navigation" id="{{ heading_id }}" class="block system-menu"  aria-labelledby="{{ heading_id }}"{{ attributes|without('role', 'aria-labelledby')}}>
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('visually-hidden') %}
@@ -40,9 +40,8 @@
   {{ title_prefix }}
   <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
   {{ title_suffix }}
-
   {# Menu. #}
   {% block content %}
-    {{ content }}
+  {{ content }}
   {% endblock %}
-</ul>
+</div>
