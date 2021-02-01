@@ -1,0 +1,16 @@
+.system-menu .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    }
+.menu-item {
+    .menu{
+    display: none;
+    }
+    :hover .menu,
+    :active .menu{
+        display: block;
+    }
+}

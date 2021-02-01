@@ -15,12 +15,3 @@
     margin: auto;
     margin-top: 4em;
 }
-// Change style for links inside nav block
-nav ul, nav ol{
-    margin: unset;
-    list-style: none;
-
-    li {
-        display: inline-block;
-    }
-}
