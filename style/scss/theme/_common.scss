@@ -6,8 +6,6 @@ html, html body {
 }
 // Some basic padding so that fixed elements don't cover contents
 html body {
-    padding: 3em 0 !important;
-
     a {
         color: $tertiary;
     &:hover {
