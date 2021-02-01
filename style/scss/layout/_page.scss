@@ -2,6 +2,9 @@
     background: url($shared+"images/texture.png"), linear-gradient(#161616 50%, #fc0 50%);
     height: 4.5em;
     justify-content: space-evenly;
+    .inner{
+        max-width: 1400px;
+    }
 }
 .content {
     max-width: 1400px;
