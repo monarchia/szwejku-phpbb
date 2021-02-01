@@ -17,11 +17,8 @@ html body {
 }
 button, .button {
     color: #fc0;
-    font-family: 'Aladin';
-    border: 3px ridge #fc0;
-    border-radius: 2em;
-    box-shadow: 0 0 2px black;
-}
-button, .button, [type="submit"], .dropimage {
-    background-color: #161616;
+background: black;
+border: 3px ridge #fc0;
+border-radius: 2em;
+box-shadow: 0 0 2px black;
 }
