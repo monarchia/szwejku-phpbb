@@ -1,9 +1,13 @@
 #main-header {
     background: url($shared+"images/texture.png"), linear-gradient(#161616 50%, #fc0 50%);
-    height: 4.5em;
-    justify-content: space-evenly;
+    height: 3em;
+    width: 100%;
     .inner{
         max-width: 1400px;
+        margin: auto;
+        .branding img {
+            height: 4rem;
+        }
     }
 }
 .content {
