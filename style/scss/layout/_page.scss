@@ -2,14 +2,10 @@
     background: url($shared+"images/texture.png"), linear-gradient(#161616 50%, #fc0 50%);
     height: 3rem;
     justify-content: space-evenly;
-
-    & * {
-        flex: unset;
-    }
     & .brand{
         max-width: 40%;
         & img {
-            height: 4rem;
+            height: 110%;
         }
     }
 }
