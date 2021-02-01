@@ -43,16 +43,11 @@
  * @see html.html.twig
  */
 #}
-<!-- <header id="main-header" role="banner" class="flex" >
-    <div class="brand">{{ page.header }}</div>
-    <div id="header-top" role="menubar">{{ page.primary_menu }}</div>
-    <div class="right">
-      {{ page.user_menu }}
-    </div>
-</header> -->
-<div id="main-header" class="flex">
-
-</div>
+<header id="main-header" role="banner" class="flex">
+    <div class="branding">{{ page.header }}</div>
+    <div>{{ page.primary_menu }}</div>
+    <div>{{ page.user_menu }}</div>
+</header>
 
 <div class="flex one two-500 three-800 six-1000 content">
   <a id="main-content" class="none" tabindex="-1"></a>{# link is in html.html.twig #}
