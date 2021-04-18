@@ -1,12 +1,12 @@
 /*
  *  Fonts 
  */
- $fonts: $shared+"fonts";
+ $fonts: "//plik.austro-wegry.org/common/fonts";
  @font-face{
     font-family: 'Aladin Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Aladin'), url($fonts+"/Aladin-Regular.woff2") format('woff2');
+    src: local('Aladin'), url($fonts+"/Aladin-Regular.woff2") format('woff2'), url($fonts+"/Aladin-Regular.woff") format('woff');
 }
 @font-face{
     font-family: 'Forum Regular';
