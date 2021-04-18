@@ -1,9 +1,17 @@
 .content {
     background-color: #fff5eecc;
 }
+.pagetitle {
+    padding: unset;
+    border-bottom: 1px solid #ccc;
+}
+h1.title{
+    color: $tertiary;
+    margin: 1rem;
+    padding: unset;
+}
 main.card
 {
-    background: floralwhite;
-    border-radius: 0.5rem;
+    background: $secondary;
     padding: 1em;
 }

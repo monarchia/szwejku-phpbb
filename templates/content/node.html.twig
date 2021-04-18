@@ -71,21 +71,6 @@
  */
 #}
 <article class="node">
-<header>
-  {{ title_prefix }}
-    <h1{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h1>
-  {{ title_suffix }}
-  {% if display_submitted %}
-    {{ author_picture }}
-    <div{{ author_attributes }}>
-      {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-      {{ metadata }}
-    </div>
-  {% endif %}
-
-</header>
   <div{{ content_attributes }}>
     {{ content }}
   </div>

@@ -45,18 +45,20 @@
 #}
 <header id="main-header" role="banner">
   <div class="inner flex">
-    <div class="branding">{{ page.header }}</div>
     {{ page.primary_menu }}
     <div class="usermenu"> {% include "themes/szwejku/templates/custom/user-menu.html.twig" %} </div>
   </div>
 </header>
+<header class="flex content">
+  {{ page.header }}
+  {{ page.breadcrumb }}
+  {{ page.highlighted }}
+  {{ page.help }}
 
+</header>
 <div class="flex one two-500 three-800 six-1000 content">
   <a id="main-content" class="none" tabindex="-1"></a>{# link is in html.html.twig #}
   <main role="main" class="card full half-500 two-third-800">
-    {{ page.breadcrumb }}
-    {{ page.highlighted }}
-    {{ page.help }}
     {{ page.content }}
   </main>
 
