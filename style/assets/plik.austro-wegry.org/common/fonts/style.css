@@ -1,0 +1,14 @@
+@font-face{
+    font-family: 'Aladin Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('Aladin-Regular.woff2') format('woff2'),
+         url('Aladin-Regular.woff') format('woff'),
+         url('Aladin-Regular.ttf') format('truetype') ;
+}
+@font-face{
+    font-family: 'Forum Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Forum'), url('Forum.woff2') format('woff2');
+}
