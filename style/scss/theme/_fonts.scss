@@ -6,7 +6,9 @@
     font-family: 'Aladin Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Aladin'), url($fonts+"/Aladin-Regular.woff2") format('woff2'), url($fonts+"/Aladin-Regular.woff") format('woff');
+    src: url($fonts+"/Aladin-Regular.woff2") format('woff2'),
+         url($fonts+"/Aladin-Regular.woff") format('woff')
+         url($fonts+"Aladin-Regular.ttf") format('truetype');
 }
 @font-face{
     font-family: 'Forum Regular';
