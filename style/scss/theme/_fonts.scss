@@ -1,21 +1,22 @@
 /*
  *  Fonts 
  */
- $fonts: "//plik.austro-wegry.org/common/fonts";
- @font-face{
-    font-family: 'Aladin Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url($fonts+"/Aladin-Regular.woff2") format('woff2'),
-         url($fonts+"/Aladin-Regular.woff") format('woff')
-         url($fonts+"Aladin-Regular.ttf") format('truetype');
-}
-@font-face{
-    font-family: 'Forum Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Forum'), url($fonts+"/Forum.woff2") format('woff2');
-}
+@import url('https://plik.austro-wegry.org/common/fonts/style.css');
+//  $fonts: "//plik.austro-wegry.org/common/fonts";
+//  @font-face{
+//     font-family: 'Aladin Regular';
+//     font-style: normal;
+//     font-weight: normal;
+//     src: url($fonts+"/Aladin-Regular.woff2") format('woff2'),
+//          url($fonts+"/Aladin-Regular.woff") format('woff')
+//          url($fonts+"Aladin-Regular.ttf") format('truetype');
+// }
+// @font-face{
+//     font-family: 'Forum Regular';
+//     font-style: normal;
+//     font-weight: normal;
+//     src: local('Forum'), url($fonts+"/Forum.woff2") format('woff2');
+// }
 
 html, html body {
     font-family: 'Forum', Helvetica, sans-serif;
