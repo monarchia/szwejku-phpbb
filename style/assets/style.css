@@ -7,8 +7,10 @@
          url('Aladin-Regular.ttf') format('truetype') ;
 }
 @font-face{
-    font-family: 'Forum Regular';
+    font-family: 'Forum';
     font-style: normal;
     font-weight: normal;
-    src: local('Forum'), url('Forum.woff2') format('woff2');
+    src: url('Forum.woff2') format('woff2'),
+         url('Forum.woff') format('woff'),
+         url('Forum.ttf') format('truetype');
 }
