@@ -1,12 +1,13 @@
 .system-menu .menu {
     list-style: none;
     display: flex;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    align-items: flex-start;
-    position: fixed;
+
     .menu-item {
         padding: 0.5rem;
+        background: #161616;
+        border-radius: 0.75rem;
         .menu{
         display: none;
         }
