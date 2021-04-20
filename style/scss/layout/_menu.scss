@@ -1,19 +1,21 @@
-.system-menu .menu {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    position: fixed;
-    }
-.menu-item {
-    padding: 0.75em;
-    .menu{
+.menu-level-1 {
     display: none;
-    }
 }
-.menu-item:hover {
-    .menu{
-        display:block;
+.menu-level-0 {
+    display: flex;
+    list-style: none;
+    font-weight: 900;
+    
+    .menu-item {
+        background: #b8860b;
+        margin: -0.5em 1em;
+        padding: 0.3em 0.6em;
+        border-radius: 5px;
+        }
+}
+.menu-item a, .menu-item a:hover {
+    color: white;
     }
+#block-szwejku-main-menu-menu {
+    flex: 10 1 50%;
 }

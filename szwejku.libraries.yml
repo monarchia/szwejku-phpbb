@@ -3,6 +3,7 @@ main:
   css:
     theme: 
       'style/css/style.css': {}
+      'style/assets/style.css': {}
 picnic:
   remote: https://github.com/franciscop/picnic
   version: 6.5.4
