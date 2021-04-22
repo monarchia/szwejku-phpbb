@@ -5,6 +5,6 @@
  "description": "Drupal theme for MAW",
  "require": {
     "composer/installers": "^1.7",
-    "drupal/bamboo_twig": "^5"
+    "drupal/bamboo_twig": "~5.0"
     }
 }
