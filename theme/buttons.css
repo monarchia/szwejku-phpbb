@@ -5,11 +5,14 @@
 	justify-content: space-between;
 }
 .buttons .btn {
-	background: #161616;
+	background: #a0680086;
 	border-radius: 2rem;
 	line-height: 2;
+	color: #ffcc00;
 }
-
+.btn i {
+	color: #fff !important;
+}
 /* Button Styles
 ---------------------------------------- */
 
