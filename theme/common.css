@@ -1200,14 +1200,17 @@ ul.linklist:after,
 }
 .stats {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
+	max-width: 1400px;
+	margin: auto;
 }
 .stats > * {
 	background-color: antiquewhite;
 }
 .stats > * h3 {
 	background-color: #161616;
+}
+.stats > * > * {
+	padding: 0.5rem 1rem;
 }
 .online-list {
 	flex: 2 1 30%;

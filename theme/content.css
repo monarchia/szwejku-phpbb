@@ -804,3 +804,7 @@ table.fixed-width-table {
 #memberlist tr.inactive, #team tr.inactive {
 	font-style: italic;
 }
+/* Set width for right column  */
+.index-right {
+	min-width: 30vw !important;
+}

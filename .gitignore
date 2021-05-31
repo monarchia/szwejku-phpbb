@@ -1,2 +1,5 @@
 *.code-workspace
 style.cfg
+style/.sass-cache
+style/css
+.vscode
