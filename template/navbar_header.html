@@ -1,5 +1,21 @@
 <nav class="navbar" role="navigation">
 	<div class="inner">
+		{# Forum navigation #}
+		<ul id="nav-main" class="nav-main linklist" role="menubar">
+			<li class="leftside">
+				<a href="{{ U_INDEX }}">
+						<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
+				</a>
+			</li>
+			{% if S_DISPLAY_SEARCH %}
+				{% include "partials/quicklinks.html.twig" %}
+			{% endif %}
+			<li class="rightside">
+				<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem" >
+					<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
+				</a>
+			</li>
+		</ul>
 	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist" role="menubar">
 		<li class="hide responsive-show">
 			<a href="{{ U_SITE_HOME ?: U_INDEX }}" title="{{ L_INDEX }}">
@@ -59,22 +75,5 @@
 		{% endif %}
 		</li>
 	</ul>
-
-{# Forum navigation #}
-<ul id="nav-main" class="nav-main linklist" role="menubar">
-	<li class="leftside">
-		<a href="{{ U_INDEX }}">
-				<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
-		</a>
-	</li>
-	{% if S_DISPLAY_SEARCH %}
-		{% include "partials/quicklinks.html.twig" %}
-	{% endif %}
-	<li class="rightside">
-		<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem" >
-			<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
-		</a>
-	</li>
-</ul>
 	</div>
 </nav>
