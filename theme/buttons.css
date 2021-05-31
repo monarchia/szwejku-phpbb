@@ -11,8 +11,21 @@
 	color: #ffcc00;
 }
 .btn i {
-	color: #fff !important;
-}
+	width: 2rem;
+	border: 1px solid goldenrod;
+	vertical-align: top;
+	line-height: 2rem;
+	margin-right: -0.5em;
+	font-size: large;
+	font-weight: 900;
+	}
+.btn span {
+	height: 2rem;
+	display: inline-block;
+	border-radius: 2rem;
+	padding: 0 1em;
+	background: #a06800;
+	}
 /* Button Styles
 ---------------------------------------- */
 
