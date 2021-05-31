@@ -1,3 +1,15 @@
+/* Buttons reinvented */
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
+.buttons.btn {
+	background: #161616;
+	border-radius: 1em;
+	
+}
+
 /* Button Styles
 ---------------------------------------- */
 

@@ -1,13 +1,11 @@
 <!-- Try out new navigation building technique -->
-<nav role="navigation">
-	<span class="btn">
-		<a href="{{ U_INDEX }}">
+<nav role="navigation" class="buttons">
+		<a href="{{ U_INDEX }}" class="btn">
 			<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
 		</a>
-	</span>
-	<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem" >
-		<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
-	</a>
+		<a class="btn" href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem" >
+			<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
+		</a>
 </nav>
 
 <nav class="navbar" role="navigation">
