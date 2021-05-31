@@ -1,8 +1,10 @@
 <!-- Try out new navigation building technique -->
 <nav role="navigation">
-	<a href="{{ U_INDEX }}">
-		<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
-	</a>
+	<span class="btn">
+		<a href="{{ U_INDEX }}">
+			<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
+		</a>
+	</span>
 	<a href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem" >
 		<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
 	</a>
@@ -45,7 +47,7 @@
 						{% if CURRENT_USER_AVATAR %}
 						{{ CURRENT_USER_AVATAR }} 
 						{% else %}
-						<img class="avatar" src="{{ T_THEME_PATH }}/images/no_avatar.gif" width="447" height="500">   
+						<img class="avatar" alt="{{S_USERNAME}}" src="{{ T_THEME_PATH }}/images/no_avatar.gif" width="447" height="500">   
 						{% endif %}
 						{{ S_USERNAME }}
 					 </a>
