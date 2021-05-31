@@ -1,43 +1,37 @@
-nav.global.header{
+#global-header {
     position: fixed;
     top: 0;
     background: url("./assets/images/texture.png"),
-        linear-gradient(#161616 50%, #fc0 50%);
+                linear-gradient(#161616 50%, #fc0 50%);
     box-shadow: 0px 0px 8px 1px #000000;
-    height: 3rem;
+    height: 3.5rem;
     z-index: 1000;
-    display: inline-flex;
-    justify-content: space-between;
     border-radius: unset;
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
-nav.global.header > div{
-    padding: 0 1em;
+#global-header .logo {
+    max-width: 40%;
 }
-nav.global.header .global-links{
-    width: 100%;
-    max-width: 25%;
-    align-self: center;
+.logo img {
+    height: 145%;
 }
-nav.global.header .global-links ul li{
-    display: inline-block;
+#global-header .user-menu {
+    margin: auto 1.5rem;
 }
-
-nav.global.header .site-description{
-    width: unset;
+.user-menu .avatar {
+    width: 1.4rem;
+    height: auto;
 }
-nav.global.header .site-description .logo{
-    padding: unset;
+.navbar #search {
+    float: inline-end;
 }
-nav.global.header a.header-avatar img.avatar{
-    max-height: unset;
-    height: 3rem;
-    border-radius: 100%;
+.navbar #search #keywords {
+    float: left;
+    line-height: 1.4rem;
 }
-nav.global.header .dropdown{
-    top: 3rem;
-    right: 1.3rem;
-}
-html body{
-    padding-top: 3rem;
+.navbar .home {
+    width: 2rem;
+    height: auto;
 }

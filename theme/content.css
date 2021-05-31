@@ -136,9 +136,7 @@ li.header dl.row-item dt .list-inner {
 .row .list-inner { padding: 4px 0; }
 
 dl.row-item {
-	background-position: 10px 50%;		/* Position of folder icon */
-	background-repeat: no-repeat;
-	background-size: 32px;
+	background: unset;
 }
 
 dl.row-item dt {
@@ -148,7 +146,7 @@ dl.row-item dt {
 }
 
 dl.row-item dt .list-inner {
-	padding-left: 52px;					/* Space for folder icon */
+	padding: 1em;
 }
 
 dl.row-item dt, dl.row-item dd {
@@ -805,4 +803,8 @@ table.fixed-width-table {
 
 #memberlist tr.inactive, #team tr.inactive {
 	font-style: italic;
+}
+/* Set width for right column  */
+.index-right {
+	min-width: 30vw !important;
 }

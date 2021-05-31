@@ -1,3 +1,30 @@
+/* Buttons reinvented */
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+}
+.btn {
+	background: #74561e7e;
+	border-radius: 2rem;
+	line-height: 2;
+	color: #ffcc00;
+}
+.btn i {
+	width: 2rem;
+	vertical-align: top;
+	line-height: 2rem;
+	font-size: large;
+	font-weight: 900;
+	}
+.btn span {
+	height: 2rem;
+	display: inline-block;
+	border-radius: 2rem;
+	padding: 0 1em;
+	margin: 0 -0.5rem;
+	background: #74561e;
+	}
 /* Button Styles
 ---------------------------------------- */
 
@@ -24,6 +51,14 @@
 .button:hover {
  	text-decoration: none;
  	outline: none;
+}
+/* Custom notification buttons */
+.button.unread {
+	background: #D31141;
+	border-color: #D31141;
+}
+.button.unread, .button.unread * {
+	color: #fff !important;
 }
 
 .caret {

@@ -1,0 +1,126 @@
+<!-- 
+{% for l in loops|keys %}
+{{ l }}
+{% endfor %}
+-->
+
+<!-- BEGIN forumrow -->
+	{% if (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  %}
+</section>
+    {% endif %}
+
+{% EVENT forumlist_body_category_header_before %}
+{% if (forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) %}
+{% endif %}
+{% if (forumrow.S_IS_CAT) %}
+{% include "forumlist/category.html.twig" %}
+{% endif %}
+{% EVENT forumlist_body_category_header_after %}
+{% if not forumrow.S_IS_CAT %}
+{% EVENT forumlist_body_forum_row_before %}
+<section class="forum {{ forumrow.S_IS_LINK ? 'link' }}" id="f-{{ forumrow.FORUM_ID }}" title="{{ forumrow.FORUM_FOLDER_IMG_ALT }}">
+    {% EVENT forumlist_body_forum_row_prepend %}
+        {% if forumrow.FORUM_IMAGE %}
+        {% EVENT forumlist_body_forum_image_before %}
+        <span class="forum-image">{% EVENT forumlist_body_forum_image_prepend %}{forumrow.FORUM_IMAGE}{% EVENT forumlist_body_forum_image_append %}</span>
+        {% EVENT forumlist_body_forum_image_after %}
+        {% endif %}
+        <header>
+            <h3><a href="{forumrow.U_VIEWFORUM}" class="forumtitle {{ forumrow.S_UNREAD_FORUM ? 'unread' : 'read' }}">{forumrow.FORUM_NAME}</a>
+                {% if S_ENABLE_FEEDS and forumrow.S_FEED_ENABLED %}
+                <a class="feed-icon-forum" title="{L_FEED} - {forumrow.FORUM_NAME}" href="{{ path('phpbb_feed_forum', { forum_id : forumrow.FORUM_ID } ) }}">
+                <i class="icon fa-rss-square fa-fw icon-orange" aria-hidden="true"></i><span class="sr-only">{L_FEED} - {forumrow.FORUM_NAME}</span>
+                </a>
+                {% endif %}
+            </h3>
+            {% if not forumrow.S_IS_LINK %}
+            <small class="topics">{L_TOPICS}: {forumrow.TOPICS} </small>&bull; <small class="posts">{L_POSTS}: {forumrow.POSTS}</small>
+            {% endif %}
+            {% if forumrow.FORUM_DESC %}
+                <div class="description">
+                    {{ forumrow.FORUM_DESC }}
+                </div>
+            {% endif %}
+            {% if forumrow.MODERATORS %}
+            <small>{forumrow.L_MODERATOR_STR}{L_COLON}</small><br><span class="moderators">{forumrow.MODERATORS}</span>
+            {% endif %}
+        </header>
+        <!-- IF forumrow.subforum and forumrow.S_LIST_SUBFORUMS -->
+        {% EVENT forumlist_body_subforums_before %}
+        <ul class="subforums">
+            <strong>{forumrow.L_SUBFORUM_STR}{L_COLON}</strong>
+            <!-- BEGIN subforum -->
+            <li>
+                {% EVENT forumlist_body_subforum_link_prepend %}
+                <a href="{{ forumrow.subforum.U_SUBFORUM }}" class="subforum {{ forumrow.subforum.S_UNREAD ? 'unread' : 'read' }}" title=" {% if forumrow.subforum.S_UNREAD %}{L_UNREAD_POSTS}{% else %}{L_NO_UNREAD_POSTS}{% endif %} ">
+                {{ forumrow.subforum.SUBFORUM_NAME }} {% if forumrow.subforum.IS_LINK %}<i class="icon fa-external-link fa-fw" aria-hidden="true"></i>{% endif %}{% if forumrow.subforum.S_UNREAD %} <i class="icon" aria-hidden="true">&bull;</i>{% endif %}
+                </a>{% EVENT forumlist_body_subforum_link_append %}
+            </li>
+            <!-- END subforum -->
+        </ul>
+        {% EVENT forumlist_body_subforums_after %}
+        <!-- ENDIF -->
+        {% if not S_IS_BOT %}
+        <div class="responsive-show" style="display: none;">
+            <!-- IF forumrow.CLICKS -->
+                {L_REDIRECTS}{L_COLON} <strong>{forumrow.CLICKS}</strong>
+            <!-- ELSEIF not forumrow.S_IS_LINK and forumrow.TOPICS -->
+                {L_TOPICS}{L_COLON} <strong>{forumrow.TOPICS}</strong>
+            <!-- ENDIF -->
+        </div>
+        {% endif %}
+        <!-- IF forumrow.CLICKS -->
+        <span class="redirect">{L_REDIRECTS}{L_COLON} {forumrow.CLICKS}</span>
+        <!-- ELSEIF not forumrow.S_IS_LINK -->
+            <div class="lastpost">
+                <!-- IF forumrow.U_UNAPPROVED_TOPICS -->
+                     <a href="{forumrow.U_UNAPPROVED_TOPICS}" title="{L_TOPICS_UNAPPROVED}">
+                          <i class="icon fa-question fa-fw icon-blue" aria-hidden="true"></i><span class="sr-only">{L_TOPICS_UNAPPROVED}</span>
+                    </a>
+                <!-- ELSEIF forumrow.U_UNAPPROVED_POSTS -->
+                    <a href="{forumrow.U_UNAPPROVED_POSTS}" title="{L_POSTS_UNAPPROVED_FORUM}">
+                       <i class="icon fa-question fa-fw icon-blue" aria-hidden="true"></i><span class="sr-only">{L_POSTS_UNAPPROVED_FORUM}</span>
+                    </a>
+                <!-- ENDIF -->
+                <!-- IF forumrow.LAST_POST_TIME -->
+                    <h4>{L_LAST_POST}</h4>
+                    <span class="meta">{% EVENT forumlist_body_last_poster_username_prepend %}{forumrow.LAST_POSTER_FULL}{% EVENT forumlist_body_last_poster_username_append %}
+                    <time datetime="{forumrow.LAST_POST_TIME_RFC3339}">{forumrow.LAST_POST_TIME}</time> w temacie</span>
+                    <!-- IF forumrow.S_DISPLAY_SUBJECT -->
+                        <!-- {% EVENT forumlist_body_last_post_title_prepend %} -->
+                        <a href="{forumrow.U_LAST_POST}" title="{forumrow.LAST_POST_SUBJECT}" class="lastsubject">{forumrow.LAST_POST_SUBJECT}</a>
+                    <!-- ENDIF -->
+                    <!-- IF not S_IS_BOT -->
+                        <a href="{forumrow.U_LAST_POST}" title="{L_VIEW_LATEST_POST}">
+                            <i class="icon fa-external-link-square fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">{L_VIEW_LATEST_POST}</span>
+                        </a>
+                    <!-- ENDIF -->
+                    <!-- ELSE -->
+                    {% if forumrow.U_UNAPPROVED_TOPICS %}
+                        {{ lang('TOPIC_UNAPPROVED_FORUM', forumrow.TOPICS) }}
+                    {% else %}
+                        {{ lang('NO_POSTS') }}
+                    {% endif %}
+                    <!-- ENDIF -->
+            </div>
+        <!-- ELSE -->
+            <dd>&nbsp;</dd>
+        <!-- ENDIF -->
+    {% EVENT forumlist_body_forum_row_append %}
+</section>{% EVENT forumlist_body_forum_row_after %}
+{% endif %}
+
+<!-- IF forumrow.S_LAST_ROW -->
+
+</div>
+</div>
+{% EVENT forumlist_body_last_row_after %}
+<!-- ENDIF -->
+
+<!-- BEGINELSE -->
+<div class="panel">
+<div class="inner">
+<strong>{L_NO_FORUMS}</strong>
+</div>
+</div>
+<!-- END forumrow -->

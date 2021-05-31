@@ -1,36 +1,47 @@
 {# 
- # template/global_header.html.twig
+ # partials/global_header.html.twig
  #}
- {% if U_SITE_HOME %}
-    {% set home_url = U_SITE_HOME %}
- {% else %}
-    {% set home_url = U_INDEX %}
- {% endif %}
-<nav class="global header headerbar">
-    <div id="global-links" class="global-links">
-        <ul>
-            <li><a class="button" href="https://forum.austro-wegry.org">Forum</a></li>
-            <li><a class="button" href="https://kiosk.austro-wegry.org">Prasa</a></li>
-        </ul>
-    </div>
-    <div id="site-description" class="site-description">
-	{% include "partials/branding.html.twig" %}
-    </div>
-<!-- EVENT overall_header_searchbox_before -->	
-    <div id="search-box" class="search-box search-header" role="search">
-		<form action="{U_SEARCH}" method="get" id="search">
-		<fieldset>
-	    	<input name="keywords" id="keywords" type="search" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search tiny" size="20" value="{SEARCH_WORDS}" placeholder="{L_SEARCH_MINI}" />
-			<button class="button button-search" type="submit" title="{L_SEARCH}">
-		    	<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
-			</button>
-			<a href="{U_SEARCH}" class="button button-search-end" title="{L_SEARCH_ADV}">
-				<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
-			</a>
-			{S_SEARCH_HIDDEN_FIELDS}
-		</fieldset>
-		</form>
-	</div>
-<!-- EVENT overall_header_searchbox_after -->
-    {% EVENT navbar_header_user_profile_prepend %}
+<header id="global-header" class="responsive-hide">
+{% block header %}
+   <a title="{{ L_SITE_HOME }}" class="logo" href="{{ BOARD_URL }}">
+      <img src="{{ T_THEME_PATH }}/images/banner.png" alt="{{ SITENAME }}">
+   </a>
+<nav class="user-menu">
+   {% if S_USER_LOGGED_IN %}
+   <a class="button" href="{{ U_PROFILE }}">
+      {% if CURRENT_USER_AVATAR %}
+      {{ CURRENT_USER_AVATAR }} 
+      {% else %}
+      <img class="avatar" src="{{ T_THEME_PATH }}/images/no_avatar.gif" width="447" height="500">   
+      {% endif %}
+      {{ CURRENT_USERNAME_SIMPLE }}
+   </a>
+   {% if S_NOTIFICATIONS_DISPLAY %}
+   <span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
+      <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger {{ NOTIFICATIONS_COUNT ? 'unread' }} button">
+         <i class="icon fa-bell fa-fw" aria-hidden="true"></i> {{ NOTIFICATIONS_COUNT ?: ''}}
+      </a> 
+   <!-- INCLUDE notification_dropdown.html -->
+</span>
+   {% endif %}
+   {% if S_DISPLAY_PM %}
+   <a class="button {{ PRIVATE_MESSAGE_COUNT ? 'unread' }}" href="{U_PRIVATEMSGS}" role="menuitem">
+      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i> {{ PRIVATE_MESSAGE_COUNT ?: ''}}
+      </a>
+   {% endif %}
+   {% if U_ACP %}
+   <a class="button" title="Administracja" href="{{ U_ACP }}">
+      <i class="icon fa-shield fa-fw"></i>
+   </a>  
+   {% endif %}
+   <a class="button" href="{{ U_LOGIN_LOGOUT }}" title="Wyloguj">
+      <i class="icon fa-power-off fa-fw" aria-hidden="true"></i>
+   </a>
+   {% else %}
+   <a class="button" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
+      <i class="icon fa-user-circle-o fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
+   </a>
+   {% endif %}
 </nav>
+{% endblock header %}
+</header>

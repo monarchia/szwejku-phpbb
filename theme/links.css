@@ -184,12 +184,6 @@ a.lastsubject:hover {
 	width: 990px;
 }
 
-/* Feed icon in forumlist_body.html */
-a.feed-icon-forum {
-	float: right;
-	margin: 3px;
-}
-
 a.anchor {
 	display: block;
 }

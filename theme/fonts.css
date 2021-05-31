@@ -3,11 +3,15 @@
     font-family: 'Aladin Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('assets/fonts/Aladin-Regular.woff2') format('woff2');
+    src: url('assets/fonts/Aladin-Regular.woff2') format('woff2'),
+         url('assets/fonts/Aladin-Regular.woff') format('woff'),
+         url('assets/fonts/Aladin-Regular.ttf') format('truetype');
 }
 @font-face{
     font-family: 'Forum Regular';
     font-style: normal;
     font-weight: normal;
-    src: url('assets/fonts/Forum.woff2') format('woff2');
+    src: url('assets/fonts/Forum.woff2') format('woff2'),
+         url('assets/fonts/Forum.woff') format('woff'),
+         url('assets/fonts/Forum.ttf') format('truetype');
 }

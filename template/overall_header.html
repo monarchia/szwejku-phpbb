@@ -1,3 +1,6 @@
+<!-- 
+	overall_header.html
+ -->
 <!DOCTYPE html>
 <html dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}">
 <head>
@@ -5,23 +8,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 {%- set TITLE %}
-	{% if UNREAD_NOTIFICATIONS_COUNT %}
-	({{ UNREAD_NOTIFICATIONS_COUNT }})
-	{% endif %}
-	{% if not S_VIEWTOPIC and not S_VIEWFORUM %}
-	{{ SITENAME }} - 
-	{% endif %}
-	{% if S_IN_MCP %}
-		{{ L_MCP }} - 
-	{% elseif S_IN_UCP %}
-		{{ L_UCP }} - 
-	{% endif %}
-	{{ PAGE_TITLE }} -
-	{% if S_VIEWTOPIC or S_VIEWFORUM %}
-	{{ SITENAME }}
-	{% endif %}
+	{% if UNREAD_NOTIFICATIONS_COUNT %}	({{ UNREAD_NOTIFICATIONS_COUNT }})	{% endif %}	{% if not S_VIEWTOPIC and not S_VIEWFORUM %}	{{ SITENAME }} - 	{% endif %}	{% if S_IN_MCP %}		{{ L_MCP }} - 	{% elseif S_IN_UCP %}		{{ L_UCP }} - 	{% endif %}	{{ PAGE_TITLE }} -	{% if S_VIEWTOPIC or S_VIEWFORUM %}	{{ SITENAME }}	{% endif %}
 {% endset -%}
-<title>{{- TITLE -}}</title>
+<title>{{ TITLE }}</title>
 <!-- IF S_ENABLE_FEEDS -->
 	<!-- IF S_ENABLE_FEEDS_OVERALL --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{{ path('phpbb_feed_index') }}"><!-- ENDIF -->
 	<!-- IF S_ENABLE_FEEDS_NEWS --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_FEED_NEWS}" href="{{ path('phpbb_feed_news') }}"><!-- ENDIF -->
@@ -38,12 +27,12 @@
 <!-- ENDIF -->
 
 <!--
-	phpBB style name: Kaisergelb
+	phpBB style name: Svejk
 	Modified by:	  [KuK Vervaltungsbureau](http://github.com/monarchia)
 -->
 
 <link href="{T_FONT_AWESOME_LINK}" rel="stylesheet">
-<link href="{T_STYLESHEET_LINK}" rel="stylesheet">
+<link href="{T_STYLESHEET_LINK}?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
 <link href="{T_STYLESHEET_LANG_LINK}" rel="stylesheet">
 
 {#
@@ -69,43 +58,15 @@
 {$STYLESHEETS}
 
 <!-- EVENT overall_header_stylesheets_after -->
-{% import "functions/macros.html.twig" as macro %}
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116126906-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-116126906-2');
-</script>
-
-<!-- Matomo -->
-<script type="text/javascript">
-	var _paq = window._paq = window._paq || [];
-	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-	_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-	_paq.push(["setCookieDomain", "*.austro-wegry.org"]);
-	_paq.push(["setDomains", ["*.austro-wegry.org","*.forum.austro-wegry.org","*.kiosk.austro-wegry.org"]]);
-	_paq.push(['trackPageView']);
-	_paq.push(['enableLinkTracking']);
-	(function() {
-	  var u="//stats.makary.online/";
-	  _paq.push(['setTrackerUrl', u+'matomo.php']);
-	  _paq.push(['setSiteId', '2']);
-	  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-	  g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-	})();
-  </script>
-  <!-- End Matomo Code -->
-  
+{% import "functions/macros.html.twig" as macro %}  
   <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+	if( screen.width >= 700 ){
 	new Crate({
 	  server: '777938415693987851',
 	  channel: '777938417341562892',
 	  color: '#fc0'
 	})
+}
   </script>
   
 </head>
@@ -116,16 +77,6 @@
 <div id="wrap" class="wrap">
 	<a id="top" class="top-anchor" accesskey="t"></a>
 	<div id="page-header">
-		<div class="headerbar" role="banner">
-		<!-- EVENT overall_header_headerbar_before -->
-			<div class="inner">
-
-			
-
-			</div>
-			<!-- EVENT overall_header_headerbar_after -->
-		</div>
-		<!-- EVENT overall_header_navbar_before -->
 		<!-- INCLUDE navbar_header.html -->
 	</div>
 

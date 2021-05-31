@@ -1,3 +1,20 @@
+# v0.1.5
+## 2021-01-21
+1. [](#improved)
+    * Rewrote homepage forum list
+2. [](#new)
+    * Added backgrounds for categories
+
+# v0.1.4
+## 2021-01-17
+1. [](#fixed)
+    * Fixed problems with viewing on very wide screens
+
+# v0.1.3
+## 2021-01-01
+1. [](#new)
+    * Added custom site header with iconified shortcuts (UCP, notifications, messages, ACP, logout)
+
 # v0.1.2
 1. [](#fixed)
     * Changed avatar display size

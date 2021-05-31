@@ -5,17 +5,10 @@ Colours and backgrounds for common.css
 
 html, body {
 	color: #161616;
-	background-color: #F0D077;
-  	background: url('images/bg.jpg');
+	background-color: beige;
+  	background: url('https://plik.austro-wegry.org/common/images/bg.webp');
 }
 
-h1 {
-	/* color: #FFFFFF; */
-}
-
-h2 {
-	/* color: #28313F; */
-}
 
 h3 {
 	border-bottom-color: #CCCCCC;
@@ -32,7 +25,7 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #105289; }
+a { color: #a06800;}
 a:hover { color: #D31141; }
 
 /* Links on gradient backgrounds */
@@ -40,9 +33,7 @@ a:hover { color: #D31141; }
 	color: #FFFFFF;
 }
 
-.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #A8D8FF;
-}
+
 
 /* Notification mark read link */
 .dropdown-extended a.mark_read {
@@ -50,29 +41,12 @@ a:hover { color: #D31141; }
 }
 
 /* Post body links */
-.postlink {
-	border-bottom-color: #368AD2;
-	color: #368AD2;
-}
 
-.postlink:visited {
-	border-bottom-color: #5D8FBD;
-	color: #5D8FBD;
-}
-
-.postlink:hover {
-	background-color: #D0E4F6;
-	color: #0D4473;
-}
 
 .signature a, .signature a:hover {
 	background-color: transparent;
 }
 
-/* Back to top of page */
-.top i {
-	color: #999999;
-}
 
 /* Arrow links  */
 .arrow-left:hover, .arrow-right:hover {
@@ -99,11 +73,6 @@ a:hover { color: #D31141; }
 .forabg {
 	background: #161616;
 	border-radius: unset;
-/*	background-color: #0076B1;
-	background-image: -webkit-linear-gradient(top, #6ACEFF 0%, #12A3EB 2px, #0076B1 92px, #0076B1 100%);
-	background-image: linear-gradient(to bottom, #6ACEFF 0%,#12A3EB 2px,#0076B1 92px,#0076B1 100%);
-	background-repeat: repeat-x;
-	*/
 }
 
 .navbar {
@@ -112,7 +81,6 @@ a:hover { color: #D31141; }
 }
 
 .panel {
-	background-color:unset;
 	color: #161616;
 }
 
@@ -328,17 +296,6 @@ p.post-notice {
 --------------------------------------------------------------
 Colours and backgrounds for content.css
 -------------------------------------------------------------- */
-
-ul.forums {
-	background-color: #fffff0; /* Old browsers */ /* FF3.6+ */
-	/*background-image: -webkit-linear-gradient(top, #D2E0EB 0%, #EEF5F9 100%);
-	background-image: linear-gradient(to bottom, #D2E0EB 0%,#EEF5F9 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D2E0EB', endColorstr='#EEF5F9',GradientType=0 ); /* IE6-9 */ 
-}
-
-ul.topiclist li {
-	/*color: #4C5D77;*/
-}
 
 ul.topiclist dd {
 	border-left-color: #FFFFFF;

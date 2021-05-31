@@ -10,6 +10,7 @@ body {
 	padding: 12px 0;
 	word-wrap: break-word;
 	-webkit-print-color-adjust: exact;
+	padding-top: 3rem;
 }
 /* Some header styling */
 h1, h2, h3, h4 {
@@ -18,7 +19,6 @@ h1, h2, h3, h4 {
 
 p {
 	line-height: 1.3em;
-	margin-bottom: 1.5em;
 }
 
 img {
@@ -103,6 +103,7 @@ a:hover	{ text-decoration: underline; }
 	margin: 0 auto;
 	min-width: 625px;
 	padding: 15px;
+	max-width: 1400px;
 }
 
 @media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
@@ -123,35 +124,6 @@ a:hover	{ text-decoration: underline; }
 .page-footer h3 {
 	margin-top: 20px;
 }
-
-.logo {
-	float: left;
-	width: auto;
-	padding: 10px 13px 0 10px;
-}
-
-.logo:hover {
-	text-decoration: none;
-}
-
-.site_logo {
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 149px;
-	height: 52px;
-}
-
-/* Site description and logo */
-.site-description {
-	float: left;
-	width: 65%;
-}
-
-.site-description h1 {
-	margin-right: 0;
-	display: none;
-}
-
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .headerbar {
@@ -1220,4 +1192,44 @@ ul.linklist:after,
 
 .dropdown .clone.hidden + li {
 	border-top: none;
+}
+
+#nav-main{
+	display: flex;
+	justify-content: space-between;
+}
+.stats {
+	display: flex;
+	max-width: 1400px;
+	margin: auto;
+}
+.stats > * {
+	background-color: antiquewhite;
+}
+.stats > * h3 {
+	background-color: #161616;
+}
+.stats > * > * {
+	padding: 0.5rem 1rem;
+}
+.online-list {
+	flex: 2 1 30%;
+}
+.login-form {
+	flex: 1 1 30%;
+}
+.statistics {
+	flex: 1 1 auto;
+}
+.statistics ul li {
+	list-style: none;
+}
+.panel {
+	background-color: rgba(255, 245, 238, 0.664);
+}
+ul dl {
+	background-image: unset;
+  }
+.action-bar {
+	background: #fff5eecc;
 }
