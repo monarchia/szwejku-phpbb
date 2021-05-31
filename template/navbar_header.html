@@ -3,6 +3,9 @@
 		<a href="{{ U_INDEX }}" class="btn">
 			<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
 		</a>
+		{% if S_DISPLAY_SEARCH %}
+		{% include "partials/quicklinks.html.twig" %}
+		{% endif %}
 		<a class="btn" href="{U_FAQ}" rel="help" title="{L_FAQ_EXPLAIN}" role="menuitem" >
 			<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>Pomoc</span>
 		</a>
