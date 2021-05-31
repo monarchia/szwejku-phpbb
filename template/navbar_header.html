@@ -1,7 +1,7 @@
 <!-- Try out new navigation building technique -->
 <nav role="navigation" class="buttons">
 		<a href="{{ U_INDEX }}" class="btn">
-			<i class="icon fa fa-fw fa-home"></i>{{ L_INDEX }}
+			<i class="icon fa fa-fw fa-home"></i><span>{{ L_INDEX }}</span>
 		</a>
 		{% if S_DISPLAY_SEARCH %}
 		{% include "partials/quicklinks.html.twig" %}

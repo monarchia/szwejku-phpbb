@@ -1,26 +1,18 @@
 {% if S_REGISTERED_USER %}
-<li class="responsive-hide">
-    <a href="{U_SEARCH_SELF}" role="menuitem">
+    <a class='btn' href="{U_SEARCH_SELF}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>{L_SEARCH_SELF}</span>
     </a>
-</li>
 {% endif %}
 {% if S_USER_LOGGED_IN %}
-<li class="responsive-hide">
-    <a href="{U_SEARCH_NEW}" role="menuitem">
+    <a class='btn' href="{U_SEARCH_NEW}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_NEW}</span>
     </a>
-</li>
 {% endif %}
 {% if S_LOAD_UNREADS %}
-<li class="responsive-hide">
-    <a href="{U_SEARCH_UNREAD}" role="menuitem">
+    <a class='btn' href="{U_SEARCH_UNREAD}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_UNREAD}</span>
     </a>
-</li>   
 {% endif %}
-<li class="responsive-hide">
-    <a href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">
+    <a class='btn' href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">
         <i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>{L_SEARCH_ACTIVE_TOPICS}</span>
     </a>
-</li>
