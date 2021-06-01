@@ -7,10 +7,13 @@
 	flex-flow: row wrap;
 }
 .btn {
-	background: #74561e7e;
+	background: #fff5ee70;
 	border-radius: 2rem;
 	line-height: 2;
 	color: #ffcc00;
+	font-family: 'Aladin Regular';
+	text-transform: lowercase;
+	box-shadow: 0 0 2px #161616;
 }
 .btn i {
 	width: 2rem;
