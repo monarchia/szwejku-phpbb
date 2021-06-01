@@ -3,6 +3,8 @@
 .buttons {
 	display: flex;
 	justify-content: space-between;
+	margin-inline-end: 0.5rem;
+	flex-flow: row wrap;
 }
 .btn {
 	background: #74561e7e;
