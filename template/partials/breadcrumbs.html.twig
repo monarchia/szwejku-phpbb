@@ -4,8 +4,8 @@
         -->
         <!-- EVENT overall_header_navlink_prepend -->
         <span class="crumb" {{ (link.MICRODATA) ? link.MICRODATA }}>
-        <a href="{{ NAVLINK_LINK }}" itemtype="https://schema.org/Thing" itemscope itemprop="item">
-        <span itemprop="name">{{ NAVLINK_NAME }}</span>
+        <a href="{{ link.U_BREADCRUMB }}" itemtype="https://schema.org/Thing" itemscope itemprop="item">
+        <span itemprop="name">{{ link.BREADCRUMB_NAME }}</span>
         </a>
         <meta itemprop="position" content="{{ navlink_position }}{% set navlink_position = navlink_position + 1 %}" />
         </span>
