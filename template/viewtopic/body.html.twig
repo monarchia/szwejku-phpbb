@@ -17,11 +17,10 @@
         </div>
         <!-- ENDIF -->
         {{ TOPIC_AUTHOR_FULL }}
-        {{ POST_DATE }}
+        {{ TOPIC_DATE }}
         <!-- EVENT viewtopic_topic_title_before -->
         <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
         <!-- EVENT viewtopic_topic_title_after -->
-    <div class="action-bar bar-top">
         <!-- EVENT viewtopic_buttons_top_before -->
         <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
                 <a href="{U_POST_REPLY_TOPIC}" class="btn action" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
@@ -65,7 +64,6 @@
                 </div>
         <!-- ENDIF -->
         <!-- EVENT viewtopic_body_pagination_top_after -->
-    </div>        
 {% endblock %}
 </header>
 
