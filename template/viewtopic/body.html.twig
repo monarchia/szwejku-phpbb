@@ -45,10 +45,8 @@
         <!-- ENDIF -->
         <!-- INCLUDE viewtopic/tools.html.twig -->
                 <!-- IF S_DISPLAY_SEARCHBOX -->
-                <div class="search-box" role="search">
                         <form method="get" id="topic-search" action="{S_SEARCHBOX_ACTION}">
-                        <fieldset>
-                                <input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_TOPIC}" />
+                                <input class="inputbox search"  type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_TOPIC}" />
                                 <button class="button button-search" type="submit" title="{L_SEARCH}">
                                         <i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
                                 </button>
@@ -56,9 +54,7 @@
                                         <i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
                                 </a>
                                 {S_SEARCH_LOCAL_HIDDEN_FIELDS}
-                        </fieldset>
                         </form>
-                </div>
         <!-- ENDIF -->
         </nav>
 <!-- EVENT viewtopic_buttons_top_after -->
