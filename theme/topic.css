@@ -7,13 +7,12 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items:stretch;
     background: #fff5ee7e;
 }
-.topic-header .path {}
 .topic-header h1,
 .topic-header h1 a{
 	color: #b8860b;
+    flex: 2 2 100%;
 }
 .topic-header > * {
 }
