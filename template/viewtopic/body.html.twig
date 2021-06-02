@@ -21,7 +21,33 @@
         <!-- EVENT viewtopic_topic_title_before -->
         <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
         <!-- EVENT viewtopic_topic_title_after -->
-        <!-- IF S_DISPLAY_SEARCHBOX -->
+        <!-- EVENT viewtopic_buttons_top_before -->
+        <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
+                <a href="{U_POST_REPLY_TOPIC}" class="btn action" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
+                        <!-- IF S_IS_LOCKED -->
+                                <span>{L_BUTTON_TOPIC_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
+                        <!-- ELSE -->
+                                <span>{L_BUTTON_POST_REPLY}</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
+                        <!-- ENDIF -->
+                </a>
+        <!-- ENDIF -->
+
+        <!-- EVENT viewtopic_buttons_top_after -->
+
+        <!-- EVENT viewtopic_dropdown_top_custom -->
+        <!-- IF .pagination or TOTAL_POSTS -->
+                <div class="pagination">
+                        <!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}" class="mark">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS}
+                        <!-- IF .pagination -->
+                                <!-- INCLUDE pagination.html -->
+                        <!-- ELSE -->
+                                &bull; {PAGE_NUMBER}
+                        <!-- ENDIF -->
+                </div>
+        <!-- ENDIF -->
+        <!-- EVENT viewtopic_body_pagination_top_after -->
+        <!-- INCLUDE viewtopic/tools.html.twig -->
+                <!-- IF S_DISPLAY_SEARCHBOX -->
                 <div class="search-box" role="search">
                         <form method="get" id="topic-search" action="{S_SEARCHBOX_ACTION}">
                         <fieldset>
@@ -37,31 +63,6 @@
                         </form>
                 </div>
         <!-- ENDIF -->
-        <!-- EVENT viewtopic_buttons_top_before -->
-        <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-                <a href="{U_POST_REPLY_TOPIC}" class="btn action" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
-                        <!-- IF S_IS_LOCKED -->
-                                <span>{L_BUTTON_TOPIC_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
-                        <!-- ELSE -->
-                                <span>{L_BUTTON_POST_REPLY}</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
-                        <!-- ENDIF -->
-                </a>
-        <!-- ENDIF -->
-
-        <!-- EVENT viewtopic_buttons_top_after -->
-        <!-- INCLUDE viewtopic/tools.html.twig -->
-        <!-- EVENT viewtopic_dropdown_top_custom -->
-        <!-- IF .pagination or TOTAL_POSTS -->
-                <div class="pagination">
-                        <!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}" class="mark">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS}
-                        <!-- IF .pagination -->
-                                <!-- INCLUDE pagination.html -->
-                        <!-- ELSE -->
-                                &bull; {PAGE_NUMBER}
-                        <!-- ENDIF -->
-                </div>
-        <!-- ENDIF -->
-        <!-- EVENT viewtopic_body_pagination_top_after -->
 {% endblock %}
 </header>
 
