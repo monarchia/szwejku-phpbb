@@ -10,6 +10,9 @@
     align-items: baseline;
     background: #fff5ee7e;
 }
+.topic-header .breadcrumbs {
+    width: 100%;
+}
 .topic-header h1,
 .topic-header h1 a{
 	color: #b8860b;
