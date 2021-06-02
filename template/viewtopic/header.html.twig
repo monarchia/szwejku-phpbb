@@ -1,6 +1,5 @@
 {% include "partials/breadcrumbs.html.twig" %}
 {% include "partials/moderators.html.twig" %}
-{{ TOPIC_AUTHOR_FULL }} {{ L_COLON }} {{ TOPIC_DATE }}
 <!-- EVENT viewtopic_topic_title_before -->
 <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
 <!-- EVENT viewtopic_topic_title_after -->
@@ -16,14 +15,14 @@
         <!-- ENDIF -->
 <!-- EVENT viewtopic_buttons_top_before -->
 <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-                <a href="{U_POST_REPLY_TOPIC}" class="btn action" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
+    <nav class="buttons">
+                    <a href="{U_POST_REPLY_TOPIC}" class="btn action" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
                         <!-- IF S_IS_LOCKED -->
                                 <span>{L_BUTTON_TOPIC_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
                         <!-- ELSE -->
                                 <span>{L_BUTTON_POST_REPLY}</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
                         <!-- ENDIF -->
                 </a>
-    <nav class="buttons">
     {% include "viewtopic/tools.html.twig" %}
     </nav>
 <!-- EVENT viewtopic_buttons_top_after -->
