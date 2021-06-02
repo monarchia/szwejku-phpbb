@@ -2,64 +2,9 @@
 {% include "overall_header.html" %}
 <header class="topic-header">
 {% block topic_header %}
-        <div class="meta">
-        {{ TOPIC_AUTHOR_FULL }} {{ L_COLON }} {{ TOPIC_DATE }}
-        <nav class="path">{% include "partials/breadcrumbs.html.twig" %}</nav>
-        {% include "partials/moderators.html.twig" %}
-        </div>
-        <!-- IF S_FORUM_RULES -->
-        <div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
-                <div class="inner">
-                <!-- IF U_FORUM_RULES -->
-                        <a href="{U_FORUM_RULES}">{L_FORUM_RULES}</a>
-                <!-- ELSE -->
-                        <strong>{L_FORUM_RULES}</strong><br />
-                        {FORUM_RULES}
-                <!-- ENDIF -->
-                </div>
-        </div>
-        <!-- ENDIF -->
-        <!-- EVENT viewtopic_topic_title_before -->
-        <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
-        <!-- EVENT viewtopic_topic_title_after -->
-        <!-- EVENT viewtopic_dropdown_top_custom -->
-        <!-- IF .pagination or TOTAL_POSTS -->
-        <nav class="pagination">
-                        <!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}" class="mark">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS}
-                        <!-- IF .pagination -->
-                                <!-- INCLUDE pagination.html -->
-                        <!-- ELSE -->
-                                &bull; {PAGE_NUMBER}
-                        <!-- ENDIF -->
-        </nav>
-        <!-- ENDIF -->
-        <!-- EVENT viewtopic_body_pagination_top_after -->
-        <!-- EVENT viewtopic_buttons_top_before -->
-        <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-        <nav class="buttons">
-                <a href="{U_POST_REPLY_TOPIC}" class="btn action" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
-                        <!-- IF S_IS_LOCKED -->
-                                <span>{L_BUTTON_TOPIC_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
-                        <!-- ELSE -->
-                                <span>{L_BUTTON_POST_REPLY}</span> <i class="icon fa-reply fa-fw" aria-hidden="true"></i>
-                        <!-- ENDIF -->
-                </a>
-        <!-- ENDIF -->
-        <!-- INCLUDE viewtopic/tools.html.twig -->
-                <!-- IF S_DISPLAY_SEARCHBOX -->
-                        <form method="get" id="topic-search" action="{S_SEARCHBOX_ACTION}">
-                                <input class="inputbox search"  type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_TOPIC}" />
-                                <button class="button button-search" type="submit" title="{L_SEARCH}">
-                                        <i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
-                                </button>
-                                <a href="{U_SEARCH}" class="button button-search-end" title="{L_SEARCH_ADV}">
-                                        <i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
-                                </a>
-                                {S_SEARCH_LOCAL_HIDDEN_FIELDS}
-                        </form>
-        <!-- ENDIF -->
-        </nav>
-<!-- EVENT viewtopic_buttons_top_after -->
+{% include "viewtopic/header.html.twig" with {
+        title: "{TOPIC_TITLE}"
+} %}
 {% endblock %}
 </header>
 
