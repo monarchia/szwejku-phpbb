@@ -19,7 +19,11 @@
 .topic-header .buttons {
     flex: content;
 }
-.topic-header > * {
+.topic-header > .crumbs {
+    flex: 100%;
+}
+.crumb::after{
+    content: '/';
 }
 .postprofile {
     float: left;
