@@ -2,7 +2,10 @@
 {% include "overall_header.html" %}
 <header class="topic-header">
 {% block topic_header %}
-        <nav class="breadcrumbs">{% include "partials/breadcrumbs.html.twig" %}</nav>
+        <!-- EVENT viewtopic_topic_title_before -->
+        <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
+        <!-- EVENT viewtopic_topic_title_after -->
+                <nav class="breadcrumbs">{% include "partials/breadcrumbs.html.twig" %}</nav>
         {% include "partials/moderators.html.twig" %}
         <!-- IF S_FORUM_RULES -->
         <div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
@@ -17,9 +20,6 @@
         </div>
         <!-- ENDIF -->
         <span class="meta">{{ TOPIC_AUTHOR_FULL }} {{ L_COLON }} {{ TOPIC_DATE }}</span>
-        <!-- EVENT viewtopic_topic_title_before -->
-        <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
-        <!-- EVENT viewtopic_topic_title_after -->
         <!-- EVENT viewtopic_dropdown_top_custom -->
         <!-- IF .pagination or TOTAL_POSTS -->
         <nav class="pagination">
