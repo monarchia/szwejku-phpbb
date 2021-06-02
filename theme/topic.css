@@ -6,6 +6,9 @@
 	padding: 0.45rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    background: #fff5ee7e;
 }
 .topic-header h1,
 .topic-header h1 a{
