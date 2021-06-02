@@ -2,7 +2,7 @@
 {% include "overall_header.html" %}
 <header class="topic-header">
 {% block topic_header %}
-        <span class="crumbs">{% include "partials/breadcrumbs.html.twig" %}</span>
+        <nav class="crumbs">{% include "partials/breadcrumbs.html.twig" %}</nav>
         {% include "partials/moderators.html.twig" %}
         <!-- IF S_FORUM_RULES -->
         <div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
@@ -22,14 +22,14 @@
         <!-- EVENT viewtopic_topic_title_after -->
         <!-- EVENT viewtopic_dropdown_top_custom -->
         <!-- IF .pagination or TOTAL_POSTS -->
-        <div class="pagination">
+        <nav class="pagination">
                         <!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}" class="mark">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS}
                         <!-- IF .pagination -->
                                 <!-- INCLUDE pagination.html -->
                         <!-- ELSE -->
                                 &bull; {PAGE_NUMBER}
                         <!-- ENDIF -->
-        </div>
+        </nav>
         <!-- ENDIF -->
         <!-- EVENT viewtopic_body_pagination_top_after -->
         <!-- EVENT viewtopic_buttons_top_before -->
