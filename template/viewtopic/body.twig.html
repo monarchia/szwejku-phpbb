@@ -3,6 +3,7 @@
 <header class="topic-header">
 {% block topic_header %}
         <aside class="forum-meta">
+        {{ FORUM_NAME }}
         {% include "partials/moderators.html.twig" %}
         <!-- IF S_FORUM_RULES -->
         <div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
@@ -19,6 +20,7 @@
     </aside>
     <aside class="topic-meta">
         {{ TOPIC_AUTHOR_FULL }}
+        {{ POST_DATE }}
         <!-- EVENT viewtopic_topic_title_before -->
         <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
         <!-- EVENT viewtopic_topic_title_after -->
