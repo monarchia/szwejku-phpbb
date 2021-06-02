@@ -3,7 +3,10 @@
 <header class="topic-header">
 {% block topic_header %}
 {% include "viewtopic/header.html.twig" with {
-        title: "{TOPIC_TITLE}"
+        title: TOPIC_TITLE,
+        author: TOPIC_AUTHOR_FULL,
+        date: TOPIC_DATE
+        
 } %}
 {% endblock %}
 </header>
