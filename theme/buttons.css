@@ -3,14 +3,18 @@
 .buttons {
 	display: flex;
 	justify-content: space-between;
-	margin-inline-end: 0.5rem;
 	flex-flow: row wrap;
 }
+.buttons.topic-tools{
+	background: #fffff0;
+}
 .btn {
-	background: #74561e7e;
+	background: #fff5ee7e;
 	border-radius: 2rem;
 	line-height: 2;
 	color: #ffcc00;
+	font-weight: 900;
+	text-transform: lowercase;
 }
 .btn i {
 	width: 2rem;
@@ -18,14 +22,21 @@
 	line-height: 2rem;
 	font-size: large;
 	font-weight: 900;
+	flex: 2 2 50%;
 	}
 .btn span {
 	height: 2rem;
 	display: inline-block;
 	border-radius: 2rem;
 	padding: 0 1em;
-	margin: 0 -0.5rem;
 	background: #74561e;
+	}
+
+.btn.action, .btn.action span {
+	background: unset;
+	}
+	.btn.primary {
+		background: #1b9a1b;
 	}
 /* Button Styles
 ---------------------------------------- */

@@ -1,0 +1,29 @@
+{% include "partials/breadcrumbs.html.twig" %}
+{% include "partials/moderators.html.twig" %}
+<!-- EVENT viewtopic_topic_title_before -->
+<h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
+<!-- EVENT viewtopic_topic_title_after -->
+        <!-- IF .pagination or TOTAL_POSTS -->
+        <nav class="pagination">
+                        <!-- IF U_VIEW_UNREAD_POST and not S_IS_BOT --><a href="{U_VIEW_UNREAD_POST}" class="mark">{L_VIEW_UNREAD_POST}</a> &bull; <!-- ENDIF -->{TOTAL_POSTS}
+                        <!-- IF .pagination -->
+                                <!-- INCLUDE pagination.html -->
+                        <!-- ELSE -->
+                                &bull; {PAGE_NUMBER}
+                        <!-- ENDIF -->
+        </nav>
+        <!-- ENDIF -->
+<!-- EVENT viewtopic_buttons_top_before -->
+<!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
+    <nav class="buttons topic-tools">
+                    <a href="{U_POST_REPLY_TOPIC}" class="btn action primary" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
+                        <!-- IF S_IS_LOCKED -->
+                                <i class="icon fa-lock fa-fw" aria-hidden="true"></i><span>{L_BUTTON_TOPIC_LOCKED}</span> 
+                        <!-- ELSE -->
+                                <i class="icon fa-reply fa-fw" aria-hidden="true"></i><span>{L_BUTTON_POST_REPLY}</span> 
+                        <!-- ENDIF -->
+                </a>
+    {% include "viewtopic/tools.html.twig" %}
+    </nav>
+<!-- EVENT viewtopic_buttons_top_after -->
+<!-- ENDIF -->
