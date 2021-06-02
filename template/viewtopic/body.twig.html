@@ -18,18 +18,17 @@
         </div>
         <!-- ENDIF -->
     </aside>
-    <aside class="topic-meta">
+    <div class="topic-meta">
         {{ TOPIC_AUTHOR_FULL }}
         {{ POST_DATE }}
         <!-- EVENT viewtopic_topic_title_before -->
         <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
         <!-- EVENT viewtopic_topic_title_after -->
-    </aside>
-<div class="action-bar bar-top">
+    </div>
+    <div class="action-bar bar-top">
         <!-- EVENT viewtopic_buttons_top_before -->
-
         <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
-                <a href="{U_POST_REPLY_TOPIC}" class="btn" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
+                <a href="{U_POST_REPLY_TOPIC}" class="btn action" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
                         <!-- IF S_IS_LOCKED -->
                                 <span>{L_BUTTON_TOPIC_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
                         <!-- ELSE -->
@@ -70,7 +69,7 @@
                 </div>
         <!-- ENDIF -->
         <!-- EVENT viewtopic_body_pagination_top_after -->
-</div>        
+    </div>        
 {% endblock %}
 </header>
 
