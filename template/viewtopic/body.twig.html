@@ -1,12 +1,9 @@
 
 {% include "overall_header.html" %}
 <header class="topic-header">
-    <aside>
-<!-- IF MODERATORS -->
-<p>
-        <strong><!-- IF S_SINGLE_MODERATOR -->{L_MODERATOR}<!-- ELSE -->{L_MODERATORS}<!-- ENDIF -->{L_COLON}</strong> {MODERATORS}
-</p>
-<!-- ENDIF -->
+{% block topic_header %}
+        <aside>
+{% include "partials/moderators.html.twig" %}
 
 <!-- IF S_FORUM_RULES -->
         <div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
@@ -75,8 +72,8 @@
                 </div>
         <!-- ENDIF -->
         <!-- EVENT viewtopic_body_pagination_top_after -->
-</div>
-
+</div>        
+{% endblock %}
 </header>
 
 
