@@ -3,7 +3,6 @@
 .buttons {
 	display: flex;
 	justify-content: space-between;
-	margin-inline-end: 0.5rem;
 	flex-flow: row wrap;
 }
 .btn {
@@ -26,9 +25,17 @@
 	display: inline-block;
 	border-radius: 2rem;
 	padding: 0 1em;
-	margin: 0 -0.5rem;
 	background: #74561e;
 	}
+
+.btn.action, .btn.action span {
+	background: white;
+	}
+.btn.primary * {
+	background: #74561e;
+	color: #fc0;
+	font-weight: 900;
+}
 /* Button Styles
 ---------------------------------------- */
 
