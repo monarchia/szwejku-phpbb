@@ -14,7 +14,10 @@
 .topic-header h1 a{
 	color: #b8860b;
 }
-
+.meta {
+    flex: content;
+    order: -1;
+}
 .postprofile {
     float: left;
 }
