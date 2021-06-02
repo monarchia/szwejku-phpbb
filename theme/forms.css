@@ -301,18 +301,6 @@ input[type="number"] {
 	-moz-padding-end: 0;
 }
 
-input[type="search"] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-}
-
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
-	display: none;
-}
-
-input[type="search"]::-webkit-search-cancel-button {
-	cursor: pointer;
-}
 
 /* Form button styles
 ---------------------------------------- */
@@ -372,42 +360,6 @@ input.button1:focus, input.button2:focus, input.button3:focus {
 }
 
 /* Topic and forum Search */
-.search-box {
-	float: left;
-}
-
-.search-box .inputbox {
-	background-image: none;
-	border-right-width: 0;
-	border-radius: 4px 0 0 4px;
-	float: left;
-	height: 24px;
-	padding: 3px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-/* Search box (header)
---------------------------------------------- */
-.search-header {
-	border-radius: 4px;
-	display: block;
-	float: right;
-	margin-right: 5px;
-	margin-top: 30px;
-}
-
-.search-header .inputbox { border: 0; }
-
-.navbar .linklist > li.responsive-search { display: none; }
-
-input.search {
-	background-image: none;
-	background-repeat: no-repeat;
-	background-position: left 1px;
-	padding-left: 17px;
-}
 
 .full { width: 95%; }
 .medium { width: 50%;}
