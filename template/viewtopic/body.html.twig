@@ -33,8 +33,9 @@
                 </div>
         <!-- ENDIF -->
         <!-- EVENT viewtopic_body_pagination_top_after -->
-              <!-- EVENT viewtopic_buttons_top_before -->
+<!-- EVENT viewtopic_buttons_top_before -->
         <!-- IF not S_IS_BOT and S_DISPLAY_REPLY_INFO -->
+        <nav class="buttons">
                 <a href="{U_POST_REPLY_TOPIC}" class="btn action" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
                         <!-- IF S_IS_LOCKED -->
                                 <span>{L_BUTTON_TOPIC_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
@@ -60,7 +61,8 @@
                         </form>
                 </div>
         <!-- ENDIF -->
-                <!-- EVENT viewtopic_buttons_top_after -->
+        </nav>
+<!-- EVENT viewtopic_buttons_top_after -->
 {% endblock %}
 </header>
 
