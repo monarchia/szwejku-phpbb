@@ -7,10 +7,12 @@
 	flex-flow: row wrap;
 }
 .btn {
-	background: #74561e7e;
+	background: #fff5ee7e;
 	border-radius: 2rem;
 	line-height: 2;
 	color: #ffcc00;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 .btn i {
 	width: 2rem;
