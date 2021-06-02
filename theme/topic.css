@@ -3,11 +3,21 @@
  */
  
 .topic-header{
-
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff5ee7e;
+}
+.topic-header h1 {
+    flex: 10 max-content;
 }
 .topic-header h1,
 .topic-header h1 a{
 	color: #b8860b;
+}
+.topic-header .buttons {
+    flex: content;
 }
 .topic-header > * {
 }
