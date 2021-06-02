@@ -15,7 +15,8 @@
 	color: #b8860b;
 }
 .topic-header > * {
-    flex: content;
+    min-width: 50%;
+    flex: 1 1 50%;
 }
 .postprofile {
     float: left;
