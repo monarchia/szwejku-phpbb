@@ -3,6 +3,7 @@
 <header class="topic-header">
 {% block topic_header %}
         <aside>
+        Forum
 {% include "partials/moderators.html.twig" %}
 
 <!-- IF S_FORUM_RULES -->
@@ -20,13 +21,15 @@
         </div>
 <!-- ENDIF -->
     </aside>
+    <aside>
+    Topic
 {{ TOPIC_AUTHOR_FULL }}
 <!-- EVENT viewtopic_topic_title_before -->
 <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
 
 <!-- EVENT viewtopic_topic_title_after -->
 
-
+</aside>x
 <div class="action-bar bar-top">
         <!-- EVENT viewtopic_buttons_top_before -->
 

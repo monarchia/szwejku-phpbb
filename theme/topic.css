@@ -1,6 +1,16 @@
 /* 
  *  Topic style overrides
  */
+ 
+.topic-header{
+	background: #fffff0;
+	padding: 0.45rem;
+}
+.topic-header h1,
+.topic-header h1 a{
+	color: #b8860b;
+}
+
 .postprofile {
     float: left;
 }
