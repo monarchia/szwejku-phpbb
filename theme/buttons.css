@@ -19,6 +19,7 @@
 	line-height: 2rem;
 	font-size: large;
 	font-weight: 900;
+	flex: 2 2 50%;
 	}
 .btn span {
 	height: 2rem;
@@ -31,11 +32,11 @@
 .btn.action, .btn.action span {
 	background: white;
 	}
-.btn.primary * {
-	background: #74561e;
-	color: #fc0;
-	font-weight: 900;
-}
+	.btn.primary span {
+		background: #1b9a1b;
+		color: #fc0;
+		font-weight: 900;
+	}
 /* Button Styles
 ---------------------------------------- */
 
