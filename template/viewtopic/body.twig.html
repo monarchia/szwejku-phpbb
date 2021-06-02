@@ -2,34 +2,27 @@
 {% include "overall_header.html" %}
 <header class="topic-header">
 {% block topic_header %}
-        <aside>
-        Forum
-{% include "partials/moderators.html.twig" %}
-
-<!-- IF S_FORUM_RULES -->
+        <aside class="forum-meta">
+        {% include "partials/moderators.html.twig" %}
+        <!-- IF S_FORUM_RULES -->
         <div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
                 <div class="inner">
-
                 <!-- IF U_FORUM_RULES -->
                         <a href="{U_FORUM_RULES}">{L_FORUM_RULES}</a>
                 <!-- ELSE -->
                         <strong>{L_FORUM_RULES}</strong><br />
                         {FORUM_RULES}
                 <!-- ENDIF -->
-
                 </div>
         </div>
-<!-- ENDIF -->
+        <!-- ENDIF -->
     </aside>
-    <aside>
-    Topic
-{{ TOPIC_AUTHOR_FULL }}
-<!-- EVENT viewtopic_topic_title_before -->
-<h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
-
-<!-- EVENT viewtopic_topic_title_after -->
-
-</aside>x
+    <aside class="topic-meta">
+        {{ TOPIC_AUTHOR_FULL }}
+        <!-- EVENT viewtopic_topic_title_before -->
+        <h1 class="topic-title"><!-- EVENT viewtopic_topic_title_prepend --><a href="{U_VIEW_TOPIC}">{TOPIC_TITLE}</a><!-- EVENT viewtopic_topic_title_append --></h1>
+        <!-- EVENT viewtopic_topic_title_after -->
+    </aside>
 <div class="action-bar bar-top">
         <!-- EVENT viewtopic_buttons_top_before -->
 
