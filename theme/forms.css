@@ -284,7 +284,6 @@ fieldset.submit-buttons input {
 	outline-style: none;
 }
 
-input.inputbox	{ width: 85%; }
 input.medium	{ width: 50%; }
 input.narrow	{ width: 25%; }
 input.tiny	{ width: 150px; }
