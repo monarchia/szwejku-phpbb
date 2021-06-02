@@ -1,6 +1,7 @@
 {% for link in navlinks %}
-        {% set NAVLINK_NAME = link.BREADCRUMB_NAME | default(link.FORUM_NAME) %}
-        {% set NAVLINK_LINK = link.U_BREADCRUMB | default(link.U_VIEW_FORUM) %}
+        <!--
+            {{ link|join(, ) }}
+        -->
         <!-- EVENT overall_header_navlink_prepend -->
         <span class="crumb"<!-- IF link.MICRODATA --> {link.MICRODATA}<!-- ENDIF -->
         <a href="{{ NAVLINK_LINK }}" itemtype="https://schema.org/Thing" itemscope itemprop="item">
