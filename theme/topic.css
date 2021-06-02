@@ -12,6 +12,7 @@
 }
 .topic-header .breadcrumbs {
     width: 100%;
+    flex: 2 2 auto;
 }
 .topic-header h1,
 .topic-header h1 a{
