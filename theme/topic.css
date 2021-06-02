@@ -20,7 +20,7 @@
     flex: content;
 }
 .topic-header > .crumbs {
-    flex: 100%;
+    flex: 1 1 80%;
 }
 .crumb::after{
     content: '/';
