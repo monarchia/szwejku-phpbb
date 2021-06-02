@@ -3,7 +3,7 @@
 <header class="topic-header">
 {% block topic_header %}
         <aside class="forum-meta">
-        {{ FORUM_NAME }}
+        {% include "partials/breadcrumbs.html.twig" %}
         {% include "partials/moderators.html.twig" %}
         <!-- IF S_FORUM_RULES -->
         <div class="rules<!-- IF U_FORUM_RULES --> rules-link<!-- ENDIF -->">
