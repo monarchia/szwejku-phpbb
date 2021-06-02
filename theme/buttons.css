@@ -5,6 +5,9 @@
 	justify-content: space-between;
 	flex-flow: row wrap;
 }
+.buttons.topic-tools{
+	background: #fffff0;
+}
 .btn {
 	background: #fff5ee7e;
 	border-radius: 2rem;
@@ -30,12 +33,10 @@
 	}
 
 .btn.action, .btn.action span {
-	background: white;
+	background: unset;
 	}
-	.btn.primary span {
+	.btn.primary {
 		background: #1b9a1b;
-		color: #fc0;
-		font-weight: 900;
 	}
 /* Button Styles
 ---------------------------------------- */
