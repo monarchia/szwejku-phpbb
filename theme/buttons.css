@@ -12,7 +12,7 @@
 	line-height: 2;
 	color: #ffcc00;
 	font-weight: 900;
-	text-transform: uppercase;
+	text-transform: lowercase;
 }
 .btn i {
 	width: 2rem;
