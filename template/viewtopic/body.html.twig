@@ -262,10 +262,11 @@
 
 <!-- EVENT viewtopic_body_topic_actions_before -->
         <div class="action-bar bar-bottom">
+        <nav class="buttons topic-tools">
         <!-- EVENT viewtopic_buttons_bottom_before -->
         <!-- INCLUDE viewtopic/tools.html.twig -->
         <!-- EVENT viewtopic_buttons_bottom_after -->
-
+        </nav>
         <!-- IF (S_NUM_POSTS > 1 or .pagination) and not S_IS_BOT  -->
                 <form method="post" action="{S_TOPIC_ACTION}">
                 <!-- INCLUDE display_options.html -->
@@ -289,7 +290,6 @@
                         </div>
                 </div>
         <!-- ENDIF -->
-
         <!-- EVENT viewtopic_dropdown_bottom_custom -->
 
         <!-- IF .pagination or TOTAL_POSTS -->
