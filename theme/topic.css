@@ -1,16 +1,44 @@
 /* 
  *  Topic style overrides
  */
+ 
+.topic-header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff5ee7e;
+    padding: 0.5em;
+}
+.topic-header h1 {
+    flex: 10 max-content;
+}
+.topic-header h1,
+.topic-header h1 a{
+	color: #b8860b;
+}
+.topic-header .buttons {
+    flex: content;
+}
+.topic-header > .crumbs {
+    flex: 1 1 80%;
+}
+.topic-header .moderation {
+    flex: 1 1 20%;
+}
+.crumb::after{
+    content: '/';
+}
 .postprofile {
     float: left;
 }
 .avatar-container {
-    max-width: 30vh;
+    max-width: 30vw;
 }
-.avatar {
+img.avatar {
     border-radius: 100%;
     width: 100%;
 }
-.online .avatar {
+.online a.avatar {
     box-shadow: 0px 0px 5px green;
 }
