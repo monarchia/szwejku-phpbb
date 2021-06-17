@@ -2,9 +2,8 @@
                         <dt class="<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->has-profile-rank<!-- ELSE -->no-profile-rank<!-- ENDIF --> <!-- IF postrow.POSTER_AVATAR -->has-avatar<!-- ELSE -->no-avatar<!-- ENDIF -->">
                         <!-- EVENT viewtopic_body_postrow_rank_before -->
                         <!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</dd><!-- ENDIF -->
-                        <!-- EVENT viewtopic_body_postrow_rank_after -->
-                                                        <!-- EVENT viewtopic_body_post_author_before -->
-                               
+                        
+                        <!-- EVENT viewtopic_body_post_author_before -->
                                 <!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong><!-- ELSE -->{postrow.POST_AUTHOR_FULL}<!-- ENDIF -->
                                 <!-- EVENT viewtopic_body_post_author_after -->
                                 <div class="avatar-container">
@@ -16,7 +15,7 @@
                                 </div>
 
                         </dt>
-
+<!-- EVENT viewtopic_body_postrow_rank_after -->
 
 
                 <!-- IF postrow.POSTER_POSTS != '' --><dd class="profile-posts"><strong>{L_POSTS}{L_COLON}</strong> <!-- IF postrow.U_SEARCH !== '' --><a href="{postrow.U_SEARCH}"><!-- ENDIF -->{postrow.POSTER_POSTS}<!-- IF postrow.U_SEARCH !== '' --></a><!-- ENDIF --></dd><!-- ENDIF -->
