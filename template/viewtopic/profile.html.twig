@@ -1,10 +1,8 @@
                 <dl class="postprofile" id="profile{postrow.POST_ID}"<!-- IF postrow.S_POST_HIDDEN --> style="display: none;"<!-- ENDIF -->>
                         <dt class="<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->has-profile-rank<!-- ELSE -->no-profile-rank<!-- ENDIF --> <!-- IF postrow.POSTER_AVATAR -->has-avatar<!-- ELSE -->no-avatar<!-- ENDIF -->">
                         <!-- EVENT viewtopic_body_postrow_rank_before -->
-                        <!-- IF postrow.RANK_TITLE or postrow.RANK_IMG --><dd class="profile-rank">{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}</dd><!-- ENDIF -->
-                        
                         <!-- EVENT viewtopic_body_post_author_before -->
-                                <!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong><!-- ELSE -->{postrow.POST_AUTHOR_FULL}<!-- ENDIF -->
+                                <a href="./memberlist.php?mode=viewprofile&u={ postrow.POSTER_ID }">{postrow.RANK_TITLE} {postrow.POST_AUTHOR}</a>
                                 <!-- EVENT viewtopic_body_post_author_after -->
                                 <div class="avatar-container">
                                         <!-- EVENT viewtopic_body_avatar_before -->
@@ -13,7 +11,6 @@
                                         <!-- ENDIF -->
                                         <!-- EVENT viewtopic_body_avatar_after -->
                                 </div>
-
                         </dt>
 <!-- EVENT viewtopic_body_postrow_rank_after -->
 
