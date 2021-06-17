@@ -5,9 +5,7 @@
 	justify-content: space-between;
 	flex-flow: row wrap;
 }
-.buttons.topic-tools{
-	background: #fffff0;
-}
+
 .btn {
 	background: #fff5ee7e;
 	border-radius: 2rem;
@@ -17,6 +15,7 @@
 	text-transform: lowercase;
 	border: 2px solid;
 	box-shadow: inset 0 0 1px gray, 0 0 3px #161616;
+	margin: 0.5em;
 }
 .btn i {
 	width: 2rem;
@@ -32,6 +31,7 @@
 	border-radius: 2rem;
 	padding: 0 1em;
 	background: #161616;
+	margin: -0.3em;
 	}
 
 .btn.action, .btn.action span {

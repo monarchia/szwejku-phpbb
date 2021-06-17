@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: space-between;
     background: #fff5ee7e;
+    padding: 0.5em;
 }
 .topic-header h1 {
     flex: 10 max-content;
