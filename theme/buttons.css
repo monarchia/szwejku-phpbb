@@ -35,9 +35,8 @@
 	}
 
 .btn.action, .btn.action span {
-	background: unset;
 	}
-	.btn.primary {
+.btn.primary {
 		background: #1b9a1b;
 	}
 /* Button Styles
