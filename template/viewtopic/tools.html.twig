@@ -1,5 +1,12 @@
 {% if not S_IS_BOT %}
 <!-- EVENT viewtopic_topic_tools_before -->
+        <a href="{U_POST_REPLY_TOPIC}" class="btn action primary" title="<!-- IF S_IS_LOCKED -->{L_TOPIC_LOCKED}<!-- ELSE -->{L_POST_REPLY}<!-- ENDIF -->">
+        <!-- IF S_IS_LOCKED -->
+        <i class="icon fa-lock fa-fw" aria-hidden="true"></i><span>{L_BUTTON_TOPIC_LOCKED}</span> 
+        <!-- ELSE -->
+        <i class="icon fa-reply fa-fw" aria-hidden="true"></i><span>{L_BUTTON_POST_REPLY}</span> 
+        <!-- ENDIF -->
+        </a>
         <!-- IF U_WATCH_TOPIC -->
         <a href="{U_WATCH_TOPIC}" class="btn action watch-topic-link" title="{S_WATCH_TOPIC_TITLE}" data-ajax="toggle_link" data-toggle-class="icon <!-- IF S_WATCHING_TOPIC -->fa-check-square-o<!-- ELSE -->fa-square-o<!-- ENDIF --> fa-fw" data-toggle-text="{S_WATCH_TOPIC_TOGGLE}" data-toggle-url="{U_WATCH_TOPIC_TOGGLE}" data-update-all=".watch-topic-link">
         <i class="icon <!-- IF S_WATCHING_TOPIC -->fa-square-o<!-- ELSE -->fa-check-square-o<!-- ENDIF --> fa-fw" aria-hidden="true"></i><span>{S_WATCH_TOPIC_TITLE}</span>
