@@ -1,10 +1,10 @@
 <!-- INCLUDE overall_header.html -->
 <!-- EVENT viewforum_forum_title_before -->
-<h2 class="forum-title"><!-- EVENT viewforum_forum_name_prepend --><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a><!-- EVENT viewforum_forum_name_append --></h2>
+<h1 class="forum-title"><!-- EVENT viewforum_forum_name_prepend --><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a><!-- EVENT viewforum_forum_name_append --></h1>
 <!-- EVENT viewforum_forum_title_after -->
 <!-- IF FORUM_DESC or MODERATORS or U_MCP -->
 <div>
-	<!-- IF FORUM_DESC --><div>{FORUM_DESC}<br /></div><!-- ENDIF -->
+	<div>{{ FORUM_DESC ? FORUM_DESC }}<br /></div>
 	<!-- IF MODERATORS --><p><strong><!-- IF S_SINGLE_MODERATOR -->{L_MODERATOR}<!-- ELSE -->{L_MODERATORS}<!-- ENDIF -->{L_COLON}</strong> {MODERATORS}</p><!-- ENDIF -->
 </div>
 <!-- ENDIF -->
