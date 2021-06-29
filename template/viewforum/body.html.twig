@@ -1,14 +1,15 @@
-<!-- INCLUDE overall_header.html -->
-<!-- EVENT viewforum_forum_title_before -->
+{% include "overall_header.html" %}
+<header class="forum-header">
+{% EVENT viewforum_forum_title_before %}
 <h1 class="forum-title"><!-- EVENT viewforum_forum_name_prepend --><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a><!-- EVENT viewforum_forum_name_append --></h1>
-<!-- EVENT viewforum_forum_title_after -->
+{% EVENT viewforum_forum_title_after %}
 <!-- IF FORUM_DESC or MODERATORS or U_MCP -->
-<div>
-	<div>{{ FORUM_DESC ? FORUM_DESC }}<br /></div>
+	{% if FORUM_DESC %}
+	<div class="forum-description">{{ FORUM_DESC }}</div>
+	{% endif %}
 	<!-- IF MODERATORS --><p><strong><!-- IF S_SINGLE_MODERATOR -->{L_MODERATOR}<!-- ELSE -->{L_MODERATORS}<!-- ENDIF -->{L_COLON}</strong> {MODERATORS}</p><!-- ENDIF -->
-</div>
 <!-- ENDIF -->
-
+</header>
 <!-- IF S_FORUM_RULES -->
 {% include "viewforum/rules.html.twig" %}
 <!-- ENDIF -->
