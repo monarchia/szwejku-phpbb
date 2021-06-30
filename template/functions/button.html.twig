@@ -1,0 +1,17 @@
+{% macro btn(action, icon, title) %}
+<a class='btn' href="{{ action }}" role="menuitem">
+    <i class="icon fa-{{ icon }} fa-fw icon-green" aria-hidden="true"></i><span>{{ title }}</span>
+</a>
+{% endmacro %}
+<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
+			<!-- EVENT viewforum_buttons_top_before -->
+
+            <a href="{U_POST_NEW_TOPIC}" class="button" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->">
+                <!-- IF S_IS_LOCKED -->
+                    <span>{L_BUTTON_FORUM_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
+                <!-- ELSE -->
+                    <span>{L_BUTTON_NEW_TOPIC}</span> <i class="icon fa-pencil fa-fw" aria-hidden="true"></i>
+                <!-- ENDIF -->
+            </a>
+                <!-- EVENT viewforum_buttons_top_after -->
+        <!-- ENDIF -->
