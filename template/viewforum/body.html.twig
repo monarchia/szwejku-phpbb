@@ -31,6 +31,22 @@
 </a>        
 {% endif %}
 <!-- EVENT viewforum_buttons_top_after -->
+	<!-- IF S_DISPLAY_SEARCHBOX -->
+	<div class="search-box" role="search">
+		<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
+		<fieldset>
+			<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_FORUM}" />
+			<button class="button button-search" type="submit" title="{L_SEARCH}">
+				<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
+			</button>
+			<a href="{{ U_SEARCH_FORUM }}" class="button button-search-end" title="{L_SEARCH_ADV}">
+				<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
+			</a>
+			{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+		</fieldset>
+		</form>
+	</div>
+<!-- ENDIF -->
 </header>
 <!-- IF S_FORUM_RULES -->
 {% include "viewforum/rules.html.twig" %}
@@ -39,23 +55,7 @@
 	<!-- INCLUDE forumlist_body.html -->
 {% endif %}
 
-<!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->	<!-- IF S_DISPLAY_SEARCHBOX -->
-		<div class="search-box" role="search">
-			<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
-			<fieldset>
-				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_FORUM}" />
-				<button class="button button-search" type="submit" title="{L_SEARCH}">
-					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
-				</button>
-				<a href="{{ U_SEARCH_FORUM }}" class="button button-search-end" title="{L_SEARCH_ADV}">
-					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
-				</a>
-				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
-			</fieldset>
-			</form>
-		</div>
-	<!-- ENDIF -->
-
+<!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->
 	<div class="pagination">
 		<!-- IF not S_IS_BOT and U_MARK_TOPICS and .topicrow --><a href="{U_MARK_TOPICS}" class="mark" accesskey="m" data-ajax="mark_topics_read">{L_MARK_TOPICS_READ}</a> &bull; <!-- ENDIF -->
 		{TOTAL_TOPICS}
