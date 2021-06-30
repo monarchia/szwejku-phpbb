@@ -5,7 +5,7 @@
 {% endmacro %}
 {% macro newtopic() %}
 			<!-- EVENT viewforum_buttons_top_before -->
-            <a href="{U_POST_NEW_TOPIC}" class="btn" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->">
+            <a href="{U_POST_NEW_TOPIC}" class="btn action primary" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->">
                 <!-- IF S_IS_LOCKED -->
                 <i class="icon fa-lock fa-fw" aria-hidden="true"></i><span>{L_BUTTON_FORUM_LOCKED}</span> 
                 <!-- ELSE -->
@@ -13,4 +13,9 @@
                 <!-- ENDIF -->
             </a>
                 <!-- EVENT viewforum_buttons_top_after -->
+{% endmacro %}
+{% macro mark-read() %}
+    <!-- IF not S_IS_BOT and U_MARK_FORUMS -->
+		<a href="{U_MARK_FORUMS}" class="mark-read btn action" data-ajax="mark_forums_read">{L_MARK_SUBFORUMS_READ}</a>
+    <!-- ENDIF -->
 {% endmacro %}
