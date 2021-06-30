@@ -15,6 +15,13 @@
                 <!-- EVENT viewforum_buttons_top_after -->
 {% endmacro %}
 {% macro markread() %}
-		<a href="{U_MARK_FORUMS}" class="mark-read btn action" data-ajax="mark_forums_read">
-            <i class="icon fa-check-square fa-fw"></i><span>{L_MARK_SUBFORUMS_READ}</span></a>
+		{% if S_HAS_SUBFORUM %}
+        <a href="{U_MARK_FORUMS}" class="mark-read btn action" data-ajax="mark_forums_read">
+            <i class="icon fa-check-square fa-fw"></i><span>{L_MARK_SUBFORUMS_READ}</span>
+        </a>
+        {% else %}
+        <a href="{U_MARK_TOPICS}" class="mark-read btn action" data-ajax="mark_forums_read">
+            <i class="icon fa-check-square fa-fw"></i><span>{L_MARK_TOPICS_READ}</span>
+        </a>        
+        {% endif %}
 {% endmacro %}

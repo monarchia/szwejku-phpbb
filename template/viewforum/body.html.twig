@@ -13,9 +13,7 @@
 <!-- ENDIF -->
 {% import "functions/button.html.twig" as btn %}
 {{ btn.newtopic() }}
-<!-- IF not S_IS_BOT and U_MARK_FORUMS -->
 {{ btn.markread() }}
-<!-- ENDIF -->
 </header>
 <!-- IF S_FORUM_RULES -->
 {% include "viewforum/rules.html.twig" %}
