@@ -39,9 +39,7 @@
 	<!-- INCLUDE forumlist_body.html -->
 {% endif %}
 
-<!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->
-	<div class="action-bar bar-top">
-	<!-- IF S_DISPLAY_SEARCHBOX -->
+<!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->	<!-- IF S_DISPLAY_SEARCHBOX -->
 		<div class="search-box" role="search">
 			<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
 			<fieldset>
@@ -232,6 +230,7 @@
 	<!-- IF topicrow.S_LAST_ROW -->
 			</ul>
 		</div>
+
 	<!-- ENDIF -->
 
 <!-- BEGINELSE -->
