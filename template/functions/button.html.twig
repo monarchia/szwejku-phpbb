@@ -4,11 +4,6 @@
 </a>
 {% endmacro %}
 {% macro newtopic() %}
-{% if S_IS_LOCKED %}
-    _self.btn(U_POST_NEW_TOPIC, 'lock', L_BUTTON_FORUM_LOCKED )
-{% endif %}
-{% endmacro %}
-<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
 			<!-- EVENT viewforum_buttons_top_before -->
 
             <a href="{U_POST_NEW_TOPIC}" class="button" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->">
@@ -19,4 +14,4 @@
                 <!-- ENDIF -->
             </a>
                 <!-- EVENT viewforum_buttons_top_after -->
-        <!-- ENDIF -->
+{% endmacro %}
