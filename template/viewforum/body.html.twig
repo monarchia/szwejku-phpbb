@@ -11,6 +11,7 @@
 	{% include "partials/moderators.html.twig" %}
 	{% endif %}
 <!-- ENDIF -->
+{% import "functions/button.html.twig" as btn %}
 
 </header>
 <!-- IF S_FORUM_RULES -->
@@ -25,11 +26,6 @@
 
 <!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->
 	<div class="action-bar bar-top">
-
-{% from "functions/button.html.twig" import btn %}
-
-{{ btn("{U_POST_NEW_TOPIC}", 'pencil', "{{ L_BUTTON_NEW_TOPIC }}") }}
-
 	<!-- IF S_DISPLAY_SEARCHBOX -->
 		<div class="search-box" role="search">
 			<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">

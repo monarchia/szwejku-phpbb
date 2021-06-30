@@ -3,6 +3,11 @@
     <i class="icon fa-{{ icon }} fa-fw icon-green" aria-hidden="true"></i><span>{{ title }}</span>
 </a>
 {% endmacro %}
+{% macro newtopic_btn() %}
+{% if S_IS_LOCKED %}
+    _self.btn(U_POST_NEW_TOPIC, 'lock', L_BUTTON_FORUM_LOCKED )
+{% endif %}
+{% endmacro %}
 <!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
 			<!-- EVENT viewforum_buttons_top_before -->
 
