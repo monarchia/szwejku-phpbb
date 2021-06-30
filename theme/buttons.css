@@ -39,6 +39,9 @@
 .btn.primary {
 		background: #1b9a1b;
 	}
+.btn.error{
+	background: #D31141;
+}
 /* Button Styles
 ---------------------------------------- */
 

@@ -3,25 +3,3 @@
     <i class="icon fa-{{ icon }} fa-fw icon-green" aria-hidden="true"></i><span>{{ title }}</span>
 </a>
 {% endmacro %}
-{% macro newtopic() %}
-			<!-- EVENT viewforum_buttons_top_before -->
-            <a href="{U_POST_NEW_TOPIC}" class="btn action primary" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->">
-                <!-- IF S_IS_LOCKED -->
-                <i class="icon fa-lock fa-fw" aria-hidden="true"></i><span>{L_BUTTON_FORUM_LOCKED}</span> 
-                <!-- ELSE -->
-                <i class="icon fa-pencil fa-fw" aria-hidden="true"></i><span>{L_BUTTON_NEW_TOPIC}</span> 
-                <!-- ENDIF -->
-            </a>
-                <!-- EVENT viewforum_buttons_top_after -->
-{% endmacro %}
-{% macro markread() %}
-		{% if S_HAS_SUBFORUM %}
-        <a href="{U_MARK_FORUMS}" class="mark-read btn action" data-ajax="mark_forums_read">
-            <i class="icon fa-check-square fa-fw"></i><span>{L_MARK_SUBFORUMS_READ}</span>
-        </a>
-        {% else %}
-        <a href="{U_MARK_TOPICS}" class="mark-read btn action" data-ajax="mark_forums_read">
-            <i class="icon fa-check-square fa-fw"></i><span>{L_MARK_TOPICS_READ}</span>
-        </a>        
-        {% endif %}
-{% endmacro %}
