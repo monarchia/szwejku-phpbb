@@ -52,7 +52,7 @@
 {% include "viewforum/rules.html.twig" %}
 <!-- ENDIF -->
 {% if S_HAS_SUBFORUM %}
-	<!-- INCLUDE forumlist_body.html -->
+	{% include "forumlist/body.html.twig" %}
 {% endif %}
 
 <!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->
@@ -115,7 +115,7 @@
 <!-- ENDIF -->
 
 <!-- EVENT viewforum_body_topic_row_before -->
-
+<section id="topicrow">
 <!-- BEGIN topicrow -->
 
 	<!-- IF not topicrow.S_TOPIC_TYPE_SWITCH and not topicrow.S_FIRST_ROW -->
@@ -248,7 +248,7 @@
 	</div>
 	<!-- ENDIF -->
 <!-- END topicrow -->
-
+</section>
 <!-- IF .topicrow and not S_DISPLAY_ACTIVE -->
 	<div class="action-bar bar-bottom">
 		<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
