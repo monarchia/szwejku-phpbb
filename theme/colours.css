@@ -1,11 +1,19 @@
+/* 
+ * Colour variables
+ */
+ :root{
+	--text: #161616;
+	--links: #b8860b;
+	--background: #fffaf0;
+}
 /*
 --------------------------------------------------------------
 Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #161616;
-	background-color: beige;
+	color: var(--text);
+	background-color: var(--background);
   	background: url('https://plik.austro-wegry.org/common/images/bg.webp');
 }
 
@@ -597,6 +605,10 @@ Colours and backgrounds for buttons.css
 
 .contact-icons a		{ border-color: #DCDCDC; }
 .contact-icons a:hover	{ background-color: #F2F6F9; }
+
+.btn i {
+	color: #b8860b;
+}
 
 /* Pagination
 ---------------------------------------- */
