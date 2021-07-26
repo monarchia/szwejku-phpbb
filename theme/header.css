@@ -14,6 +14,10 @@
 #global-header .logo {
     max-width: 40%;
 }
+#global-header .search {
+    align-self: center;
+}
+
 .logo img {
     height: 145%;
 }
