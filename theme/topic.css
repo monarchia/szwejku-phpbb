@@ -11,7 +11,7 @@
     padding: 0.5em;
 }
 .topic-header h1 {
-    flex: 10 max-content;
+    flex: 1 1 80%;
 }
 .topic-header h1,
 .topic-header h1 a{
