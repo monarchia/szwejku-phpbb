@@ -35,6 +35,9 @@
   	.action-bar .search-box .inputbox ::-webkit-input-placeholder {
   		content: "Search...";
   	}
+	.buttons .btn span {
+		display: none;
+	}
 }
 
 @media (max-width: 500px) {

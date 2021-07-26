@@ -1,59 +1,61 @@
-<!-- INCLUDE overall_header.html -->
-<!-- EVENT viewforum_forum_title_before -->
-<h2 class="forum-title"><!-- EVENT viewforum_forum_name_prepend --><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a><!-- EVENT viewforum_forum_name_append --></h2>
-<!-- EVENT viewforum_forum_title_after -->
+{% include "overall_header.html" %}
+<header class="forum-header">
+{% EVENT viewforum_forum_title_before %}
+<h1 class="forum-title"><!-- EVENT viewforum_forum_name_prepend --><a href="{U_VIEW_FORUM}">{FORUM_NAME}</a><!-- EVENT viewforum_forum_name_append --></h1>
+{% EVENT viewforum_forum_title_after %}
 <!-- IF FORUM_DESC or MODERATORS or U_MCP -->
-<div>
-	<!-- IF FORUM_DESC --><div>{FORUM_DESC}<br /></div><!-- ENDIF -->
-	<!-- IF MODERATORS --><p><strong><!-- IF S_SINGLE_MODERATOR -->{L_MODERATOR}<!-- ELSE -->{L_MODERATORS}<!-- ENDIF -->{L_COLON}</strong> {MODERATORS}</p><!-- ENDIF -->
-</div>
+	{% if FORUM_DESC %}
+	<div class="forum-description">{{ FORUM_DESC }}</div>
+	{% endif %}
+	{% if MODERATORS %}
+	{% include "partials/moderators.html.twig" %}
+	{% endif %}
 <!-- ENDIF -->
-
+<!-- EVENT viewforum_buttons_top_before -->
+	{% if S_IS_LOCKED %}
+		<a href="{U_POST_NEW_TOPIC}" class="btn action error" title="{L_FORUM_LOCKED}">
+    	<i class="icon fa-lock fa-fw" aria-hidden="true"></i><span>{L_BUTTON_FORUM_LOCKED}</span>
+		</a>
+	{% else %}
+		<a href="{{ U_POST_NEW_TOPIC }}" class="btn action primary">
+		<i class="icon fa-pencil fa-fw" aria-hidden="true"></i><span>{L_BUTTON_NEW_TOPIC}</span> 
+		</a>
+	{% endif %}
+{% if S_HAS_SUBFORUM %}
+<a href="{U_MARK_FORUMS}" class="mark-read btn action" data-ajax="mark_forums_read">
+	<i class="icon fa-check-square fa-fw"></i><span>{L_MARK_SUBFORUMS_READ}</span>
+</a>
+{% else %}
+<a href="{U_MARK_TOPICS}" class="mark-read btn action" data-ajax="mark_forums_read">
+	<i class="icon fa-check-square fa-fw"></i><span>{L_MARK_TOPICS_READ}</span>
+</a>        
+{% endif %}
+<!-- EVENT viewforum_buttons_top_after -->
+	<!-- IF S_DISPLAY_SEARCHBOX -->
+	<div class="search-box" role="search">
+		<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
+		<fieldset>
+			<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_FORUM}" />
+			<button class="button button-search" type="submit" title="{L_SEARCH}">
+				<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
+			</button>
+			<a href="{{ U_SEARCH_FORUM }}" class="button button-search-end" title="{L_SEARCH_ADV}">
+				<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
+			</a>
+			{S_SEARCH_LOCAL_HIDDEN_FIELDS}
+		</fieldset>
+		</form>
+	</div>
+<!-- ENDIF -->
+</header>
 <!-- IF S_FORUM_RULES -->
 {% include "viewforum/rules.html.twig" %}
 <!-- ENDIF -->
 {% if S_HAS_SUBFORUM %}
-<!-- IF not S_IS_BOT and U_MARK_FORUMS -->
-	<div class="action-bar compact">
-		<a href="{U_MARK_FORUMS}" class="mark-read rightside" data-ajax="mark_forums_read">{L_MARK_SUBFORUMS_READ}</a>
-	</div>
-<!-- ENDIF -->
-	<!-- INCLUDE forumlist_body.html -->
+	{% include "forumlist/body.html.twig" %}
 {% endif %}
 
 <!-- IF S_DISPLAY_POST_INFO or .pagination or TOTAL_POSTS or TOTAL_TOPICS -->
-	<div class="action-bar bar-top">
-
-	<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
-			<!-- EVENT viewforum_buttons_top_before -->
-
-		<a href="{U_POST_NEW_TOPIC}" class="button" title="<!-- IF S_IS_LOCKED -->{L_FORUM_LOCKED}<!-- ELSE -->{L_POST_TOPIC}<!-- ENDIF -->">
-			<!-- IF S_IS_LOCKED -->
-				<span>{L_BUTTON_FORUM_LOCKED}</span> <i class="icon fa-lock fa-fw" aria-hidden="true"></i>
-			<!-- ELSE -->
-				<span>{L_BUTTON_NEW_TOPIC}</span> <i class="icon fa-pencil fa-fw" aria-hidden="true"></i>
-			<!-- ENDIF -->
-		</a>
-			<!-- EVENT viewforum_buttons_top_after -->
-	<!-- ENDIF -->
-
-	<!-- IF S_DISPLAY_SEARCHBOX -->
-		<div class="search-box" role="search">
-			<form method="get" id="forum-search" action="{S_SEARCHBOX_ACTION}">
-			<fieldset>
-				<input class="inputbox search tiny" type="search" name="keywords" id="search_keywords" size="20" placeholder="{L_SEARCH_FORUM}" />
-				<button class="button button-search" type="submit" title="{L_SEARCH}">
-					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
-				</button>
-				<a href="{{ U_SEARCH_FORUM }}" class="button button-search-end" title="{L_SEARCH_ADV}">
-					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
-				</a>
-				{S_SEARCH_LOCAL_HIDDEN_FIELDS}
-			</fieldset>
-			</form>
-		</div>
-	<!-- ENDIF -->
-
 	<div class="pagination">
 		<!-- IF not S_IS_BOT and U_MARK_TOPICS and .topicrow --><a href="{U_MARK_TOPICS}" class="mark" accesskey="m" data-ajax="mark_topics_read">{L_MARK_TOPICS_READ}</a> &bull; <!-- ENDIF -->
 		{TOTAL_TOPICS}
@@ -62,8 +64,6 @@
 		<!-- ELSE -->
 			&bull; {PAGE_NUMBER}
 		<!-- ENDIF -->
-	</div>
-
 	</div>
 <!-- ENDIF -->
 
@@ -115,7 +115,7 @@
 <!-- ENDIF -->
 
 <!-- EVENT viewforum_body_topic_row_before -->
-
+<section id="topicrow">
 <!-- BEGIN topicrow -->
 
 	<!-- IF not topicrow.S_TOPIC_TYPE_SWITCH and not topicrow.S_FIRST_ROW -->
@@ -230,7 +230,7 @@
 	<!-- IF topicrow.S_LAST_ROW -->
 			</ul>
 		</div>
-	</div>
+
 	<!-- ENDIF -->
 
 <!-- BEGINELSE -->
@@ -248,7 +248,7 @@
 	</div>
 	<!-- ENDIF -->
 <!-- END topicrow -->
-
+</section>
 <!-- IF .topicrow and not S_DISPLAY_ACTIVE -->
 	<div class="action-bar bar-bottom">
 		<!-- IF not S_IS_BOT and S_DISPLAY_POST_INFO -->
@@ -284,7 +284,7 @@
 <!-- ENDIF -->
 
 <!-- INCLUDE jumpbox.html -->
-
+</div>
 {% EVENT viewforum_body_online_list_before %}
 <aside class="stats">
 <!-- IF S_DISPLAY_ONLINE_LIST and U_VIEWONLINE -->

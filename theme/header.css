@@ -14,6 +14,15 @@
 #global-header .logo {
     max-width: 40%;
 }
+#global-header .search {
+    align-self: center;
+    background: white;
+    border-radius: 1em;
+    padding: 0 1em;
+    line-height: 1.5em;
+    border: 0;
+}
+
 .logo img {
     height: 145%;
 }

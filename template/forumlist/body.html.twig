@@ -3,9 +3,9 @@
 {{ l }}
 {% endfor %}
 -->
-
+<section id="forumlist">
 <!-- BEGIN forumrow -->
-	{% if (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  %}
+{% if (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  %}
 </section>
     {% endif %}
 
@@ -112,8 +112,6 @@
 
 <!-- IF forumrow.S_LAST_ROW -->
 
-</div>
-</div>
 {% EVENT forumlist_body_last_row_after %}
 <!-- ENDIF -->
 
@@ -124,3 +122,4 @@
 </div>
 </div>
 <!-- END forumrow -->
+</section>
