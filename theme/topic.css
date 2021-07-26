@@ -35,9 +35,12 @@
 .avatar-container {
     width: 250px;
 }
+.postprofile .avatar{
+    width: 90%;
+    margin: auto;
+}
 img.avatar {
     border-radius: 100%;
-    width: 90%;
 }
 .online a.avatar {
     box-shadow: 0px 0px 5px green;
