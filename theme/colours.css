@@ -594,9 +594,11 @@ Colours and backgrounds for buttons.css
 .contact-icons a:hover	{ background-color: #F2F6F9; }
 
 .btn i {
-	color: #b8860b;
+	color:var(--links);
 }
-
+.btn.action i{
+	color: var(--text)
+}
 /* Pagination
 ---------------------------------------- */
 
