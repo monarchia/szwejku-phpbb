@@ -33,11 +33,11 @@
     float: left;
 }
 .avatar-container {
-    max-width: 30vw;
+    width: 250px;
 }
 img.avatar {
     border-radius: 100%;
-    width: 100%;
+    width: 90%;
 }
 .online a.avatar {
     box-shadow: 0px 0px 5px green;
