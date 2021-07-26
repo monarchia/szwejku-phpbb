@@ -3,7 +3,7 @@
  */
  :root{
 	--text: #161616;
-	--links: #b8860b;
+	--links: #a06800;
 	--background: #fffaf0;
 }
 /*
@@ -18,14 +18,9 @@ html, body {
 }
 
 
-h3 {
-	border-bottom-color: #CCCCCC;
-	color: #115098;
-}
-
 hr {
-	border-color: #161616;
-	border-top-color: #CCCCCC;
+	border-color: var(--text);
+	min-height: 1px;
 }
 
 /*
@@ -33,13 +28,11 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #a06800;}
-a:hover { color: #D31141; }
-
-/* Links on gradient backgrounds */
-.forumbg .header a, .forabg .header a, th a {
-	color: #FFFFFF;
+a {
+	 color: var(--links);
 }
+
+
 
 
 
