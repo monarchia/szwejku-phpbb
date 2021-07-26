@@ -1,0 +1,38 @@
+<nav class="mobile-navigation hide responsive-show" role="navigation">
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist" role="menubar">
+		<li class="hide responsive-show">
+			<a href="{{ U_SITE_HOME ?: U_INDEX }}" title="{{ L_INDEX }}">
+				<img class="home icon" src="{{ T_THEME_PATH }}/images/favicon/android-chrome-192x192.png" alt="{{ L_INDEX }}">
+			</a>
+		</li>
+		<li class="hide responsive-show rightside user-menu">
+		{% if S_USER_LOGGED_IN %}
+					<a class="username" href="{{ U_PROFILE }}">
+						{% if CURRENT_USER_AVATAR %}
+						{{ CURRENT_USER_AVATAR }} 
+						{% else %}
+						<img class="avatar" alt="{{ S_USERNAME }}" src="{{ T_THEME_PATH }}/images/no_avatar.gif" width="447" height="500">   
+						{% endif %}
+						{{ S_USERNAME }}
+					 </a>
+					 {% if S_NOTIFICATIONS_DISPLAY %}
+   <span class="dropdown-container dropdown-{S_CONTENT_FLOW_END}">
+      <a href="{U_VIEW_ALL_NOTIFICATIONS}" title="{{ L_NOTIFICATIONS }}" id="notification_list_button" class="dropdown-trigger {{ NOTIFICATIONS_COUNT ? 'unread' }} button">
+         <i class="icon fa-bell fa-fw" aria-hidden="true"></i> {{ NOTIFICATIONS_COUNT ? ''}}
+      </a> 
+   <!-- INCLUDE notification_dropdown.html -->
+</span>
+   {% endif %}
+   {% if S_DISPLAY_PM %}
+   <a class="button {{ PRIVATE_MESSAGE_COUNT ? 'unread' }}" href="{U_PRIVATEMSGS}" role="menuitem">
+      <i class="icon fa-envelope fa-fw" aria-hidden="true" title="{{ L_PRIVATE_MESSAGES }}"></i> {{ PRIVATE_MESSAGE_COUNT ?: ''}}
+      </a>
+   {% endif %}
+		{% elseif S_REGISTER_ENABLED %}
+			<a class="btn action login" href="{{ U_LOGIN_LOGOUT }}" role="menuitem">
+				<i class="icon fa-user-circle-o fa-fw" aria-hidden="true"></i>{{ L_LOGIN_LOGOUT }}
+			</a>
+		{% endif %}
+		</li>
+	</ul>
+</nav>
