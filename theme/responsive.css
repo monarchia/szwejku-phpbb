@@ -35,7 +35,7 @@
   	.action-bar .search-box .inputbox ::-webkit-input-placeholder {
   		content: "Search...";
   	}
-	nav.buttons .btn > span {
+	.buttons .btn span {
 		display: none;
 	}
 }
