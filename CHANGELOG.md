@@ -1,3 +1,11 @@
+# v0.1.6
+## 2021-07-26
+1. [](#new)
+    * Added new colours based on CSS variables
+2. [](#improved)
+    * Set new buttons to display icons only on screens =< 430px
+    * Moved global search form to global header
+
 # v0.1.5
 ## 2021-01-21
 1. [](#improved)

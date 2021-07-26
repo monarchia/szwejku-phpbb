@@ -1,23 +1,26 @@
+/* 
+ * Colour variables
+ */
+ :root{
+	--text: #161616;
+	--links: #a06800;
+	--background: #fffaf0;
+}
 /*
 --------------------------------------------------------------
 Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #161616;
+	color: var(--text);
 	background-color: var(--background);
   	background: url('https://plik.austro-wegry.org/common/images/bg.webp');
 }
 
 
-h3 {
-	border-bottom-color: #CCCCCC;
-	color: #115098;
-}
-
 hr {
-	border-color: #161616;
-	border-top-color: #CCCCCC;
+	border-color: var(--text);
+	min-height: 1px;
 }
 
 /*
@@ -25,13 +28,11 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #a06800;}
-a:hover { color: #D31141; }
-
-/* Links on gradient backgrounds */
-.forumbg .header a, .forabg .header a, th a {
-	color: #FFFFFF;
+a {
+	 color: var(--links);
 }
+
+
 
 
 
@@ -40,12 +41,6 @@ a:hover { color: #D31141; }
 	background-color: #FFFFFF;
 }
 
-/* Post body links */
-
-
-.signature a, .signature a:hover {
-	background-color: transparent;
-}
 
 
 /* Arrow links  */
@@ -598,6 +593,12 @@ Colours and backgrounds for buttons.css
 .contact-icons a		{ border-color: #DCDCDC; }
 .contact-icons a:hover	{ background-color: #F2F6F9; }
 
+.btn i {
+	color:var(--links);
+}
+.btn.action i{
+	color: var(--text)
+}
 /* Pagination
 ---------------------------------------- */
 
