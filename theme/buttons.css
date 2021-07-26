@@ -24,6 +24,7 @@
 	font-size: large;
 	font-weight: 900;
 	flex: 2 2 50%;
+	color: var(--links);
 	}
 .btn span {
 	height: 2rem;
