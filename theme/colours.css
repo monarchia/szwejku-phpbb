@@ -14,7 +14,7 @@ Colours and backgrounds for common.css
 html, body {
 	color: var(--text);
 	background-color: var(--background);
-  	background: url('https://plik.austro-wegry.org/common/images/bg.webp');
+  	background: url('../images/bg.webp');
 }
 
 
