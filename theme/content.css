@@ -220,9 +220,10 @@ dd.option {
 
 /* Post body styles
 ----------------------------------------*/
-@media screen and (min-width: 1024px) .index-right{
+@media screen and (min-width: 1024px) 	{
+	.index-right{
 	width: 40vw;
-}
+}}
 
 .postbody {
 	padding: 0;
@@ -230,13 +231,6 @@ dd.option {
 	width: 76%;
 	float: left;
 	position: relative;
-}
-
-.postbody .ignore {
-}
-
-.postbody h3.first {
-	/* The first post on the page uses this */
 }
 
 .postbody h3 {
@@ -570,17 +564,12 @@ dl.thumbnail dd {
 	font-style: italic;
 }
 
-.attachbox dl.thumbnail dd {
-}
-
 dl.thumbnail dt a:hover img {
 	border: 1px solid transparent;
 }
 
 /* Post poll styles
 ----------------------------------------*/
-fieldset.polls {
-}
 
 fieldset.polls dl {
 	margin-top: 5px;
