@@ -788,3 +788,16 @@ table.fixed-width-table {
 .index-right {
 	min-width: 30vw !important;
 }
+
+/* 
+ *		Stats block
+ */
+ aside.stats{
+	background: floralwhite;
+}
+
+.stats h3 {
+	width: 100%;
+	margin: auto;
+	color: #161616 !important;
+}
