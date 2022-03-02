@@ -9,10 +9,7 @@
 <aside class="copyright">
 		<!-- EVENT overall_footer_copyright_prepend -->
 			<small class="footer-copyright">{{ CREDIT_LINE }}</small>
-			{% for t in TRANSLATION_INFO %}
-			<!-- Translation: -->
-				{{ t }}
-			{% endfor %}
+			{{ TRANSLATION_INFO ?: 'h' }}
 		<!-- EVENT overall_footer_copyright_append -->
 		<!-- IF DEBUG_OUTPUT -->
 		<p class="footer-row">
