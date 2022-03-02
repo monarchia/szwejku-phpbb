@@ -13,15 +13,6 @@
 			<small class="footer-copyright">{{ TRANSLATION_INFO }}</small>
 		<!-- ENDIF -->
 		<!-- EVENT overall_footer_copyright_append -->
-		<p class="footer-row" role="menu">
-			<a class="footer-link" href="{{ U_PRIVACY }}" title="{{ lang('PRIVACY_LINK') }}" role="menuitem">
-				<span class="footer-link-text">{{ lang('PRIVACY_LINK') }}</span>
-			</a>
-			|
-			<a class="footer-link" href="{{ U_TERMS_USE }}" title="{{ lang('TERMS_LINK') }}" role="menuitem">
-				<span class="footer-link-text">{{ lang('TERMS_LINK') }}</span>
-			</a>
-		</p>
 		<!-- IF DEBUG_OUTPUT -->
 		<p class="footer-row">
 			<span class="footer-info">{{ DEBUG_OUTPUT }}</span>
@@ -51,6 +42,13 @@
 		<div class="alert_text"></div>
 	</div>
 </div>
+<a class="footer-link" href="{{ U_PRIVACY }}" title="{{ lang('PRIVACY_LINK') }}" role="menuitem">
+	<span class="footer-link-text">{{ lang('PRIVACY_LINK') }}</span>
+</a>
+|
+<a class="footer-link" href="{{ U_TERMS_USE }}" title="{{ lang('TERMS_LINK') }}" role="menuitem">
+	<span class="footer-link-text">{{ lang('TERMS_LINK') }}</span>
+</a>
 <!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
 </footer>
 <script src="{T_JQUERY_LINK}"></script>
