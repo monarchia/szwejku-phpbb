@@ -6,7 +6,7 @@ Colours and backgrounds for common.css
 html, body {
 	color: #161616;
 	background-color: beige;
-  	background: url('/assets/images/bg.jpg');
+  	background: url('./images/bg.jpg');
 }
 
 
