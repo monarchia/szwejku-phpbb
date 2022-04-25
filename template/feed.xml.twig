@@ -33,8 +33,8 @@
 </rss>
 <!--
 {% for row in FEED_ROWS %}
-    {% for key in row|keys %}
-    {{ key }}
+    {% for key, value in row %}
+    {{ key }} :: {{ value }}
     {% endfor %}
 {% endfor %}
 -->
