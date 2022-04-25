@@ -32,8 +32,8 @@
 </channel>
 </rss>
 <!--
-{% for row in loops %}
-    {% for key, value in row %} 
+{% for row in FEED_ROWS %}
+    {% for key, value in row %}
     {{ key }} :: {{ value }}
     {% endfor %}
 {% endfor %}
