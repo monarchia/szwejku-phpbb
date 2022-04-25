@@ -17,7 +17,7 @@
 <item>
 {% if not row.author is empty %}<dc:creator><![CDATA[{{ row.author }}]]></dc:creator>{% endif %}
 {% if not row.published is empty %}<pubDate>{{ row.published|date('D, d M y H:i:s O') }}</pubDate>{% endif %}
-<guid>{{ row.link }}</guid>
+<guid>{{ row.link |trim('https://forum.austro-wegry.org/viewtopic.php?p=') }}</guid>
 <link>{{ row.link }}</link>
 <title><![CDATA[{{ row.title }}]]></title>
 {% if not row.category is empty and row.category_name is defined and row.category_name != '' %}
