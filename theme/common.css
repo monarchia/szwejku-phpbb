@@ -1198,32 +1198,7 @@ ul.linklist:after,
 	display: flex;
 	justify-content: space-between;
 }
-.stats {
-	display: flex;
-	max-width: 1400px;
-	margin: auto;
-}
-.stats > * {
-	background-color: antiquewhite;
-}
-.stats > * h3 {
-	background-color: #161616;
-}
-.stats > * > * {
-	padding: 0.5rem 1rem;
-}
-.online-list {
-	flex: 2 1 30%;
-}
-.login-form {
-	flex: 1 1 30%;
-}
-.statistics {
-	flex: 1 1 auto;
-}
-.statistics ul li {
-	list-style: none;
-}
+
 .panel {
 	background-color: rgba(255, 245, 238, 0.664);
 }
