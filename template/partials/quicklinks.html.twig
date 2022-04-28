@@ -1,18 +1,18 @@
 {% if S_REGISTERED_USER %}
-    <a class='btn' href="{U_SEARCH_SELF}" role="menuitem">
+    <a class='btn' href="{U_SEARCH_SELF}" role="menuitem" title="{L_SEARCH_SELF}">
         <i class="icon fa-id-badge fa-fw icon-blue" aria-hidden="true"></i><span>{L_SEARCH_SELF}</span>
     </a>
 {% endif %}
 {% if S_USER_LOGGED_IN %}
-    <a class='btn' href="{U_SEARCH_NEW}" role="menuitem">
+    <a class='btn' href="{U_SEARCH_NEW}" role="menuitem" title="{L_SEARCH_NEW}">
         <i class="icon fa-file-text fa-fw icon-green" aria-hidden="true"></i><span>{L_SEARCH_NEW}</span>
     </a>
 {% endif %}
 {% if S_LOAD_UNREADS %}
-    <a class='btn' href="{U_SEARCH_UNREAD}" role="menuitem">
+    <a class='btn' href="{U_SEARCH_UNREAD}" role="menuitem" title="{L_SEARCH_UNREAD}">
         <i class="icon fa-exclamation-circle fa-fw icon-orange" aria-hidden="true"></i><span>{L_SEARCH_UNREAD}</span>
     </a>
 {% endif %}
-    <a class='btn' href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem">
+    <a class='btn' href="{U_SEARCH_ACTIVE_TOPICS}" role="menuitem" title="{L_SEARCH_ACTIVE_TOPICS}">
         <i class="icon fa-fire fa-fw icon-red" aria-hidden="true"></i><span>{L_SEARCH_ACTIVE_TOPICS}</span>
     </a>

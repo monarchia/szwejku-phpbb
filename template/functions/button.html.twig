@@ -1,0 +1,5 @@
+{% macro btn(action, icon, title) %}
+<a class='btn' href="{{ action }}" role="menuitem">
+    <i class="icon fa-{{ icon }} fa-fw icon-green" aria-hidden="true"></i><span>{{ title }}</span>
+</a>
+{% endmacro %}

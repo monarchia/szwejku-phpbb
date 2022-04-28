@@ -11,7 +11,7 @@
     padding: 0.5em;
 }
 .topic-header h1 {
-    flex: 10 max-content;
+    flex: 1 1 80%;
 }
 .topic-header h1,
 .topic-header h1 a{
@@ -33,12 +33,16 @@
     float: left;
 }
 .avatar-container {
-    max-width: 30vw;
+    width: 250px;
+}
+.postprofile .avatar{
+    width: 90%;
+    margin: auto;
 }
 img.avatar {
     border-radius: 100%;
-    width: 100%;
 }
-.online a.avatar {
-    box-shadow: 0px 0px 5px green;
+.online .avatar img {
+    box-shadow: 0 0 5px 2px green;
+    border-radius: 100%;
 }

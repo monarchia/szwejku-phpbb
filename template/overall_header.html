@@ -40,10 +40,6 @@
  #}
 {% include "partials/favicon.html.twig" %}
 
-<!-- IF S_CONTENT_DIRECTION eq 'rtl' -->
-	<link href="{T_THEME_PATH}/bidi.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
-<!-- ENDIF -->
-
 <!-- IF S_PLUPLOAD -->
 	<link href="{T_THEME_PATH}/plupload.css?assets_version={T_ASSETS_VERSION}" rel="stylesheet">
 <!-- ENDIF -->
@@ -64,7 +60,9 @@
 	new Crate({
 	  server: '777938415693987851',
 	  channel: '777938417341562892',
-	  color: '#fc0'
+	  color: 'black',
+	  notifications: true,
+	  indicator: true
 	})
 }
   </script>

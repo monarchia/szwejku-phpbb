@@ -24,6 +24,7 @@
 	font-size: large;
 	font-weight: 900;
 	flex: 2 2 50%;
+	color: var(--links);
 	}
 .btn span {
 	height: 2rem;
@@ -31,7 +32,7 @@
 	border-radius: 2rem;
 	padding: 0 1em;
 	background: #161616;
-	margin: -0.3em;
+	margin-inline-start: -0.3em;
 	}
 
 .btn.action, .btn.action span {
@@ -39,6 +40,9 @@
 .btn.primary {
 		background: #1b9a1b;
 	}
+.btn.error{
+	background: #D31141;
+}
 /* Button Styles
 ---------------------------------------- */
 
@@ -89,26 +93,15 @@
 ----------------------------------------*/
 .button-search,
 .button-search-end  {
-	float: left;
-	border-radius: 0;
-	margin: 0;
-	padding: 2px 5px;
+
 }
 
-.button-search-end {
-	border-left-width: 0;
-	border-radius: 0 4px 4px 0;
-}
 
 .search-header .button-search,
 .search-header .button-search-end {
 	border-top-width: 0;
 	border-bottom-width: 0;
 	padding: 3px 5px;
-}
-
-.search-header .button-search-end {
-	border-right-width: 0;
 }
 
 .button-icon-only {
