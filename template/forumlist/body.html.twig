@@ -3,12 +3,24 @@
 {{ l }}
 {% endfor %}
 -->
+{% import "forumlist/macros.html.twig" as rows %}
+{% set forumrow = loops.forumrow %}
+{% for row in forumrow %}
+    {% if row.S_IS_CAT %}
+        {% if not row.S_FIRST_ROW %}</section>{% endif %}
+    {% include "forumlist/category.html.twig" %}
+    {% elseif row.S_IS_LINK %}
+    {{ rows.link(row) }}
+    {% else %}
+    {{ rows.forum(row) }}
+    {% endif %}
+{% endfor %}
 
+{# 
 <!-- BEGIN forumrow -->
 	{% if (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  %}
 </section>
     {% endif %}
-
 {% EVENT forumlist_body_category_header_before %}
 {% if (forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT) %}
 {% endif %}
@@ -123,4 +135,4 @@
 <strong>{L_NO_FORUMS}</strong>
 </div>
 </div>
-<!-- END forumrow -->
+<!-- END forumrow --> #}

@@ -1,45 +1,71 @@
-.category {
-    background: #161616;
-    background-size: contain;
-    border-radius: 1.5rem;
-    background-repeat: no-repeat;
-}
-.category>header {
-    color: beige;
-    padding: 1rem;
-    background: linear-gradient(#161616df 10%, transparent 100%);
-}
-.category>header h2 a {
-    color: #ffcc00f0;
-}
-.forum {
-    background: #fffffff0;
+main.viewforum{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    justify-items: stretch;
-    border-bottom: 0.5px dotted #161616;
 }
-.forum > * {
-    padding: 1em 0.5em;
+.viewforum header {
+    width: 100%;
+}
+.viewforum section{
+    flex: 1 1 250px;
+}
+.viewforum .topics {
+    flex-grow: 2;
+}
+.category {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.33em;
+    margin: 0.33em;
+}
+.category>header {
+    width: 100%;
+}
+.category>header a {
+    color: #ffcc00f0;
+}
+
+article {
+    display: block;
+    background: #fff5eecc;
+    margin: 0.33em;
+    padding: 0.33em;
+}
+.forum {
+    flex: 4 1 500px;
+}
+
+.forum .forum-image {
+    width: 5rem;
+}
+
+.forum-image img {
+    width: 99%;
+}
+.link {
+    flex: 1 4 300px;
+    min-height: 10rem;
+}
+.link h2 {
+    width: fit-content;
+    margin: auto;
+}
+
+.link .forum-image {
+    display: block;
+    width: 100%;
+}
+
+.link .description {
+    display: block;
+    width: 100%;
+}
+
+.feed-icon-forum,
+.feed-icon-forum *   {
+    float: right;
+    font-size: 1em !important;
 }
 /* FLEXBOX */
-        .forum-image {
-            max-width: 5rem;
-            width: 5rem;
-        }
-        .forum-image img {
-            width: 99%;
-        }
-        .forum header {
-            flex: 1 1 40%;
-        }
-        .forum header:first-child {
-            margin-left: 5rem;
-        }
-    .forum .subforums {
-        flex: 1 1 20%;
-    }
     .forum .lastpost {
         display: block;
         background: floralwhite;
@@ -56,21 +82,6 @@
             .lastpost .lastsubject {
                 font-size: x-large;
             }
-    .link .forum-image {
-        order: 2;
-        max-width: 60%;
-        width: auto;;
-    }
-    .link .forum-image img {
-        width: unset;
-    }
-    .link header {
-        flex: 1 1 30%;
-        align-self: center;
-    }
-.moderators {
-    font-weight: bolder;
-}
 /* 
  * Subforum links styling
  ************************/

@@ -92,25 +92,6 @@ a:hover { color: #D31141; }
 	color: #000000;
 }
 
-.bg1 {
-	background-color: #ECF3F7;
-}
-
-table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
-	background-color: #ECF3F7;
-}
-
-.bg2 {
-	background-color: #E1EBF2;
-}
-
-table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
-	background-color: #E1EBF2;
-}
-
-.bg3	{
-	background-color: #CADCEB;
-}
 
 .post {
   background: #fffff0;
@@ -278,9 +259,6 @@ dl.details dd {
 li.reported:hover {
 	background-color: #ECD5D8 !important;
 }
-.sticky, .announce {
-	/* you can add a background for stickies and announcements*/
-}
 
 div.rules {
 	background-color: #ECD5D8;
@@ -358,9 +336,6 @@ dl.faq dt {
 	color: #BC2A4D;
 }
 
-.announce, .unreadpost {
-	/* Highlight the announcements & unread posts box */
-}
 
 /* Post signature */
 .signature {

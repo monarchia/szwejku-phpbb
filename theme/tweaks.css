@@ -39,3 +39,7 @@ dd label input { vertical-align: text-bottom\9; }
 .tabs .tab > a {
 	border-radius: 0;
 }
+
+.row {
+	background-color: floralwhite;
+}
