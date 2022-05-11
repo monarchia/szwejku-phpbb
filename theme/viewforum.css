@@ -1,4 +1,4 @@
-main.viewforum{
+main {
     display: flex;
     flex-flow: row wrap;
 }
@@ -14,14 +14,29 @@ main.viewforum{
 .category {
     display: flex;
     flex-flow: row wrap;
-    padding: 0.33em;
-    margin: 0.33em;
+    padding: 1em;
+    margin: 1em;
+    background: var(--background);
+    border-radius: 1em;
+}
+.category>*{
+    flex: 1 1 300px;
 }
 .category>header {
     width: 100%;
+    flex: 6 1 100%;
+}
+.category>header>* {
+    background: #fff5eecc;
+    padding: 0.5em 1em;
+}
+.image-category > header {
+    background: center right/cover no-repeat;
+    margin: 0 -1em;
+    padding: 3em;
 }
 .category>header a {
-    color: #ffcc00f0;
+    /* color: #ffcc00f0; */
 }
 
 article {
@@ -31,7 +46,7 @@ article {
     padding: 0.33em;
 }
 .forum {
-    flex: 4 1 500px;
+    flex: 2 1 490px;
 }
 
 .forum .forum-image {
@@ -43,7 +58,7 @@ article {
 }
 .link {
     flex: 1 4 300px;
-    min-height: 10rem;
+    min-height: 300px;
 }
 .link h2 {
     width: fit-content;

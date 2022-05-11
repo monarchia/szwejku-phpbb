@@ -220,10 +220,6 @@ dd.option {
 
 /* Post body styles
 ----------------------------------------*/
-@media screen and (min-width: 1024px) 	{
-	.index-right{
-	width: 40vw;
-}}
 
 .postbody {
 	padding: 0;
@@ -783,9 +779,13 @@ table.fixed-width-table {
 #memberlist tr.inactive, #team tr.inactive {
 	font-style: italic;
 }
-/* Set width for right column  */
+
+main, #page-body {
+	background: #fff5eecc;
+}
+
 .index-right {
-	min-width: 30vw !important;
+	min-width: 25%;
 }
 
 /* 
