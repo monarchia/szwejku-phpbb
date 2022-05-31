@@ -793,6 +793,7 @@ main, #page-body {
  */
  aside.stats{
 	background: floralwhite;
+	display: flex;
 }
 
 .stats h3 {

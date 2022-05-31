@@ -28,16 +28,18 @@
 </article>
 {% endmacro %}
 {% macro link(row) %}
+<a href="{{ row.U_VIEWFORUM }}">
 <article class="link">
-    <a href="{{ row.U_VIEWFORUM }}">
+    <header>
     <h2>{{ row.FORUM_NAME }}</h2>
-    <small class="clicks">{L_REDIRECTS}{L_COLON} {row.CLICKS}</small>
-    <div class="description">{{ row.FORUM_DESC }}</div>
+    <small class="clicks">{row.CLICKS} kliknięć</small>
+    </header>
     {% if row.FORUM_IMAGE %}
     {% EVENT forumlist_body_forum_image_before %}
     <span class="forum-image">{% EVENT forumlist_body_forum_image_prepend %}{{ row.FORUM_IMAGE }}{% EVENT forumlist_body_forum_image_append %}</span>
     {% EVENT forumlist_body_forum_image_after %}
+    <div class="description">{{ row.FORUM_DESC }}</div>
     {% endif %}
-</a></article>
+</article></a>
 
 {% endmacro %}
